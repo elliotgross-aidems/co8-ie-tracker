@@ -469,6 +469,11 @@ def main(argv):
         return 0
 
     if new_primary and not baseline:
+        if not (os.environ.get("SMTP_USER") and os.environ.get("SMTP_PASSWORD")):
+            # leave state unsaved so these items are emailed once credentials exist
+            print("::warning::SMTP_USER / SMTP_PASSWORD not set; "
+                  f"{len(new_primary)} new item(s) are waiting to be emailed", flush=True)
+            return 0
         send_email(*render_email(new_primary, tot))   # raises on failure -> state not saved -> retried next run
     elif new_rows:
         log(f"baseline: recorded {len(new_rows)} lines without emailing")

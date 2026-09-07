@@ -34,6 +34,10 @@ jobs:
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           RECIPIENTS: ${{ vars.RECIPIENTS }}
         run: |
+          if [ -z "$FEC_API_KEY" ]; then
+            echo "::warning::FEC_API_KEY secret is not set yet; skipping this run"
+            exit 0
+          fi
           MODE="${{ github.event.inputs.mode || 'normal' }}"
           case "$MODE" in
             test-email) python tracker.py --test-email ;;
