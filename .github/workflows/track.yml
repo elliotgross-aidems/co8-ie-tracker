@@ -1,0 +1,56 @@
+name: Track CO-08 independent expenditures
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "normal | test-email | dry-run"
+        required: false
+        default: normal
+
+concurrency:
+  group: ie-tracker
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run tracker
+        env:
+          FEC_API_KEY: ${{ secrets.FEC_API_KEY }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          RECIPIENTS: ${{ vars.RECIPIENTS }}
+        run: |
+          MODE="${{ github.event.inputs.mode || 'normal' }}"
+          case "$MODE" in
+            test-email) python tracker.py --test-email ;;
+            dry-run)    python tracker.py --dry-run ;;
+            *)          python tracker.py ;;
+          esac
+
+      - name: Commit updated data
+        if: always()
+        run: |
+          git config user.name "ie-tracker bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "no data changes"
+          else
+            git commit -m "Update IE data $(date -u +%Y-%m-%dT%H:%MZ)"
+            git pull --rebase
+            git push
+          fi

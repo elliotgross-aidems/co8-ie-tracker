@@ -1,0 +1,116 @@
+{
+  "as_of": "2026-09-07T21:55:33+00:00",
+  "items": 409,
+  "items_excluding_double_listed": 385,
+  "double_listed_pairs": 24,
+  "pro_rutinel_total": 3921900.41,
+  "pro_evans_total": 1746950.08,
+  "by_candidate": {
+    "Rutinel": {
+      "support": 3754083.77,
+      "oppose": 1148897.11
+    },
+    "Evans": {
+      "support": 867471.66,
+      "oppose": 268740.97
+    }
+  },
+  "by_committee": {
+    "LATINO VICTORY FUND": {
+      "Pro-Rutinel": 1000000.0,
+      "Pro-Evans": 0.0
+    },
+    "YOU CAN PUSH BACK": {
+      "Pro-Rutinel": 976943.5700000001,
+      "Pro-Evans": 0.0
+    },
+    "SOMOS PAC": {
+      "Pro-Rutinel": 823568.45,
+      "Pro-Evans": 0.0
+    },
+    "LATINO VICTORY PROJECT": {
+      "Pro-Rutinel": 799123.28,
+      "Pro-Evans": 0.0
+    },
+    "WOMEN VOTE": {
+      "Pro-Rutinel": 0.0,
+      "Pro-Evans": 653885.0
+    },
+    "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION": {
+      "Pro-Rutinel": 0.0,
+      "Pro-Evans": 358292.30999999994
+    },
+    "PROTECT AND SERVE PAC": {
+      "Pro-Rutinel": 0.0,
+      "Pro-Evans": 225000.0
+    },
+    "AMERICA FIRST AGRICULTURE ACTION INC.": {
+      "Pro-Rutinel": 0.0,
+      "Pro-Evans": 130850.24
+    },
+    "TRUST BRIGADE": {
+      "Pro-Rutinel": 118445.41000000002,
+      "Pro-Evans": 0.0
+    },
+    "PRO-CHOICE MAJORITY 2026": {
+      "Pro-Rutinel": 0.0,
+      "Pro-Evans": 116621.5
+    },
+    "CLEARPATH ACTION FUND, INC.": {
+      "Pro-Rutinel": 0.0,
+      "Pro-Evans": 113950.0
+    },
+    "MAINSTREAM COLORADO FUND": {
+      "Pro-Rutinel": 100924.33,
+      "Pro-Evans": 0.0
+    },
+    "SPECIAL OPERATIONS FOR AMERICA": {
+      "Pro-Rutinel": 0.0,
+      "Pro-Evans": 56000.0
+    },
+    "PAF": {
+      "Pro-Rutinel": 50000.0,
+      "Pro-Evans": 0.0
+    },
+    "LAW ENFORCEMENT FOR A SAFER AMERICA PAC": {
+      "Pro-Rutinel": 0.0,
+      "Pro-Evans": 40000.0
+    },
+    "HMP": {
+      "Pro-Rutinel": 25100.0,
+      "Pro-Evans": 0.0
+    },
+    "THE CONSERVATIVE CAUCUS DBA AMERICANS FOR CONSTITUTIONAL LIBERTY": {
+      "Pro-Rutinel": 0.0,
+      "Pro-Evans": 23598.510000000002
+    },
+    "LGBTQ CONNECTION PAC": {
+      "Pro-Rutinel": 18649.16,
+      "Pro-Evans": 4532.32
+    },
+    "AMERICA PAC": {
+      "Pro-Rutinel": 0.0,
+      "Pro-Evans": 12220.2
+    },
+    "HONORING AMERICAN LAW ENFORCEMENT PAC": {
+      "Pro-Rutinel": 0.0,
+      "Pro-Evans": 12000.0
+    },
+    "YOUTH SAVE DEMOCRACY PAC": {
+      "Pro-Rutinel": 4749.0,
+      "Pro-Evans": 0.0
+    },
+    "WORKING FAMILIES PARTY PAC": {
+      "Pro-Rutinel": 3524.1400000000003,
+      "Pro-Evans": 0.0
+    },
+    "INDIGO PAC": {
+      "Pro-Rutinel": 858.04,
+      "Pro-Evans": 0.0
+    },
+    "PLANNED PARENTHOOD VOTES": {
+      "Pro-Rutinel": 15.03,
+      "Pro-Evans": 0.0
+    }
+  }
+}
