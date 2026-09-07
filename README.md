@@ -25,7 +25,8 @@ something new is filed.
 
 - `tracker.py`: the whole thing, standard library only.
 - `data/ie_spending.csv`: the running spreadsheet, newest first. Open in Sheets/Excel.
-- `data/totals.json`: running totals by candidate and by spender.
+- `data/totals.json`: running totals by candidate and by spender, general election only
+  (items dated July 1, 2026 or later; the primary was June 30). Change `TOTALS_START` to move it.
 - `data/state.json`: fingerprints already alerted on. Delete it to re-baseline.
 - `.github/workflows/track.yml`: runs every 10 minutes on GitHub Actions and commits
   data changes back to the repo.

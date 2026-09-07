@@ -46,6 +46,7 @@ TOTALS_PATH = DATA / "totals.json"
 API = "https://api.open.fec.gov/v1"
 CYCLE = 2026
 MIN_DATE = "2025-01-01"  # ignore anything older (Evans has 2024-cycle history)
+TOTALS_START = "2026-07-01"  # running totals cover the general election only (primary was June 30)
 
 CANDIDATES = {
     "H6CO08013": {"name": "Manny Rutinel", "short": "Rutinel", "party": "DEM"},
@@ -278,6 +279,7 @@ def write_csv(rows):
 
 
 def totals(rows):
+    rows = [r for r in rows if r["best_date"] >= TOTALS_START]
     # per-candidate support/oppose figures count every FEC line, matching fec.gov;
     # the headline pro-X totals and per-spender totals count double-listed items once
     t = {c["short"]: {"support": 0.0, "oppose": 0.0} for c in CANDIDATES.values()}
@@ -297,6 +299,7 @@ def totals(rows):
     pro_r, pro_e = pro["Pro-Rutinel"], pro["Pro-Evans"]
     return {
         "as_of": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "since": TOTALS_START,
         "items": len(rows),
         "items_excluding_double_listed": len(primary(rows)),
         "double_listed_pairs": len(rows) - len(primary(rows)),
@@ -381,9 +384,9 @@ def render_email(new_rows, tot, test=False):
       <p style="font-size:14px">{intro}</p>
       <h3 style="margin:16px 0 6px;font-size:15px">{'Most recent items' if test else 'New items'}</h3>
       {items_table}
-      <h3 style="margin:22px 0 4px;font-size:15px">Running totals, 2026 cycle</h3>
+      <h3 style="margin:22px 0 4px;font-size:15px">Running totals, general election (since July 1)</h3>
       {totals_table}
-      <h3 style="margin:22px 0 4px;font-size:15px">Top spenders</h3>
+      <h3 style="margin:22px 0 4px;font-size:15px">Top spenders since July 1</h3>
       {top_table}
       <p style="color:#888;font-size:11px;margin-top:22px">
         Source: FEC Schedule E via api.open.fec.gov, raw e-filings plus processed data, de-duplicated so quarterly re-reports of
@@ -394,7 +397,8 @@ def render_email(new_rows, tot, test=False):
         Full spreadsheet: data/ie_spending.csv in the tracker repo.
       </p></div>"""
     text = "\n".join(f"{r['best_date']}  {r['side']:<12} {money(r['amount']):>12}  {r['committee']}  {r['description']}" for r in new_rows)
-    text = f"{re.sub('<[^>]+>', '', intro)}\n\n{text}\n\nPro-Rutinel total: {money(tot['pro_rutinel_total'])}\nPro-Evans total: {money(tot['pro_evans_total'])}\n"
+    text = (f"{re.sub('<[^>]+>', '', intro)}\n\n{text}\n\nSince July 1: pro-Rutinel {money(tot['pro_rutinel_total'])}, "
+            f"pro-Evans {money(tot['pro_evans_total'])}\n")
     return subject, text, body
 
 
