@@ -401,7 +401,9 @@ def render_email(new_rows, tot, test=False):
 def send_email(subject, text, html_body):
     user = os.environ.get("SMTP_USER")
     pw = os.environ.get("SMTP_PASSWORD")
-    recipients = [r.strip() for r in os.environ.get("RECIPIENTS", DEFAULT_RECIPIENTS).split(",") if r.strip()]
+    recipients = [r.strip() for r in (os.environ.get("RECIPIENTS") or DEFAULT_RECIPIENTS).split(",") if r.strip()]
+    if not recipients:
+        raise RuntimeError("no recipients configured")
     if not user or not pw:
         raise RuntimeError("SMTP_USER / SMTP_PASSWORD not set; cannot send email")
     msg = EmailMessage()
