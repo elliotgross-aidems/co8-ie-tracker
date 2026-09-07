@@ -19,7 +19,7 @@ Environment:
   FEC_API_KEY     required (free key from api.data.gov)
   SMTP_USER       Google Workspace address that sends the email
   SMTP_PASSWORD   app password for that address
-  RECIPIENTS      comma-separated, defaults to clay@ and elliot@mannyforcolorado.com
+  RECIPIENTS      comma-separated list of addresses to notify (required)
 """
 import csv
 import html
@@ -52,7 +52,6 @@ CANDIDATES = {
     "H6CO08013": {"name": "Manny Rutinel", "short": "Rutinel", "party": "DEM"},
     "H4CO08034": {"name": "Gabe Evans", "short": "Evans", "party": "REP"},
 }
-DEFAULT_RECIPIENTS = "clay@mannyforcolorado.com,elliot@mannyforcolorado.com"
 
 CSV_FIELDS = [
     "best_date", "date_source", "candidate", "support_oppose", "side",
@@ -405,9 +404,9 @@ def render_email(new_rows, tot, test=False):
 def send_email(subject, text, html_body):
     user = os.environ.get("SMTP_USER")
     pw = os.environ.get("SMTP_PASSWORD")
-    recipients = [r.strip() for r in (os.environ.get("RECIPIENTS") or DEFAULT_RECIPIENTS).split(",") if r.strip()]
+    recipients = [r.strip() for r in (os.environ.get("RECIPIENTS") or "").split(",") if r.strip()]
     if not recipients:
-        raise RuntimeError("no recipients configured")
+        raise RuntimeError("RECIPIENTS is not set; add it as a repository variable")
     if not user or not pw:
         raise RuntimeError("SMTP_USER / SMTP_PASSWORD not set; cannot send email")
     msg = EmailMessage()

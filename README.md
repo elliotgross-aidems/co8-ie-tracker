@@ -50,8 +50,8 @@ Secrets in the GitHub repo (Settings > Secrets and variables > Actions):
 | `SMTP_USER` | the Google Workspace address that sends the digest |
 | `SMTP_PASSWORD` | a Google app password for that address (needs 2-Step Verification on) |
 
-Optional repo variable `RECIPIENTS` (comma-separated) overrides the default
-`clay@mannyforcolorado.com,elliot@mannyforcolorado.com`.
+Repository variable `RECIPIENTS` (Settings > Secrets and variables > Actions > Variables):
+comma-separated list of addresses that receive the digest.
 
 Manual runs: Actions > "Track CO-08 independent expenditures" > Run workflow, with
 mode `normal`, `test-email`, or `dry-run`.
