@@ -232,7 +232,7 @@ def load_csv():
 def load_state():
     if STATE_PATH.exists():
         return json.loads(STATE_PATH.read_text())
-    return {"seen": {}, "last_run": None}
+    return {"seen": {}, "last_change": None}
 
 
 def sort_key(r):
@@ -268,13 +268,16 @@ def primary(rows):
 
 
 def write_csv(rows):
+    import io
     DATA.mkdir(exist_ok=True)
     rows = sorted(rows, key=sort_key, reverse=True)
-    with CSV_PATH.open("w", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=CSV_FIELDS)
-        w.writeheader()
-        for r in rows:
-            w.writerow({k: r.get(k, "") for k in CSV_FIELDS})
+    buf = io.StringIO()
+    w = csv.DictWriter(buf, fieldnames=CSV_FIELDS, lineterminator="\n")
+    w.writeheader()
+    for r in rows:
+        w.writerow({k: r.get(k, "") for k in CSV_FIELDS})
+    if not CSV_PATH.exists() or CSV_PATH.read_text() != buf.getvalue():
+        CSV_PATH.write_text(buf.getvalue())
 
 
 def totals(rows):
@@ -297,7 +300,6 @@ def totals(rows):
             pro[r["side"]] += amt
     pro_r, pro_e = pro["Pro-Rutinel"], pro["Pro-Evans"]
     return {
-        "as_of": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "since": TOTALS_START,
         "items": len(rows),
         "items_excluding_double_listed": len(primary(rows)),
@@ -466,7 +468,9 @@ def main(argv):
         return 0
 
     write_csv(all_rows)
-    TOTALS_PATH.write_text(json.dumps(tot, indent=2))
+    totals_text = json.dumps(tot, indent=2)
+    if not TOTALS_PATH.exists() or TOTALS_PATH.read_text() != totals_text:
+        TOTALS_PATH.write_text(totals_text)
 
     if test:
         recent = sorted(all_rows, key=sort_key, reverse=True)[:10]
@@ -483,10 +487,11 @@ def main(argv):
     elif new_rows:
         log(f"baseline: recorded {len(new_rows)} lines without emailing")
 
-    for rec in new_rows:
-        state["seen"][rec["fingerprint"]] = now
-    state["last_run"] = now
-    STATE_PATH.write_text(json.dumps(state, indent=1, sort_keys=True))
+    if new_rows:
+        for rec in new_rows:
+            state["seen"][rec["fingerprint"]] = now
+        state["last_change"] = now
+        STATE_PATH.write_text(json.dumps(state, indent=1, sort_keys=True))
     return 0
 
 
