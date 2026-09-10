@@ -1,14 +1,14 @@
 {
   "since": "2026-07-01",
-  "items": 71,
-  "items_excluding_double_listed": 52,
+  "items": 72,
+  "items_excluding_double_listed": 53,
   "double_listed_pairs": 19,
   "pro_rutinel_total": 126024.33,
-  "pro_evans_total": 772614.74,
+  "pro_evans_total": 826674.74,
   "by_candidate": {
     "Rutinel": {
       "support": 100924.33,
-      "oppose": 370939.19
+      "oppose": 424999.19
     },
     "Evans": {
       "support": 663642.82,
@@ -31,6 +31,10 @@
     "MAINSTREAM COLORADO FUND": {
       "Pro-Rutinel": 100924.33,
       "Pro-Evans": 0.0
+    },
+    "NO GOING BACK PAC INC.": {
+      "Pro-Rutinel": 0.0,
+      "Pro-Evans": 54060.0
     },
     "CLEARPATH ACTION FUND, INC.": {
       "Pro-Rutinel": 0.0,
