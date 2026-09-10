@@ -53,6 +53,14 @@ CANDIDATES = {
     "H4CO08034": {"name": "Gabe Evans", "short": "Evans", "party": "REP"},
 }
 
+# Our candidate. Spending that helps him (supporting him, or opposing his
+# opponent) is "Friendly"; spending that hurts him is "Unfriendly".
+FRIENDLY_ID = "H6CO08013"
+FRIENDLY = "Friendly"
+UNFRIENDLY = "Unfriendly"
+LEGACY_SIDES = {"Pro-Rutinel": FRIENDLY, "Pro-Evans": UNFRIENDLY,
+                "Anti-Rutinel": UNFRIENDLY, "Anti-Evans": FRIENDLY}
+
 CSV_FIELDS = [
     "best_date", "date_source", "candidate", "support_oppose", "side",
     "committee", "amount", "description", "payee", "expenditure_date",
@@ -159,11 +167,9 @@ def normalize(row, source):
         str(int(math.floor(amount + 1e-6))), key_date,
         norm_desc(row.get("expenditure_description")),
     ])
-    if so == "S":
-        side = f"Pro-{cand.get('short', '?')}"
-    elif so == "O":
-        other = [c["short"] for k, c in CANDIDATES.items() if k != cid]
-        side = f"Pro-{other[0]}" if len(other) == 1 else f"Anti-{cand.get('short', '?')}"
+    if so in ("S", "O"):
+        # supporting our guy or opposing the other guy both help us
+        side = FRIENDLY if (cid == FRIENDLY_ID) == (so == "S") else UNFRIENDLY
     else:
         side = "?"
     return {
@@ -226,7 +232,10 @@ def load_csv():
     if not CSV_PATH.exists():
         return {}
     with CSV_PATH.open(newline="") as f:
-        return {r["fingerprint"]: r for r in csv.DictReader(f)}
+        rows = list(csv.DictReader(f))
+    for r in rows:                       # rows written before the Friendly/Unfriendly rename
+        r["side"] = LEGACY_SIDES.get(r.get("side", ""), r.get("side", ""))
+    return {r["fingerprint"]: r for r in rows}
 
 
 def load_state():
@@ -283,10 +292,11 @@ def write_csv(rows):
 def totals(rows):
     rows = [r for r in rows if r["best_date"] >= TOTALS_START]
     # per-candidate support/oppose figures count every FEC line, matching fec.gov;
-    # the headline pro-X totals and per-spender totals count double-listed items once
+    # the headline friendly/unfriendly totals and per-spender totals count
+    # double-listed items once
     t = {c["short"]: {"support": 0.0, "oppose": 0.0} for c in CANDIDATES.values()}
     by_committee = {}
-    pro = {"Pro-Rutinel": 0.0, "Pro-Evans": 0.0}
+    pro = {FRIENDLY: 0.0, UNFRIENDLY: 0.0}
     for r in rows:
         amt = float(r["amount"])
         short = next((c["short"] for c in CANDIDATES.values() if c["name"] == r["candidate"]), None)
@@ -294,21 +304,21 @@ def totals(rows):
             t[short]["support" if r["support_oppose"] == "Support" else "oppose"] += amt
         if r.get("duplicate_of"):
             continue
-        bc = by_committee.setdefault(r["committee"], {"Pro-Rutinel": 0.0, "Pro-Evans": 0.0})
+        bc = by_committee.setdefault(r["committee"], {FRIENDLY: 0.0, UNFRIENDLY: 0.0})
         if r["side"] in bc:
             bc[r["side"]] += amt
             pro[r["side"]] += amt
-    pro_r, pro_e = pro["Pro-Rutinel"], pro["Pro-Evans"]
+    friendly, unfriendly = pro[FRIENDLY], pro[UNFRIENDLY]
     return {
         "since": TOTALS_START,
         "items": len(rows),
         "items_excluding_double_listed": len(primary(rows)),
         "double_listed_pairs": len(rows) - len(primary(rows)),
-        "pro_rutinel_total": round(pro_r, 2),
-        "pro_evans_total": round(pro_e, 2),
+        "friendly_total": round(friendly, 2),
+        "unfriendly_total": round(unfriendly, 2),
         "by_candidate": {k: {kk: round(vv, 2) for kk, vv in v.items()} for k, v in t.items()},
         "by_committee": dict(sorted(by_committee.items(),
-                                    key=lambda kv: -(kv[1]["Pro-Rutinel"] + kv[1]["Pro-Evans"]))),
+                                    key=lambda kv: -(kv[1][FRIENDLY] + kv[1][UNFRIENDLY]))),
     }
 
 
@@ -321,31 +331,31 @@ def money(x):
 def render_email(new_rows, tot, test=False):
     new_rows = sorted(primary(new_rows), key=sort_key, reverse=True)
     new_total = sum(float(r["amount"]) for r in new_rows)
-    pro_r_new = sum(float(r["amount"]) for r in new_rows if r["side"] == "Pro-Rutinel")
-    pro_e_new = sum(float(r["amount"]) for r in new_rows if r["side"] == "Pro-Evans")
+    friendly_new = sum(float(r["amount"]) for r in new_rows if r["side"] == FRIENDLY)
+    unfriendly_new = sum(float(r["amount"]) for r in new_rows if r["side"] == UNFRIENDLY)
 
     if test:
-        subject = f"[TEST] CO-08 IE tracker is live: {money(tot['pro_rutinel_total'])} pro-Rutinel vs {money(tot['pro_evans_total'])} pro-Evans"
+        subject = f"[TEST] CO-08 IE tracker is live: {money(tot['friendly_total'])} friendly vs {money(tot['unfriendly_total'])} unfriendly"
     else:
         subject = f"New IE spending in CO-08: {money(new_total)} ({len(new_rows)} item{'s' if len(new_rows) != 1 else ''})"
-        if pro_r_new and pro_e_new:
-            subject += f" | {money(pro_r_new)} pro-Rutinel, {money(pro_e_new)} pro-Evans"
-        elif pro_r_new:
-            subject += " | pro-Rutinel"
-        elif pro_e_new:
-            subject += " | pro-Evans"
+        if friendly_new and unfriendly_new:
+            subject += f" | {money(friendly_new)} friendly, {money(unfriendly_new)} unfriendly"
+        elif friendly_new:
+            subject += " | friendly"
+        elif unfriendly_new:
+            subject += " | unfriendly"
 
     def td(s, align="left", extra=""):
         return f'<td style="padding:6px 8px;border-bottom:1px solid #e5e5e5;text-align:{align};vertical-align:top;{extra}">{s}</td>'
 
     def row_html(r):
-        color = "#1a56db" if r["side"] == "Pro-Rutinel" else "#c81e1e" if r["side"] == "Pro-Evans" else "#555"
+        color = "#1a56db" if r["side"] == FRIENDLY else "#c81e1e" if r["side"] == UNFRIENDLY else "#555"
         date_note = "" if r["date_source"] == "disseminated" else f' <span style="color:#888;font-size:11px">({r["date_source"]} date)</span>'
         link = f'<a href="{html.escape(r["pdf_url"])}">{html.escape(r["form"])}</a>' if r["pdf_url"] else html.escape(r["form"])
         return "<tr>" + "".join([
             td(html.escape(r["best_date"]) + date_note, extra="white-space:nowrap"),
             td(f'<b style="color:{color}">{html.escape(r["side"])}</b><br><span style="color:#666;font-size:12px">{html.escape(r["support_oppose"])} {html.escape(r["candidate"])}'
-               + (f'<br>also filed as {html.escape(r["also_listed_as"])}' if r["also_listed_as"] else "") + '</span>'),
+               + (f'<br>{html.escape(r["also_listed_as"])}' if r["also_listed_as"] else "") + '</span>'),
             td(html.escape(r["committee"])),
             td(money(r["amount"]), "right", "white-space:nowrap;font-weight:600"),
             td(html.escape(r["description"]) + (f'<br><span style="color:#888;font-size:12px">Payee: {html.escape(r["payee"])}</span>' if r["payee"] else "")),
@@ -365,17 +375,17 @@ def render_email(new_rows, tot, test=False):
       <tr><td style="padding:4px 10px">Manny Rutinel</td><td style="text-align:right;padding:4px 10px">{money(bc['Rutinel']['support'])}</td><td style="text-align:right;padding:4px 10px">{money(bc['Rutinel']['oppose'])}</td></tr>
       <tr><td style="padding:4px 10px">Gabe Evans</td><td style="text-align:right;padding:4px 10px">{money(bc['Evans']['support'])}</td><td style="text-align:right;padding:4px 10px">{money(bc['Evans']['oppose'])}</td></tr>
     </table>
-    <p style="font-size:14px;margin:10px 0 0"><b style="color:#1a56db">Pro-Rutinel total: {money(tot['pro_rutinel_total'])}</b>
-       &nbsp;&nbsp;|&nbsp;&nbsp; <b style="color:#c81e1e">Pro-Evans total: {money(tot['pro_evans_total'])}</b></p>"""
+    <p style="font-size:14px;margin:10px 0 0"><b style="color:#1a56db">Friendly total: {money(tot['friendly_total'])}</b>
+       &nbsp;&nbsp;|&nbsp;&nbsp; <b style="color:#c81e1e">Unfriendly total: {money(tot['unfriendly_total'])}</b></p>"""
 
     top = list(tot["by_committee"].items())[:8]
     top_rows = "".join(
         f'<tr><td style="padding:3px 10px">{html.escape(k)}</td>'
-        f'<td style="text-align:right;padding:3px 10px;color:#1a56db">{money(v["Pro-Rutinel"]) if v["Pro-Rutinel"] else ""}</td>'
-        f'<td style="text-align:right;padding:3px 10px;color:#c81e1e">{money(v["Pro-Evans"]) if v["Pro-Evans"] else ""}</td></tr>'
+        f'<td style="text-align:right;padding:3px 10px;color:#1a56db">{money(v[FRIENDLY]) if v[FRIENDLY] else ""}</td>'
+        f'<td style="text-align:right;padding:3px 10px;color:#c81e1e">{money(v[UNFRIENDLY]) if v[UNFRIENDLY] else ""}</td></tr>'
         for k, v in top)
     top_table = f"""<table style="border-collapse:collapse;font-size:12px;margin-top:6px">
-      <tr><th style="text-align:left;padding:3px 10px">Spender</th><th style="text-align:right;padding:3px 10px">Pro-Rutinel</th><th style="text-align:right;padding:3px 10px">Pro-Evans</th></tr>{top_rows}</table>"""
+      <tr><th style="text-align:left;padding:3px 10px">Spender</th><th style="text-align:right;padding:3px 10px">Friendly</th><th style="text-align:right;padding:3px 10px">Unfriendly</th></tr>{top_rows}</table>"""
 
     intro = ("This is a test message confirming the tracker is running. Below are the most recent items on file and the running totals."
              if test else
@@ -391,15 +401,16 @@ def render_email(new_rows, tot, test=False):
       {top_table}
       <p style="color:#888;font-size:11px;margin-top:22px">
         Source: FEC Schedule E via api.open.fec.gov, raw e-filings plus processed data, de-duplicated so quarterly re-reports of
-        24/48-hour notices are not counted twice. Where a filer lists one ad both as supporting one candidate and opposing the
-        other, it is shown once and counted once in the pro-Rutinel / pro-Evans totals (the per-candidate supporting/opposing
+        24/48-hour notices are not counted twice. Friendly = supporting Manny Rutinel or opposing Gabe Evans; unfriendly = the
+        reverse. Where a filer lists one ad both as supporting one candidate and opposing the other, it is shown once and counted
+        once in the friendly / unfriendly totals (the per-candidate supporting/opposing
         figures count every line, matching fec.gov). Date shown is the dissemination date when reported, otherwise the
         expenditure date, otherwise the filing date. Amounts on 24-hour notices are often estimates.
         Full spreadsheet: data/ie_spending.csv in the tracker repo.
       </p></div>"""
     text = "\n".join(f"{r['best_date']}  {r['side']:<12} {money(r['amount']):>12}  {r['committee']}  {r['description']}" for r in new_rows)
-    text = (f"{re.sub('<[^>]+>', '', intro)}\n\n{text}\n\nSince July 1: pro-Rutinel {money(tot['pro_rutinel_total'])}, "
-            f"pro-Evans {money(tot['pro_evans_total'])}\n")
+    text = (f"{re.sub('<[^>]+>', '', intro)}\n\n{text}\n\nSince July 1: friendly {money(tot['friendly_total'])}, "
+            f"unfriendly {money(tot['unfriendly_total'])}\n")
     return subject, text, body
 
 
@@ -459,7 +470,7 @@ def main(argv):
     new_primary = primary(new_rows)
 
     log(f"{len(all_rows)} FEC lines on file ({tot['double_listed_pairs']} double-listed twins), "
-        f"{len(new_primary)} new. Pro-Rutinel {money(tot['pro_rutinel_total'])}, pro-Evans {money(tot['pro_evans_total'])}")
+        f"{len(new_primary)} new. Friendly {money(tot['friendly_total'])}, unfriendly {money(tot['unfriendly_total'])}")
     for r in sorted(new_primary, key=sort_key, reverse=True):
         twin = f" (+ {r['also_listed_as']})" if r["also_listed_as"] else ""
         log(f"  NEW {r['best_date']} {r['side']:<12} {money(r['amount']):>12}  {r['committee']}  {r['description']}{twin}  [{r['form']} {r['source']}]")

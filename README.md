@@ -4,6 +4,10 @@ Watches fec.gov for new independent expenditures (Schedule E) in the Colorado 8t
 congressional race between Manny Rutinel and Gabe Evans, and emails a digest whenever
 something new is filed.
 
+Everything is labeled from our side of the race: **Friendly** means the money helps
+Manny Rutinel (supporting him, or opposing Gabe Evans) and **Unfriendly** means it
+helps Evans. Set `FRIENDLY_ID` in `tracker.py` to flip which candidate that is.
+
 ## What it fixes
 
 - **Missing dates.** Form 5 filers often omit the dissemination date, so fec.gov's
@@ -16,7 +20,7 @@ something new is filed.
 - **Double listing.** Several PACs file one ad twice, as "Support Evans" and again as
   "Oppose Rutinel", full amount both times. Those twins are paired: the CSV keeps both
   lines (matching fec.gov's per-candidate figures) but the email and the headline
-  pro-Rutinel / pro-Evans totals count them once. Filers who split the cost in half
+  friendly / unfriendly totals count them once. Filers who split the cost in half
   (AFP does, a penny apart) are left as two real items.
 - **Speed.** Raw e-filings are polled alongside processed data, so a 24-hour notice
   shows up within minutes of hitting the FEC, not after nightly processing.
