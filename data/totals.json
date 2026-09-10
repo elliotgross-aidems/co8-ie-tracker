@@ -1,17 +1,17 @@
 {
   "since": "2026-07-01",
-  "items": 68,
-  "items_excluding_double_listed": 49,
+  "items": 71,
+  "items_excluding_double_listed": 52,
   "double_listed_pairs": 19,
   "pro_rutinel_total": 126024.33,
-  "pro_evans_total": 772083.74,
+  "pro_evans_total": 772614.74,
   "by_candidate": {
     "Rutinel": {
       "support": 100924.33,
       "oppose": 370939.19
     },
     "Evans": {
-      "support": 663111.82,
+      "support": 663642.82,
       "oppose": 126024.33
     }
   },
@@ -47,6 +47,10 @@
     "AMERICA PAC": {
       "Pro-Rutinel": 0.0,
       "Pro-Evans": 12220.2
+    },
+    "NRA VICTORY FUND, INC.": {
+      "Pro-Rutinel": 0.0,
+      "Pro-Evans": 531.0
     }
   }
 }
