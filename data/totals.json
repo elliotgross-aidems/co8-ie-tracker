@@ -1,9 +1,9 @@
 {
   "since": "2026-07-01",
-  "items": 72,
-  "items_excluding_double_listed": 53,
+  "items": 78,
+  "items_excluding_double_listed": 59,
   "double_listed_pairs": 19,
-  "friendly_total": 126024.33,
+  "friendly_total": 877168.33,
   "unfriendly_total": 826674.74,
   "by_candidate": {
     "Rutinel": {
@@ -12,10 +12,14 @@
     },
     "Evans": {
       "support": 663642.82,
-      "oppose": 126024.33
+      "oppose": 877168.33
     }
   },
   "by_committee": {
+    "HMP": {
+      "Friendly": 776244.0,
+      "Unfriendly": 0.0
+    },
     "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION": {
       "Friendly": 0.0,
       "Unfriendly": 338140.33999999997
@@ -39,10 +43,6 @@
     "CLEARPATH ACTION FUND, INC.": {
       "Friendly": 0.0,
       "Unfriendly": 49950.0
-    },
-    "HMP": {
-      "Friendly": 25100.0,
-      "Unfriendly": 0.0
     },
     "THE CONSERVATIVE CAUCUS DBA AMERICANS FOR CONSTITUTIONAL LIBERTY": {
       "Friendly": 0.0,
