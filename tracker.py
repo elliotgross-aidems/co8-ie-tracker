@@ -2,8 +2,8 @@
 """
 CO-08 independent expenditure tracker (Rutinel vs. Evans).
 
-Pulls Schedule E independent expenditures from the OpenFEC API for both
-candidates, merges the raw e-filed rows (fast, appear within minutes of a
+Pulls Schedule E independent expenditures from the OpenFEC API for the
+district, merges the raw e-filed rows (fast, appear within minutes of a
 24/48-hour notice) with the processed rows (slower, but exact amounts),
 de-duplicates re-reported items, fixes the missing-date problem with a
 best-available-date fallback, keeps a CSV as the running spreadsheet, and
@@ -48,9 +48,15 @@ CYCLE = 2026
 MIN_DATE = "2025-01-01"  # ignore anything older (Evans has 2024-cycle history)
 TOTALS_START = "2026-07-01"  # running totals cover the general election only (primary was June 30)
 
+# Queries filter on office/state/district rather than candidate ID: several
+# filers (CLF, Trust Brigade, ...) leave the candidate ID blank on Schedule E
+# and the FEC never backfills it, so a candidate_id filter silently drops them.
+STATE = "CO"
+DISTRICT = "08"
+
 CANDIDATES = {
-    "H6CO08013": {"name": "Manny Rutinel", "short": "Rutinel", "party": "DEM"},
-    "H4CO08034": {"name": "Gabe Evans", "short": "Evans", "party": "REP"},
+    "H6CO08013": {"name": "Manny Rutinel", "short": "Rutinel", "last": "RUTINEL", "party": "DEM"},
+    "H4CO08034": {"name": "Gabe Evans", "short": "Evans", "last": "EVANS", "party": "REP"},
 }
 
 # Our candidate. Spending that helps him (supporting him, or opposing his
@@ -100,10 +106,11 @@ def api_get(path, params, retries=4):
     raise RuntimeError(f"gave up on {path}")
 
 
-def fetch_processed(candidate_id):
+def fetch_processed():
     """Processed Schedule E. Uses keyset pagination (page= is ignored here)."""
     rows, params = [], {
-        "candidate_id": candidate_id, "cycle": CYCLE, "per_page": 100,
+        "candidate_office_state": STATE, "candidate_office_district": DISTRICT,
+        "cycle": CYCLE, "per_page": 100,
         "sort": "-expenditure_date", "sort_hide_null": "false",
     }
     while True:
@@ -118,12 +125,13 @@ def fetch_processed(candidate_id):
     return rows
 
 
-def fetch_efile(candidate_id):
+def fetch_efile():
     """Raw e-filed Schedule E (24/48-hour notices show up here first)."""
     rows, page = [], 1
     while True:
         d = api_get("/schedules/schedule_e/efile/",
-                    {"candidate_id": candidate_id, "per_page": 100, "page": page})
+                    {"candidate_office_state": STATE, "candidate_office_district": DISTRICT,
+                     "per_page": 100, "page": page})
         rows.extend(d["results"])
         if page >= (d.get("pagination") or {}).get("pages", 1) or not d["results"]:
             break
@@ -142,8 +150,27 @@ def norm_desc(s):
     return re.sub(r"[^A-Z0-9]", "", s)[:24]
 
 
-def normalize(row, source):
+def candidate_of(row):
+    """
+    Candidate ID as filed, else matched on last name ("RUTINEL", "EVANS, GABE",
+    "Evans"). Rows are already limited to this district, so the last name is
+    enough. Returns "" for anyone else (e.g. primary opponents).
+    """
     cid = row.get("candidate_id") or ""
+    if cid in CANDIDATES:
+        return cid
+    if cid:
+        return ""
+    name = (row.get("candidate_name") or row.get("candidate_last_name") or "").upper()
+    words = set(re.findall(r"[A-Z]+", name))
+    for cid, c in CANDIDATES.items():
+        if c["last"] in words:
+            return cid
+    return ""
+
+
+def normalize(row, source):
+    cid = candidate_of(row)
     cand = CANDIDATES.get(cid, {})
     so = (row.get("support_oppose_indicator") or "").upper()
     amount = float(row.get("expenditure_amount") or 0)
@@ -203,7 +230,7 @@ def usable(row):
         return False
     if row.get("most_recent") is False:      # superseded by an amendment
         return False
-    if row.get("candidate_id") not in CANDIDATES:
+    if candidate_of(row) not in CANDIDATES:
         return False
     best = _d(row.get("dissemination_date")) or _d(row.get("expenditure_date")) or ""
     if best and best < MIN_DATE:
@@ -213,16 +240,15 @@ def usable(row):
 
 def fetch_all():
     records = {}
-    for cid in CANDIDATES:
-        p = fetch_processed(cid)
-        e = fetch_efile(cid)
-        log(f"{CANDIDATES[cid]['short']}: {len(p)} processed rows, {len(e)} e-filed rows")
-        # e-file first, then processed overwrites (exact amounts, official dates)
-        for source, rows in (("efile", e), ("processed", p)):
-            for row in rows:
-                if usable(row):
-                    rec = normalize(row, source)
-                    records[rec["fingerprint"]] = rec
+    p = fetch_processed()
+    e = fetch_efile()
+    log(f"{STATE}-{DISTRICT}: {len(p)} processed rows, {len(e)} e-filed rows")
+    # e-file first, then processed overwrites (exact amounts, official dates)
+    for source, rows in (("efile", e), ("processed", p)):
+        for row in rows:
+            if usable(row):
+                rec = normalize(row, source)
+                records[rec["fingerprint"]] = rec
     return records
 
 

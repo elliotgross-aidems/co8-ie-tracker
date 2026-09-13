@@ -24,6 +24,10 @@ helps Evans. Set `FRIENDLY_ID` in `tracker.py` to flip which candidate that is.
   (AFP does, a penny apart) are left as two real items.
 - **Speed.** Raw e-filings are polled alongside processed data, so a 24-hour notice
   shows up within minutes of hitting the FEC, not after nightly processing.
+- **Blank candidate IDs.** Some filers (CLF, Trust Brigade, LGBTQ Connection PAC,
+  You Can Push Back) leave the candidate ID off their Schedule E lines and the FEC
+  never fills it in, so a candidate-ID lookup silently misses them. Queries filter on
+  office/state/district instead, and blank IDs are resolved from the candidate's name.
 
 ## Files
 
