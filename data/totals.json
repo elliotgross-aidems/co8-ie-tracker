@@ -1,14 +1,14 @@
 {
   "since": "2026-07-01",
-  "items": 80,
-  "items_excluding_double_listed": 61,
+  "items": 81,
+  "items_excluding_double_listed": 62,
   "double_listed_pairs": 19,
   "friendly_total": 877169.71,
-  "unfriendly_total": 849368.7,
+  "unfriendly_total": 1384728.7,
   "by_candidate": {
     "Rutinel": {
       "support": 100924.33,
-      "oppose": 426372.19
+      "oppose": 961732.19
     },
     "Evans": {
       "support": 684963.78,
@@ -19,6 +19,10 @@
     "HMP": {
       "Friendly": 776245.38,
       "Unfriendly": 0.0
+    },
+    "NO GOING BACK PAC INC.": {
+      "Friendly": 0.0,
+      "Unfriendly": 590793.0
     },
     "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION": {
       "Friendly": 0.0,
@@ -35,10 +39,6 @@
     "MAINSTREAM COLORADO FUND": {
       "Friendly": 100924.33,
       "Unfriendly": 0.0
-    },
-    "NO GOING BACK PAC INC.": {
-      "Friendly": 0.0,
-      "Unfriendly": 55433.0
     },
     "CLEARPATH ACTION FUND, INC.": {
       "Friendly": 0.0,
