@@ -18,9 +18,9 @@ helps Evans. Set `FRIENDLY_ID` in `tracker.py` to flip which candidate that is.
   spender, candidate, support/oppose, whole-dollar amount, date, and purpose so a
   re-report is not "new".
 - **Double listing.** Several PACs file one ad twice, as "Support Evans" and again as
-  "Oppose Rutinel", full amount both times. Those twins are paired: the CSV keeps both
-  lines (matching fec.gov's per-candidate figures) but the email and the headline
-  friendly / unfriendly totals count them once. Filers who split the cost in half
+  "Oppose Rutinel", full amount both times. Those twins are paired: the CSV and the
+  email show both lines (matching fec.gov), with the second marked "same buy as the
+  line above", and the headline friendly / unfriendly totals count them once. Filers who split the cost in half
   (AFP does, a penny apart) are left as two real items.
 - **Speed.** Raw e-filings are polled alongside processed data, so a 24-hour notice
   shows up within minutes of hitting the FEC, not after nightly processing.

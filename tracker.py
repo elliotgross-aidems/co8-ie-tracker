@@ -354,16 +354,36 @@ def money(x):
     return f"${float(x):,.0f}"
 
 
+def order_lines(rows):
+    """Every FEC line, newest first, with a double-listed twin directly under its primary."""
+    twins = {}
+    for r in rows:
+        if r.get("duplicate_of"):
+            twins.setdefault(r["duplicate_of"], []).append(r)
+    fps = {r["fingerprint"] for r in rows}
+    out = []
+    for r in sorted(rows, key=sort_key, reverse=True):
+        if not r.get("duplicate_of"):
+            out.append(r)
+            out.extend(twins.get(r["fingerprint"], []))
+        elif r["duplicate_of"] not in fps:
+            out.append(r)   # twin of an item that was reported earlier
+    return out
+
+
 def render_email(new_rows, tot, test=False):
-    new_rows = sorted(primary(new_rows), key=sort_key, reverse=True)
-    new_total = sum(float(r["amount"]) for r in new_rows)
-    friendly_new = sum(float(r["amount"]) for r in new_rows if r["side"] == FRIENDLY)
-    unfriendly_new = sum(float(r["amount"]) for r in new_rows if r["side"] == UNFRIENDLY)
+    # every FEC line is listed, like fec.gov; dollar figures count a double-listed buy once
+    rows = order_lines(new_rows)
+    counted = primary(new_rows)
+    n_twins = len(rows) - len(counted)
+    new_total = sum(float(r["amount"]) for r in counted)
+    friendly_new = sum(float(r["amount"]) for r in counted if r["side"] == FRIENDLY)
+    unfriendly_new = sum(float(r["amount"]) for r in counted if r["side"] == UNFRIENDLY)
 
     if test:
         subject = f"[TEST] CO-08 IE tracker is live: {money(tot['friendly_total'])} friendly vs {money(tot['unfriendly_total'])} unfriendly"
     else:
-        subject = f"New IE spending in CO-08: {money(new_total)} ({len(new_rows)} item{'s' if len(new_rows) != 1 else ''})"
+        subject = f"New IE spending in CO-08: {money(new_total)} ({len(rows)} item{'s' if len(rows) != 1 else ''})"
         if friendly_new and unfriendly_new:
             subject += f" | {money(friendly_new)} friendly, {money(unfriendly_new)} unfriendly"
         elif friendly_new:
@@ -374,16 +394,27 @@ def render_email(new_rows, tot, test=False):
     def td(s, align="left", extra=""):
         return f'<td style="padding:6px 8px;border-bottom:1px solid #e5e5e5;text-align:{align};vertical-align:top;{extra}">{s}</td>'
 
-    def row_html(r):
+    def twin_note(i):
+        r = rows[i]
+        if r.get("duplicate_of"):
+            above = i > 0 and rows[i - 1]["fingerprint"] == r["duplicate_of"]
+            return ("same buy as the line above" if above else "same buy as an item reported earlier") + ", counted once"
+        below = i + 1 < len(rows) and rows[i + 1].get("duplicate_of") == r["fingerprint"]
+        return f"also listed as {r['also_listed_as']}" if r["also_listed_as"] and not below else ""
+
+    def row_html(i):
+        r = rows[i]
+        twin = bool(r.get("duplicate_of"))
+        note = twin_note(i)
         color = "#1a56db" if r["side"] == FRIENDLY else "#c81e1e" if r["side"] == UNFRIENDLY else "#555"
         date_note = "" if r["date_source"] == "disseminated" else f' <span style="color:#888;font-size:11px">({r["date_source"]} date)</span>'
         link = f'<a href="{html.escape(r["pdf_url"])}">{html.escape(r["form"])}</a>' if r["pdf_url"] else html.escape(r["form"])
         return "<tr>" + "".join([
             td(html.escape(r["best_date"]) + date_note, extra="white-space:nowrap"),
             td(f'<b style="color:{color}">{html.escape(r["side"])}</b><br><span style="color:#666;font-size:12px">{html.escape(r["support_oppose"])} {html.escape(r["candidate"])}'
-               + (f'<br>{html.escape(r["also_listed_as"])}' if r["also_listed_as"] else "") + '</span>'),
+               + (f'<br><i style="color:#888">{html.escape(note)}</i>' if note else "") + '</span>'),
             td(html.escape(r["committee"])),
-            td(money(r["amount"]), "right", "white-space:nowrap;font-weight:600"),
+            td(money(r["amount"]), "right", "white-space:nowrap;" + ("color:#888" if twin else "font-weight:600")),
             td(html.escape(r["description"]) + (f'<br><span style="color:#888;font-size:12px">Payee: {html.escape(r["payee"])}</span>' if r["payee"] else "")),
             td(link, extra="white-space:nowrap"),
         ]) + "</tr>"
@@ -392,7 +423,7 @@ def render_email(new_rows, tot, test=False):
                      for h, a in [("Date", "left"), ("Side", "left"), ("Spender", "left"),
                                   ("Amount", "right"), ("Purpose", "left"), ("Filing", "left")])
     items_table = (f'<table style="border-collapse:collapse;width:100%;font-size:13px">'
-                   f"<thead><tr>{header}</tr></thead><tbody>{''.join(row_html(r) for r in new_rows)}</tbody></table>")
+                   f"<thead><tr>{header}</tr></thead><tbody>{''.join(row_html(i) for i in range(len(rows)))}</tbody></table>")
 
     bc = tot["by_candidate"]
     totals_table = f"""
@@ -415,8 +446,10 @@ def render_email(new_rows, tot, test=False):
 
     intro = ("This is a test message confirming the tracker is running. Below are the most recent items on file and the running totals."
              if test else
-             f"{len(new_rows)} new independent expenditure item{'s' if len(new_rows) != 1 else ''} totaling <b>{money(new_total)}</b> "
-             f"appeared on fec.gov since the last check.")
+             f"{len(rows)} new independent expenditure item{'s' if len(rows) != 1 else ''} totaling <b>{money(new_total)}</b> "
+             f"appeared on fec.gov since the last check"
+             + (f" ({n_twins} {'is' if n_twins == 1 else 'are'} the second listing of a buy filed as both support and oppose, counted once)."
+                if n_twins else "."))
     body = f"""<div style="font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;color:#222;max-width:900px">
       <p style="font-size:14px">{intro}</p>
       <h3 style="margin:16px 0 6px;font-size:15px">{'Most recent items' if test else 'New items'}</h3>
@@ -428,13 +461,14 @@ def render_email(new_rows, tot, test=False):
       <p style="color:#888;font-size:11px;margin-top:22px">
         Source: FEC Schedule E via api.open.fec.gov, raw e-filings plus processed data, de-duplicated so quarterly re-reports of
         24/48-hour notices are not counted twice. Friendly = supporting Manny Rutinel or opposing Gabe Evans; unfriendly = the
-        reverse. Where a filer lists one ad both as supporting one candidate and opposing the other, it is shown once and counted
-        once in the friendly / unfriendly totals (the per-candidate supporting/opposing
+        reverse. Where a filer lists one ad both as supporting one candidate and opposing the other, both lines are shown, the second
+        marked, and it is counted once in the friendly / unfriendly totals (the per-candidate supporting/opposing
         figures count every line, matching fec.gov). Date shown is the dissemination date when reported, otherwise the
         expenditure date, otherwise the filing date. Amounts on 24-hour notices are often estimates.
         Full spreadsheet: data/ie_spending.csv in the tracker repo.
       </p></div>"""
-    text = "\n".join(f"{r['best_date']}  {r['side']:<12} {money(r['amount']):>12}  {r['committee']}  {r['description']}" for r in new_rows)
+    text = "\n".join(f"{r['best_date']}  {r['side']:<12} {money(r['amount']):>12}  {r['committee']}  {r['description']}"
+                     + ("  (twin, counted once)" if r.get("duplicate_of") else "") for r in rows)
     text = (f"{re.sub('<[^>]+>', '', intro)}\n\n{text}\n\nSince July 1: friendly {money(tot['friendly_total'])}, "
             f"unfriendly {money(tot['unfriendly_total'])}\n")
     return subject, text, body
@@ -520,7 +554,7 @@ def main(argv):
             print("::warning::SMTP_USER / SMTP_PASSWORD not set; "
                   f"{len(new_primary)} new item(s) are waiting to be emailed", flush=True)
             return 0
-        send_email(*render_email(new_primary, tot))   # raises on failure -> state not saved -> retried next run
+        send_email(*render_email(new_rows, tot))   # raises on failure -> state not saved -> retried next run
     elif new_rows:
         log(f"baseline: recorded {len(new_rows)} lines without emailing")
 
