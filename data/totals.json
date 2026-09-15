@@ -1,17 +1,17 @@
 {
   "since": "2026-07-01",
-  "items": 126,
-  "items_excluding_double_listed": 106,
+  "items": 127,
+  "items_excluding_double_listed": 107,
   "double_listed_pairs": 20,
   "friendly_total": 919882.5,
-  "unfriendly_total": 2529422.88,
+  "unfriendly_total": 2559663.88,
   "by_candidate": {
     "Rutinel": {
       "support": 124430.11,
       "oppose": 2018338.37
     },
     "Evans": {
-      "support": 773051.78,
+      "support": 803292.78,
       "oppose": 916717.72
     }
   },
@@ -48,13 +48,13 @@
       "Friendly": 0.0,
       "Unfriendly": 88088.0
     },
+    "AMERICA PAC": {
+      "Friendly": 0.0,
+      "Unfriendly": 63781.4
+    },
     "CLEARPATH ACTION FUND, INC.": {
       "Friendly": 0.0,
       "Unfriendly": 49950.0
-    },
-    "AMERICA PAC": {
-      "Friendly": 0.0,
-      "Unfriendly": 33540.4
     },
     "TRUST BRIGADE": {
       "Friendly": 19207.01,
