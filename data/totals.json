@@ -1,13 +1,13 @@
 {
   "since": "2026-07-01",
-  "items": 129,
-  "items_excluding_double_listed": 109,
+  "items": 131,
+  "items_excluding_double_listed": 111,
   "double_listed_pairs": 20,
-  "friendly_total": 919882.5,
+  "friendly_total": 997673.5,
   "unfriendly_total": 2783007.41,
   "by_candidate": {
     "Rutinel": {
-      "support": 124430.11,
+      "support": 202221.11,
       "oppose": 2072398.37
     },
     "Evans": {
@@ -47,6 +47,10 @@
     "AMERICAN CHEMISTRY COUNCIL, INC": {
       "Friendly": 0.0,
       "Unfriendly": 88088.0
+    },
+    "314 ACTION FUND": {
+      "Friendly": 77791.0,
+      "Unfriendly": 0.0
     },
     "AMERICA PAC": {
       "Friendly": 0.0,
