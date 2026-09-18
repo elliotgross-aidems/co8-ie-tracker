@@ -1,17 +1,17 @@
 {
   "since": "2026-07-01",
-  "items": 143,
-  "items_excluding_double_listed": 123,
+  "items": 145,
+  "items_excluding_double_listed": 125,
   "double_listed_pairs": 20,
   "friendly_total": 2043770.86,
-  "unfriendly_total": 2820736.68,
+  "unfriendly_total": 2829680.68,
   "by_candidate": {
     "Rutinel": {
       "support": 202221.11,
       "oppose": 2072398.37
     },
     "Evans": {
-      "support": 1010305.58,
+      "support": 1019249.58,
       "oppose": 1962815.08
     }
   },
@@ -30,7 +30,7 @@
     },
     "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION": {
       "Friendly": 0.0,
-      "Unfriendly": 375869.61
+      "Unfriendly": 384813.61
     },
     "AMERICAN FEDERATION OF STATE COUNTY & MUNICIPAL EMPLOYEES  P E O P L E": {
       "Friendly": 329500.0,
