@@ -1,9 +1,9 @@
 {
   "since": "2026-07-01",
-  "items": 155,
-  "items_excluding_double_listed": 133,
+  "items": 156,
+  "items_excluding_double_listed": 134,
   "double_listed_pairs": 22,
-  "friendly_total": 2043770.86,
+  "friendly_total": 2056380.86,
   "unfriendly_total": 4200879.72,
   "by_candidate": {
     "Rutinel": {
@@ -12,7 +12,7 @@
     },
     "Evans": {
       "support": 1114760.62,
-      "oppose": 1962815.08
+      "oppose": 1975425.08
     }
   },
   "by_committee": {
@@ -21,7 +21,7 @@
       "Unfriendly": 1791642.18
     },
     "HMP": {
-      "Friendly": 1492689.38,
+      "Friendly": 1505299.38,
       "Unfriendly": 0.0
     },
     "NO GOING BACK PAC INC.": {
