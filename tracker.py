@@ -71,7 +71,7 @@ CSV_FIELDS = [
     "best_date", "date_source", "candidate", "support_oppose", "side",
     "committee", "amount", "description", "payee", "expenditure_date",
     "dissemination_date", "filed_date", "form", "source", "file_number",
-    "pdf_url", "committee_id", "candidate_id", "also_listed_as", "duplicate_of",
+    "pdf_url", "committee_id", "candidate_id", "also_listed_as", "other_half_of",
     "first_seen", "fingerprint",
 ]
 
@@ -219,7 +219,7 @@ def normalize(row, source):
         "committee_id": row.get("committee_id") or "",
         "candidate_id": cid,
         "also_listed_as": "",
-        "duplicate_of": "",
+        "other_half_of": "",
         "first_seen": "",
         "fingerprint": fingerprint,
     }
@@ -276,15 +276,17 @@ def sort_key(r):
 
 def pair_mirrors(rows):
     """
-    Many filers report one ad twice: a "Support Evans" line and an identical
-    "Oppose Rutinel" line, full amount on each. Pair those up so the second
-    copy is flagged as duplicate_of the first and not counted twice in the
-    headline totals or the email. Halves that differ by a cent (AFP splits its
-    cost 50/50 between the two lines) are different amounts and stay separate.
+    A filer that runs one ad both for Evans and against Rutinel reports it as
+    two Schedule E lines, a "Support Evans" line and an "Oppose Rutinel" line,
+    each carrying its share of the cost (AFP splits 50/50, so the two lines
+    match to the dollar). BOTH lines are real spending and every total counts
+    both (Clay, 2026-09-19). Pairing them is for the reader only: the email
+    puts the second line under the first and says it is the other half of the
+    same buy. Nothing here changes an amount or drops a line.
     """
     for r in rows:
         r["also_listed_as"] = ""
-        r["duplicate_of"] = ""
+        r["other_half_of"] = ""
     groups = {}
     for r in rows:
         k = (r["committee_id"], r["best_date"], r["amount"], norm_desc(r["description"]), r["side"])
@@ -295,11 +297,11 @@ def pair_mirrors(rows):
         for a, b in zip(supports, opposes):
             if a["candidate_id"] != b["candidate_id"]:
                 a["also_listed_as"] = f"{b['support_oppose']} {b['candidate']}"
-                b["duplicate_of"] = a["fingerprint"]
+                b["other_half_of"] = a["fingerprint"]
 
 
-def primary(rows):
-    return [r for r in rows if not r.get("duplicate_of")]
+def paired(rows):
+    return [r for r in rows if r.get("other_half_of")]
 
 
 def write_csv(rows):
@@ -317,9 +319,8 @@ def write_csv(rows):
 
 def totals(rows):
     rows = [r for r in rows if r["best_date"] >= TOTALS_START]
-    # per-candidate support/oppose figures count every FEC line, matching fec.gov;
-    # the headline friendly/unfriendly totals and per-spender totals count
-    # double-listed items once
+    # every FEC line counts everywhere, matching fec.gov: the two lines of a
+    # support/oppose pair are two halves of one buy, not one buy listed twice
     t = {c["short"]: {"support": 0.0, "oppose": 0.0} for c in CANDIDATES.values()}
     by_committee = {}
     pro = {FRIENDLY: 0.0, UNFRIENDLY: 0.0}
@@ -328,8 +329,6 @@ def totals(rows):
         short = next((c["short"] for c in CANDIDATES.values() if c["name"] == r["candidate"]), None)
         if short:
             t[short]["support" if r["support_oppose"] == "Support" else "oppose"] += amt
-        if r.get("duplicate_of"):
-            continue
         bc = by_committee.setdefault(r["committee"], {FRIENDLY: 0.0, UNFRIENDLY: 0.0})
         if r["side"] in bc:
             bc[r["side"]] += amt
@@ -338,8 +337,7 @@ def totals(rows):
     return {
         "since": TOTALS_START,
         "items": len(rows),
-        "items_excluding_double_listed": len(primary(rows)),
-        "double_listed_pairs": len(rows) - len(primary(rows)),
+        "support_oppose_pairs": len(paired(rows)),
         "friendly_total": round(friendly, 2),
         "unfriendly_total": round(unfriendly, 2),
         "by_candidate": {k: {kk: round(vv, 2) for kk, vv in v.items()} for k, v in t.items()},
@@ -355,30 +353,29 @@ def money(x):
 
 
 def order_lines(rows):
-    """Every FEC line, newest first, with a double-listed twin directly under its primary."""
-    twins = {}
+    """Every FEC line, newest first, with the second half of a paired buy directly under the first."""
+    halves = {}
     for r in rows:
-        if r.get("duplicate_of"):
-            twins.setdefault(r["duplicate_of"], []).append(r)
+        if r.get("other_half_of"):
+            halves.setdefault(r["other_half_of"], []).append(r)
     fps = {r["fingerprint"] for r in rows}
     out = []
     for r in sorted(rows, key=sort_key, reverse=True):
-        if not r.get("duplicate_of"):
+        if not r.get("other_half_of"):
             out.append(r)
-            out.extend(twins.get(r["fingerprint"], []))
-        elif r["duplicate_of"] not in fps:
-            out.append(r)   # twin of an item that was reported earlier
+            out.extend(halves.get(r["fingerprint"], []))
+        elif r["other_half_of"] not in fps:
+            out.append(r)   # other half of an item that was reported earlier
     return out
 
 
 def render_email(new_rows, tot, test=False):
-    # every FEC line is listed, like fec.gov; dollar figures count a double-listed buy once
+    # every FEC line is listed and counted, like fec.gov
     rows = order_lines(new_rows)
-    counted = primary(new_rows)
-    n_twins = len(rows) - len(counted)
-    new_total = sum(float(r["amount"]) for r in counted)
-    friendly_new = sum(float(r["amount"]) for r in counted if r["side"] == FRIENDLY)
-    unfriendly_new = sum(float(r["amount"]) for r in counted if r["side"] == UNFRIENDLY)
+    n_pairs = len(paired(new_rows))
+    new_total = sum(float(r["amount"]) for r in rows)
+    friendly_new = sum(float(r["amount"]) for r in rows if r["side"] == FRIENDLY)
+    unfriendly_new = sum(float(r["amount"]) for r in rows if r["side"] == UNFRIENDLY)
 
     if test:
         subject = f"[TEST] CO-08 IE tracker is live: {money(tot['friendly_total'])} friendly vs {money(tot['unfriendly_total'])} unfriendly"
@@ -394,18 +391,17 @@ def render_email(new_rows, tot, test=False):
     def td(s, align="left", extra=""):
         return f'<td style="padding:6px 8px;border-bottom:1px solid #e5e5e5;text-align:{align};vertical-align:top;{extra}">{s}</td>'
 
-    def twin_note(i):
+    def pair_note(i):
         r = rows[i]
-        if r.get("duplicate_of"):
-            above = i > 0 and rows[i - 1]["fingerprint"] == r["duplicate_of"]
-            return ("same buy as the line above" if above else "same buy as an item reported earlier") + ", counted once"
-        below = i + 1 < len(rows) and rows[i + 1].get("duplicate_of") == r["fingerprint"]
-        return f"also listed as {r['also_listed_as']}" if r["also_listed_as"] and not below else ""
+        if r.get("other_half_of"):
+            above = i > 0 and rows[i - 1]["fingerprint"] == r["other_half_of"]
+            return "other half of the buy above" if above else "other half of a buy reported earlier"
+        below = i + 1 < len(rows) and rows[i + 1].get("other_half_of") == r["fingerprint"]
+        return f"other half filed as {r['also_listed_as']}" if r["also_listed_as"] and not below else ""
 
     def row_html(i):
         r = rows[i]
-        twin = bool(r.get("duplicate_of"))
-        note = twin_note(i)
+        note = pair_note(i)
         color = "#1a56db" if r["side"] == FRIENDLY else "#c81e1e" if r["side"] == UNFRIENDLY else "#555"
         date_note = "" if r["date_source"] == "disseminated" else f' <span style="color:#888;font-size:11px">({r["date_source"]} date)</span>'
         link = f'<a href="{html.escape(r["pdf_url"])}">{html.escape(r["form"])}</a>' if r["pdf_url"] else html.escape(r["form"])
@@ -414,7 +410,7 @@ def render_email(new_rows, tot, test=False):
             td(f'<b style="color:{color}">{html.escape(r["side"])}</b><br><span style="color:#666;font-size:12px">{html.escape(r["support_oppose"])} {html.escape(r["candidate"])}'
                + (f'<br><i style="color:#888">{html.escape(note)}</i>' if note else "") + '</span>'),
             td(html.escape(r["committee"])),
-            td(money(r["amount"]), "right", "white-space:nowrap;" + ("color:#888" if twin else "font-weight:600")),
+            td(money(r["amount"]), "right", "white-space:nowrap;font-weight:600"),
             td(html.escape(r["description"]) + (f'<br><span style="color:#888;font-size:12px">Payee: {html.escape(r["payee"])}</span>' if r["payee"] else "")),
             td(link, extra="white-space:nowrap"),
         ]) + "</tr>"
@@ -448,8 +444,8 @@ def render_email(new_rows, tot, test=False):
              if test else
              f"{len(rows)} new independent expenditure item{'s' if len(rows) != 1 else ''} totaling <b>{money(new_total)}</b> "
              f"appeared on fec.gov since the last check"
-             + (f" ({n_twins} {'is' if n_twins == 1 else 'are'} the second listing of a buy filed as both support and oppose, counted once)."
-                if n_twins else "."))
+             + (f" ({n_pairs} {'is' if n_pairs == 1 else 'are'} the second half of a buy filed as both support and oppose; both halves count)."
+                if n_pairs else "."))
     body = f"""<div style="font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;color:#222;max-width:900px">
       <p style="font-size:14px">{intro}</p>
       <h3 style="margin:16px 0 6px;font-size:15px">{'Most recent items' if test else 'New items'}</h3>
@@ -461,14 +457,14 @@ def render_email(new_rows, tot, test=False):
       <p style="color:#888;font-size:11px;margin-top:22px">
         Source: FEC Schedule E via api.open.fec.gov, raw e-filings plus processed data, de-duplicated so quarterly re-reports of
         24/48-hour notices are not counted twice. Friendly = supporting Manny Rutinel or opposing Gabe Evans; unfriendly = the
-        reverse. Where a filer lists one ad both as supporting one candidate and opposing the other, both lines are shown, the second
-        marked, and it is counted once in the friendly / unfriendly totals (the per-candidate supporting/opposing
-        figures count every line, matching fec.gov). Date shown is the dissemination date when reported, otherwise the
+        reverse. Every line counts, matching fec.gov: where a filer runs one ad both for one candidate and against the other, it
+        files two lines that each carry their share of the cost, and both are shown and counted, the second marked as the other
+        half. Date shown is the dissemination date when reported, otherwise the
         expenditure date, otherwise the filing date. Amounts on 24-hour notices are often estimates.
         Full spreadsheet: data/ie_spending.csv in the tracker repo.
       </p></div>"""
     text = "\n".join(f"{r['best_date']}  {r['side']:<12} {money(r['amount']):>12}  {r['committee']}  {r['description']}"
-                     + ("  (twin, counted once)" if r.get("duplicate_of") else "") for r in rows)
+                     + ("  (other half of the same buy)" if r.get("other_half_of") else "") for r in rows)
     text = (f"{re.sub('<[^>]+>', '', intro)}\n\n{text}\n\nSince July 1: friendly {money(tot['friendly_total'])}, "
             f"unfriendly {money(tot['unfriendly_total'])}\n")
     return subject, text, body
@@ -527,13 +523,11 @@ def main(argv):
     all_rows = list(merged.values())
     pair_mirrors(all_rows)
     tot = totals(all_rows)
-    new_primary = primary(new_rows)
-
-    log(f"{len(all_rows)} FEC lines on file ({tot['double_listed_pairs']} double-listed twins), "
-        f"{len(new_primary)} new. Friendly {money(tot['friendly_total'])}, unfriendly {money(tot['unfriendly_total'])}")
-    for r in sorted(new_primary, key=sort_key, reverse=True):
-        twin = f" (+ {r['also_listed_as']})" if r["also_listed_as"] else ""
-        log(f"  NEW {r['best_date']} {r['side']:<12} {money(r['amount']):>12}  {r['committee']}  {r['description']}{twin}  [{r['form']} {r['source']}]")
+    log(f"{len(all_rows)} FEC lines on file ({tot['support_oppose_pairs']} support/oppose pairs), "
+        f"{len(new_rows)} new. Friendly {money(tot['friendly_total'])}, unfriendly {money(tot['unfriendly_total'])}")
+    for r in order_lines(new_rows):
+        half = " (other half of the same buy)" if r["other_half_of"] else (f" (+ {r['also_listed_as']})" if r["also_listed_as"] else "")
+        log(f"  NEW {r['best_date']} {r['side']:<12} {money(r['amount']):>12}  {r['committee']}  {r['description']}{half}  [{r['form']} {r['source']}]")
 
     if dry:
         return 0
@@ -548,11 +542,11 @@ def main(argv):
         send_email(*render_email(recent, tot, test=True))
         return 0
 
-    if new_primary and not baseline:
+    if new_rows and not baseline:
         if not (os.environ.get("SMTP_USER") and os.environ.get("SMTP_PASSWORD")):
             # leave state unsaved so these items are emailed once credentials exist
             print("::warning::SMTP_USER / SMTP_PASSWORD not set; "
-                  f"{len(new_primary)} new item(s) are waiting to be emailed", flush=True)
+                  f"{len(new_rows)} new item(s) are waiting to be emailed", flush=True)
             return 0
         send_email(*render_email(new_rows, tot))   # raises on failure -> state not saved -> retried next run
     elif new_rows:

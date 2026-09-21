@@ -17,11 +17,13 @@ helps Evans. Set `FRIENDLY_ID` in `tracker.py` to flip which candidate that is.
   Form 3X, and Form 5 filers re-report on amendments. Items are fingerprinted on
   spender, candidate, support/oppose, whole-dollar amount, date, and purpose so a
   re-report is not "new".
-- **Double listing.** Several PACs file one ad twice, as "Support Evans" and again as
-  "Oppose Rutinel", full amount both times. Those twins are paired: the CSV and the
-  email show both lines (matching fec.gov), with the second marked "same buy as the
-  line above", and the headline friendly / unfriendly totals count them once. Filers who split the cost in half
-  (AFP does, a penny apart) are left as two real items.
+- **Support/oppose pairs.** A PAC that runs one ad both for Evans and against Rutinel
+  files it as two lines, "Support Evans" and "Oppose Rutinel", each with its share of
+  the cost (AFP splits 50/50). Both lines are real spending and every total counts
+  both, matching fec.gov. The CSV and the email pair them up for the reader only:
+  the second line sits under the first, marked "other half of the buy above"
+  (`other_half_of` in the CSV). An earlier version counted a pair once, which
+  undercounted; Clay corrected it on 2026-09-19.
 - **Speed.** Raw e-filings are polled alongside processed data, so a 24-hour notice
   shows up within minutes of hitting the FEC, not after nightly processing.
 - **Blank candidate IDs.** Some filers (CLF, Trust Brigade, LGBTQ Connection PAC,
