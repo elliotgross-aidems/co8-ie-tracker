@@ -1,18 +1,18 @@
 {
   "since": "2026-07-01",
-  "items": 158,
-  "items_excluding_double_listed": 136,
-  "double_listed_pairs": 22,
-  "friendly_total": 2056381.7,
+  "items": 164,
+  "items_excluding_double_listed": 139,
+  "double_listed_pairs": 25,
+  "friendly_total": 2083475.7,
   "unfriendly_total": 4273881.89,
   "by_candidate": {
     "Rutinel": {
-      "support": 202221.11,
+      "support": 229315.11,
       "oppose": 3509487.92
     },
     "Evans": {
       "support": 1114761.24,
-      "oppose": 1975425.92
+      "oppose": 2002519.92
     }
   },
   "by_committee": {
@@ -45,7 +45,7 @@
       "Unfriendly": 225000.0
     },
     "MAINSTREAM COLORADO FUND": {
-      "Friendly": 121265.33,
+      "Friendly": 148359.33000000002,
       "Unfriendly": 0.0
     },
     "AMERICAN CHEMISTRY COUNCIL, INC": {
