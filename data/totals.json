@@ -2,11 +2,11 @@
   "since": "2026-07-01",
   "items": 169,
   "support_oppose_pairs": 25,
-  "friendly_total": 2294885.03,
+  "friendly_total": 2294885.4,
   "unfriendly_total": 4711106.04,
   "by_candidate": {
     "Rutinel": {
-      "support": 292364.61,
+      "support": 292364.98,
       "oppose": 3566102.92
     },
     "Evans": {
@@ -48,7 +48,7 @@
       "Unfriendly": 0.0
     },
     "314 ACTION FUND": {
-      "Friendly": 140840.0,
+      "Friendly": 140840.37,
       "Unfriendly": 0.0
     },
     "AMERICA PAC": {
