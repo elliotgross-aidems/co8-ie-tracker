@@ -1,16 +1,16 @@
 {
   "since": "2026-07-01",
-  "items": 178,
-  "support_oppose_pairs": 26,
+  "items": 180,
+  "support_oppose_pairs": 27,
   "friendly_total": 3006829.4,
-  "unfriendly_total": 4779076.33,
+  "unfriendly_total": 4794076.33,
   "by_candidate": {
     "Rutinel": {
       "support": 292364.98,
-      "oppose": 3584967.57
+      "oppose": 3592467.57
     },
     "Evans": {
-      "support": 1194108.76,
+      "support": 1201608.76,
       "oppose": 2714464.42
     }
   },
@@ -33,7 +33,7 @@
     },
     "PROTECT AND SERVE PAC": {
       "Friendly": 0.0,
-      "Unfriendly": 450000.0
+      "Unfriendly": 465000.0
     },
     "AMERICAN FEDERATION OF STATE COUNTY & MUNICIPAL EMPLOYEES  P E O P L E": {
       "Friendly": 329500.0,
