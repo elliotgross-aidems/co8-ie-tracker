@@ -1,17 +1,17 @@
 {
   "since": "2026-07-01",
-  "items": 186,
-  "support_oppose_pairs": 29,
-  "friendly_total": 3006829.4,
+  "items": 190,
+  "support_oppose_pairs": 31,
+  "friendly_total": 3033427.4,
   "unfriendly_total": 5723442.21,
   "by_candidate": {
     "Rutinel": {
-      "support": 292364.98,
+      "support": 305663.98,
       "oppose": 4517360.57
     },
     "Evans": {
       "support": 1206081.64,
-      "oppose": 2714464.42
+      "oppose": 2727763.42
     }
   },
   "by_committee": {
@@ -39,13 +39,13 @@
       "Friendly": 329500.0,
       "Unfriendly": 0.0
     },
+    "MAINSTREAM COLORADO FUND": {
+      "Friendly": 323317.66000000003,
+      "Unfriendly": 0.0
+    },
     "AMERICA FIRST AGRICULTURE ACTION INC.": {
       "Friendly": 0.0,
       "Unfriendly": 300132.89
-    },
-    "MAINSTREAM COLORADO FUND": {
-      "Friendly": 296719.66000000003,
-      "Unfriendly": 0.0
     },
     "314 ACTION FUND": {
       "Friendly": 140840.37,
