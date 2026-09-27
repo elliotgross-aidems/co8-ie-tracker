@@ -1,23 +1,23 @@
 {
   "since": "2026-07-01",
   "items": 191,
-  "support_oppose_pairs": 31,
-  "friendly_total": 3363427.4,
-  "unfriendly_total": 5723442.21,
+  "support_oppose_pairs": 29,
+  "friendly_total": 3363429.24,
+  "unfriendly_total": 5723443.59,
   "by_candidate": {
     "Rutinel": {
-      "support": 635663.98,
-      "oppose": 4517360.57
+      "support": 635664.9,
+      "oppose": 4517361.44
     },
     "Evans": {
-      "support": 1206081.64,
-      "oppose": 2727763.42
+      "support": 1206082.15,
+      "oppose": 2727764.34
     }
   },
   "by_committee": {
     "CLF": {
       "Friendly": 0.0,
-      "Unfriendly": 2785063.85
+      "Unfriendly": 2785064.19
     },
     "HMP": {
       "Friendly": 2217244.2199999997,
@@ -29,7 +29,7 @@
     },
     "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION": {
       "Friendly": 0.0,
-      "Unfriendly": 654402.7099999998
+      "Unfriendly": 654403.7499999999
     },
     "PROTECT AND SERVE PAC": {
       "Friendly": 0.0,
@@ -44,7 +44,7 @@
       "Unfriendly": 0.0
     },
     "MAINSTREAM COLORADO FUND": {
-      "Friendly": 323317.66000000003,
+      "Friendly": 323319.5,
       "Unfriendly": 0.0
     },
     "AMERICA FIRST AGRICULTURE ACTION INC.": {
