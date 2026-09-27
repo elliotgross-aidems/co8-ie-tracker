@@ -1,13 +1,13 @@
 {
   "since": "2026-07-01",
-  "items": 193,
+  "items": 194,
   "support_oppose_pairs": 30,
   "friendly_total": 3385161.24,
-  "unfriendly_total": 5723443.59,
+  "unfriendly_total": 5736443.59,
   "by_candidate": {
     "Rutinel": {
       "support": 646530.9,
-      "oppose": 4517361.44
+      "oppose": 4530361.44
     },
     "Evans": {
       "support": 1206082.15,
@@ -17,7 +17,7 @@
   "by_committee": {
     "CLF": {
       "Friendly": 0.0,
-      "Unfriendly": 2785064.19
+      "Unfriendly": 2798064.19
     },
     "HMP": {
       "Friendly": 2217244.2199999997,
