@@ -1,12 +1,12 @@
 {
   "since": "2026-07-01",
-  "items": 190,
+  "items": 191,
   "support_oppose_pairs": 31,
-  "friendly_total": 3033427.4,
+  "friendly_total": 3363427.4,
   "unfriendly_total": 5723442.21,
   "by_candidate": {
     "Rutinel": {
-      "support": 305663.98,
+      "support": 635663.98,
       "oppose": 4517360.57
     },
     "Evans": {
@@ -34,6 +34,10 @@
     "PROTECT AND SERVE PAC": {
       "Friendly": 0.0,
       "Unfriendly": 465000.0
+    },
+    "LCV VICTORY FUND": {
+      "Friendly": 330153.36,
+      "Unfriendly": 0.0
     },
     "AMERICAN FEDERATION OF STATE COUNTY & MUNICIPAL EMPLOYEES  P E O P L E": {
       "Friendly": 329500.0,
@@ -78,10 +82,6 @@
     "NRA VICTORY FUND, INC.": {
       "Friendly": 0.0,
       "Unfriendly": 531.76
-    },
-    "LCV VICTORY FUND": {
-      "Friendly": 153.35999999999999,
-      "Unfriendly": 0.0
     }
   }
 }
