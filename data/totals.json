@@ -1,17 +1,17 @@
 {
   "since": "2026-07-01",
-  "items": 194,
+  "items": 223,
   "support_oppose_pairs": 30,
-  "friendly_total": 3385161.24,
+  "friendly_total": 3394683.24,
   "unfriendly_total": 5736443.59,
   "by_candidate": {
     "Rutinel": {
-      "support": 646530.9,
+      "support": 650342.9,
       "oppose": 4530361.44
     },
     "Evans": {
       "support": 1206082.15,
-      "oppose": 2738630.34
+      "oppose": 2744340.34
     }
   },
   "by_committee": {
@@ -74,6 +74,10 @@
     "THE CONSERVATIVE CAUCUS DBA AMERICANS FOR CONSTITUTIONAL LIBERTY": {
       "Friendly": 0.0,
       "Unfriendly": 15922.96
+    },
+    "CAMPAIGN FOR WORKING CLASS COMMUNITIES": {
+      "Friendly": 9522.0,
+      "Unfriendly": 0.0
     },
     "LGBTQ CONNECTION PAC": {
       "Friendly": 3164.7799999999997,
