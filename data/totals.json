@@ -1,17 +1,17 @@
 {
   "since": "2026-07-01",
-  "items": 230,
+  "items": 232,
   "support_oppose_pairs": 33,
-  "friendly_total": 3457147.99,
+  "friendly_total": 3569917.99,
   "unfriendly_total": 5790503.59,
   "by_candidate": {
     "Rutinel": {
-      "support": 681577.28,
+      "support": 740129.28,
       "oppose": 4584421.44
     },
     "Evans": {
       "support": 1206082.15,
-      "oppose": 2775570.71
+      "oppose": 2829788.71
     }
   },
   "by_committee": {
@@ -52,7 +52,7 @@
       "Unfriendly": 300132.89
     },
     "314 ACTION FUND": {
-      "Friendly": 140840.37,
+      "Friendly": 253610.37,
       "Unfriendly": 0.0
     },
     "AMERICA PAC": {
