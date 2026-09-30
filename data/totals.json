@@ -1,13 +1,13 @@
 {
   "since": "2026-07-01",
-  "items": 229,
+  "items": 230,
   "support_oppose_pairs": 33,
   "friendly_total": 3457147.99,
-  "unfriendly_total": 5736443.59,
+  "unfriendly_total": 5790503.59,
   "by_candidate": {
     "Rutinel": {
       "support": 681577.28,
-      "oppose": 4530361.44
+      "oppose": 4584421.44
     },
     "Evans": {
       "support": 1206082.15,
@@ -25,7 +25,7 @@
     },
     "NO GOING BACK PAC INC.": {
       "Friendly": 0.0,
-      "Unfriendly": 1240084.0
+      "Unfriendly": 1294144.0
     },
     "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION": {
       "Friendly": 0.0,
