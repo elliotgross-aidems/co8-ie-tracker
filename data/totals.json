@@ -2,16 +2,16 @@
   "since": "2026-07-01",
   "items": 235,
   "support_oppose_pairs": 34,
-  "friendly_total": 3595599.99,
+  "friendly_total": 3595601.53,
   "unfriendly_total": 5819495.59,
   "by_candidate": {
     "Rutinel": {
-      "support": 752970.28,
+      "support": 752971.01,
       "oppose": 4584421.44
     },
     "Evans": {
       "support": 1235074.15,
-      "oppose": 2842629.71
+      "oppose": 2842630.52
     }
   },
   "by_committee": {
@@ -36,7 +36,7 @@
       "Unfriendly": 465000.0
     },
     "MAINSTREAM COLORADO FUND": {
-      "Friendly": 433188.30000000005,
+      "Friendly": 433189.76,
       "Unfriendly": 0.0
     },
     "LCV VICTORY FUND": {
@@ -52,7 +52,7 @@
       "Unfriendly": 300132.89
     },
     "314 ACTION FUND": {
-      "Friendly": 253610.37,
+      "Friendly": 253610.45,
       "Unfriendly": 0.0
     },
     "AMERICA PAC": {
