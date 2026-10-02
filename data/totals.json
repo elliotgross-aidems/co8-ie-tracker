@@ -1,17 +1,17 @@
 {
   "since": "2026-07-01",
-  "items": 246,
+  "items": 250,
   "support_oppose_pairs": 35,
-  "friendly_total": 4135497.25,
-  "unfriendly_total": 5855709.17,
+  "friendly_total": 4189715.25,
+  "unfriendly_total": 5917502.17,
   "by_candidate": {
     "Rutinel": {
       "support": 773779.48,
       "oppose": 4620634.44
     },
     "Evans": {
-      "support": 1235074.73,
-      "oppose": 3361717.77
+      "support": 1296867.73,
+      "oppose": 3415935.77
     }
   },
   "by_committee": {
@@ -47,13 +47,13 @@
       "Friendly": 329500.0,
       "Unfriendly": 0.0
     },
+    "314 ACTION FUND": {
+      "Friendly": 307828.45,
+      "Unfriendly": 0.0
+    },
     "AMERICA FIRST AGRICULTURE ACTION INC.": {
       "Friendly": 0.0,
       "Unfriendly": 300132.89
-    },
-    "314 ACTION FUND": {
-      "Friendly": 253610.45,
-      "Unfriendly": 0.0
     },
     "CHC BOLD PAC": {
       "Friendly": 250000.0,
@@ -74,6 +74,10 @@
     "AMERICAN CHEMISTRY COUNCIL, INC": {
       "Friendly": 0.0,
       "Unfriendly": 88088.0
+    },
+    "NATIONAL ASSOCIATION OF REALTORS POLITICAL ACTION COMMITTEE": {
+      "Friendly": 0.0,
+      "Unfriendly": 61793.0
     },
     "CLEARPATH ACTION FUND, INC.": {
       "Friendly": 0.0,
