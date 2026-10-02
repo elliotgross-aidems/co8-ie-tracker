@@ -1,17 +1,17 @@
 {
   "since": "2026-07-01",
-  "items": 237,
-  "support_oppose_pairs": 34,
-  "friendly_total": 3695601.53,
-  "unfriendly_total": 5819495.59,
+  "items": 241,
+  "support_oppose_pairs": 35,
+  "friendly_total": 3726287.53,
+  "unfriendly_total": 5855708.59,
   "by_candidate": {
     "Rutinel": {
-      "support": 752971.01,
-      "oppose": 4584421.44
+      "support": 773779.01,
+      "oppose": 4620634.44
     },
     "Evans": {
       "support": 1235074.15,
-      "oppose": 2942630.52
+      "oppose": 2952508.52
     }
   },
   "by_committee": {
@@ -36,11 +36,11 @@
       "Unfriendly": 465000.0
     },
     "MAINSTREAM COLORADO FUND": {
-      "Friendly": 433189.76,
+      "Friendly": 452945.76,
       "Unfriendly": 0.0
     },
     "LCV VICTORY FUND": {
-      "Friendly": 330153.36000000004,
+      "Friendly": 341083.36000000004,
       "Unfriendly": 0.0
     },
     "AMERICAN FEDERATION OF STATE COUNTY & MUNICIPAL EMPLOYEES  P E O P L E": {
@@ -57,7 +57,7 @@
     },
     "AMERICA PAC": {
       "Friendly": 0.0,
-      "Unfriendly": 153258.04000000004
+      "Unfriendly": 189471.04000000004
     },
     "BOLD AMERICA": {
       "Friendly": 100000.0,
