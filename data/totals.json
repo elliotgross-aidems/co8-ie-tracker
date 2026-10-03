@@ -1,17 +1,17 @@
 {
   "since": "2026-07-01",
-  "items": 256,
+  "items": 257,
   "support_oppose_pairs": 36,
-  "friendly_total": 4211530.25,
-  "unfriendly_total": 6840919.17,
+  "friendly_total": 4211530.92,
+  "unfriendly_total": 6957419.18,
   "by_candidate": {
     "Rutinel": {
-      "support": 784728.48,
-      "oppose": 5544051.44
+      "support": 784728.96,
+      "oppose": 5544051.45
     },
     "Evans": {
-      "support": 1296867.73,
-      "oppose": 3426801.77
+      "support": 1413367.73,
+      "oppose": 3426801.96
     }
   },
   "by_committee": {
@@ -32,7 +32,7 @@
       "Unfriendly": 654403.7499999999
     },
     "MAINSTREAM COLORADO FUND": {
-      "Friendly": 474678.26,
+      "Friendly": 474678.42,
       "Unfriendly": 0.0
     },
     "PROTECT AND SERVE PAC": {
@@ -48,7 +48,7 @@
       "Unfriendly": 0.0
     },
     "314 ACTION FUND": {
-      "Friendly": 307828.45,
+      "Friendly": 307828.53,
       "Unfriendly": 0.0
     },
     "AMERICA FIRST AGRICULTURE ACTION INC.": {
@@ -61,10 +61,14 @@
     },
     "AMERICA PAC": {
       "Friendly": 0.0,
-      "Unfriendly": 189471.62000000002
+      "Unfriendly": 189471.63000000003
+    },
+    "AMERICAN CONSERVATION COALITION PAC (ACC PAC)": {
+      "Friendly": 0.0,
+      "Unfriendly": 116500.0
     },
     "UNITE HERE PAC": {
-      "Friendly": 100207.0,
+      "Friendly": 100207.03,
       "Unfriendly": 0.0
     },
     "BOLD AMERICA": {
@@ -96,7 +100,7 @@
       "Unfriendly": 0.0
     },
     "LGBTQ CONNECTION PAC": {
-      "Friendly": 3247.7799999999997,
+      "Friendly": 3248.1800000000003,
       "Unfriendly": 0.0
     },
     "NRA VICTORY FUND, INC.": {
