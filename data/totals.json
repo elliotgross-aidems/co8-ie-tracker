@@ -1,17 +1,17 @@
 {
   "since": "2026-07-01",
-  "items": 261,
-  "support_oppose_pairs": 38,
-  "friendly_total": 4229311.78,
+  "items": 263,
+  "support_oppose_pairs": 39,
+  "friendly_total": 4245115.78,
   "unfriendly_total": 6959012.82,
   "by_candidate": {
     "Rutinel": {
-      "support": 793619.39,
+      "support": 801521.39,
       "oppose": 5544848.59
     },
     "Evans": {
       "support": 1414164.23,
-      "oppose": 3435692.39
+      "oppose": 3443594.39
     }
   },
   "by_committee": {
@@ -32,7 +32,7 @@
       "Unfriendly": 655996.7499999999
     },
     "MAINSTREAM COLORADO FUND": {
-      "Friendly": 492459.27999999997,
+      "Friendly": 508263.27999999997,
       "Unfriendly": 0.0
     },
     "PROTECT AND SERVE PAC": {
