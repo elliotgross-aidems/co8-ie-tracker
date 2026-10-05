@@ -1,8 +1,8 @@
 {
   "since": "2026-07-01",
-  "items": 263,
+  "items": 265,
   "support_oppose_pairs": 39,
-  "friendly_total": 4245116.98,
+  "friendly_total": 4495116.98,
   "unfriendly_total": 6959012.82,
   "by_candidate": {
     "Rutinel": {
@@ -11,7 +11,7 @@
     },
     "Evans": {
       "support": 1414164.23,
-      "oppose": 3443594.99
+      "oppose": 3693594.99
     }
   },
   "by_committee": {
@@ -35,6 +35,10 @@
       "Friendly": 508264.48,
       "Unfriendly": 0.0
     },
+    "CHC BOLD PAC": {
+      "Friendly": 500000.0,
+      "Unfriendly": 0.0
+    },
     "PROTECT AND SERVE PAC": {
       "Friendly": 0.0,
       "Unfriendly": 465000.0
@@ -54,10 +58,6 @@
     "AMERICA FIRST AGRICULTURE ACTION INC.": {
       "Friendly": 0.0,
       "Unfriendly": 300132.89
-    },
-    "CHC BOLD PAC": {
-      "Friendly": 250000.0,
-      "Unfriendly": 0.0
     },
     "AMERICA PAC": {
       "Friendly": 0.0,
