@@ -1,16 +1,16 @@
 {
   "since": "2026-07-01",
-  "items": 265,
+  "items": 266,
   "support_oppose_pairs": 39,
   "friendly_total": 4495116.98,
-  "unfriendly_total": 6959012.82,
+  "unfriendly_total": 6959541.82,
   "by_candidate": {
     "Rutinel": {
       "support": 801521.99,
       "oppose": 5544848.59
     },
     "Evans": {
-      "support": 1414164.23,
+      "support": 1414693.23,
       "oppose": 3693594.99
     }
   },
@@ -65,7 +65,7 @@
     },
     "AMERICAN CONSERVATION COALITION PAC (ACC PAC)": {
       "Friendly": 0.0,
-      "Unfriendly": 116500.0
+      "Unfriendly": 117029.0
     },
     "UNITE HERE PAC": {
       "Friendly": 100207.03,
