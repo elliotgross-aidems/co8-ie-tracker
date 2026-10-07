@@ -1,13 +1,13 @@
 {
   "since": "2026-07-01",
-  "items": 275,
+  "items": 277,
   "support_oppose_pairs": 41,
   "friendly_total": 4838657.04,
-  "unfriendly_total": 6985557.41,
+  "unfriendly_total": 7042934.41,
   "by_candidate": {
     "Rutinel": {
       "support": 902977.02,
-      "oppose": 5561043.59
+      "oppose": 5618420.59
     },
     "Evans": {
       "support": 1424513.82,
@@ -25,7 +25,7 @@
     },
     "NO GOING BACK PAC INC.": {
       "Friendly": 0.0,
-      "Unfriendly": 1294144.0
+      "Unfriendly": 1351521.0
     },
     "MAINSTREAM COLORADO FUND": {
       "Friendly": 739248.54,
