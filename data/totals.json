@@ -1,17 +1,17 @@
 {
   "since": "2026-07-01",
-  "items": 281,
-  "support_oppose_pairs": 41,
-  "friendly_total": 4839570.04,
-  "unfriendly_total": 7042934.41,
+  "items": 294,
+  "support_oppose_pairs": 45,
+  "friendly_total": 4851424.04,
+  "unfriendly_total": 7104639.41,
   "by_candidate": {
     "Rutinel": {
       "support": 903890.02,
-      "oppose": 5618420.59
+      "oppose": 5644825.59
     },
     "Evans": {
-      "support": 1424513.82,
-      "oppose": 3935680.02
+      "support": 1459813.82,
+      "oppose": 3947534.02
     }
   },
   "by_committee": {
@@ -33,7 +33,7 @@
     },
     "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION": {
       "Friendly": 0.0,
-      "Unfriendly": 655996.7499999999
+      "Unfriendly": 717701.7499999999
     },
     "CHC BOLD PAC": {
       "Friendly": 500000.0,
@@ -94,6 +94,10 @@
     "THE CONSERVATIVE CAUCUS DBA AMERICANS FOR CONSTITUTIONAL LIBERTY": {
       "Friendly": 0.0,
       "Unfriendly": 15922.96
+    },
+    "INDIVISIBLE PROJECT INC.": {
+      "Friendly": 11854.0,
+      "Unfriendly": 0.0
     },
     "CAMPAIGN FOR WORKING CLASS COMMUNITIES": {
       "Friendly": 9531.95,
