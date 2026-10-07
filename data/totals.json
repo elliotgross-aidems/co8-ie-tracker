@@ -1,17 +1,17 @@
 {
   "since": "2026-07-01",
-  "items": 270,
-  "support_oppose_pairs": 40,
-  "friendly_total": 4565547.04,
+  "items": 275,
+  "support_oppose_pairs": 41,
+  "friendly_total": 4838657.04,
   "unfriendly_total": 6985557.41,
   "by_candidate": {
     "Rutinel": {
-      "support": 836737.02,
+      "support": 902977.02,
       "oppose": 5561043.59
     },
     "Evans": {
       "support": 1424513.82,
-      "oppose": 3728810.02
+      "oppose": 3935680.02
     }
   },
   "by_committee": {
@@ -27,13 +27,13 @@
       "Friendly": 0.0,
       "Unfriendly": 1294144.0
     },
+    "MAINSTREAM COLORADO FUND": {
+      "Friendly": 739248.54,
+      "Unfriendly": 0.0
+    },
     "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION": {
       "Friendly": 0.0,
       "Unfriendly": 655996.7499999999
-    },
-    "MAINSTREAM COLORADO FUND": {
-      "Friendly": 578694.54,
-      "Unfriendly": 0.0
     },
     "CHC BOLD PAC": {
       "Friendly": 500000.0,
@@ -43,16 +43,16 @@
       "Friendly": 0.0,
       "Unfriendly": 465000.0
     },
+    "314 ACTION FUND": {
+      "Friendly": 420384.53,
+      "Unfriendly": 0.0
+    },
     "LCV VICTORY FUND": {
       "Friendly": 341083.58,
       "Unfriendly": 0.0
     },
     "AMERICAN FEDERATION OF STATE COUNTY & MUNICIPAL EMPLOYEES  P E O P L E": {
       "Friendly": 329500.0,
-      "Unfriendly": 0.0
-    },
-    "314 ACTION FUND": {
-      "Friendly": 307828.53,
       "Unfriendly": 0.0
     },
     "AMERICA FIRST AGRICULTURE ACTION INC.": {
