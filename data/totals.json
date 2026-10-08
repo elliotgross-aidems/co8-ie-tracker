@@ -1,12 +1,12 @@
 {
   "since": "2026-07-01",
-  "items": 294,
+  "items": 297,
   "support_oppose_pairs": 45,
-  "friendly_total": 4851424.04,
+  "friendly_total": 4944006.04,
   "unfriendly_total": 7104639.41,
   "by_candidate": {
     "Rutinel": {
-      "support": 903890.02,
+      "support": 996472.02,
       "oppose": 5644825.59
     },
     "Evans": {
@@ -73,6 +73,10 @@
     },
     "BOLD AMERICA": {
       "Friendly": 100000.0,
+      "Unfriendly": 0.0
+    },
+    "AB PAC": {
+      "Friendly": 92582.0,
       "Unfriendly": 0.0
     },
     "AMERICAN CHEMISTRY COUNCIL, INC": {
