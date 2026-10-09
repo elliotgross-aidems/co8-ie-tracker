@@ -1,17 +1,17 @@
 {
   "since": "2026-07-01",
-  "items": 323,
-  "support_oppose_pairs": 46,
-  "friendly_total": 6054952.12,
-  "unfriendly_total": 7187623.3,
+  "items": 326,
+  "support_oppose_pairs": 47,
+  "friendly_total": 6244597.12,
+  "unfriendly_total": 7209693.3,
   "by_candidate": {
     "Rutinel": {
       "support": 1024856.69,
-      "oppose": 5684869.58
+      "oppose": 5695904.58
     },
     "Evans": {
-      "support": 1502753.72,
-      "oppose": 5030095.43
+      "support": 1513788.72,
+      "oppose": 5219740.43
     }
   },
   "by_committee": {
@@ -35,6 +35,10 @@
       "Friendly": 0.0,
       "Unfriendly": 717706.7399999999
     },
+    "LCV VICTORY FUND": {
+      "Friendly": 559615.5800000001,
+      "Unfriendly": 0.0
+    },
     "CHC BOLD PAC": {
       "Friendly": 500000.0,
       "Unfriendly": 0.0
@@ -47,10 +51,6 @@
       "Friendly": 0.0,
       "Unfriendly": 465000.0
     },
-    "LCV VICTORY FUND": {
-      "Friendly": 369970.58,
-      "Unfriendly": 0.0
-    },
     "AMERICAN FEDERATION OF STATE COUNTY & MUNICIPAL EMPLOYEES  P E O P L E": {
       "Friendly": 329500.0,
       "Unfriendly": 0.0
@@ -61,7 +61,7 @@
     },
     "AMERICA PAC": {
       "Friendly": 0.0,
-      "Unfriendly": 228343.53000000006
+      "Unfriendly": 250413.53000000006
     },
     "AMERICAN CONSERVATION COALITION PAC (ACC PAC)": {
       "Friendly": 0.0,
