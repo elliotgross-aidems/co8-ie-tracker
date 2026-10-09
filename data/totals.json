@@ -1,8 +1,8 @@
 {
   "since": "2026-07-01",
-  "items": 310,
+  "items": 312,
   "support_oppose_pairs": 44,
-  "friendly_total": 5951011.12,
+  "friendly_total": 5995013.12,
   "unfriendly_total": 7182585.3,
   "by_candidate": {
     "Rutinel": {
@@ -11,7 +11,7 @@
     },
     "Evans": {
       "support": 1497715.72,
-      "oppose": 4941693.43
+      "oppose": 4985695.43
     }
   },
   "by_committee": {
@@ -94,6 +94,10 @@
     "CLEARPATH ACTION FUND, INC.": {
       "Friendly": 0.0,
       "Unfriendly": 49950.0
+    },
+    "BACK THE BOLD": {
+      "Friendly": 44002.0,
+      "Unfriendly": 0.0
     },
     "TRUST BRIGADE": {
       "Friendly": 19207.01,
