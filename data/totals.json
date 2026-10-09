@@ -1,17 +1,17 @@
 {
   "since": "2026-07-01",
-  "items": 314,
+  "items": 319,
   "support_oppose_pairs": 44,
-  "friendly_total": 5995013.12,
+  "friendly_total": 6023900.12,
   "unfriendly_total": 7187623.3,
   "by_candidate": {
     "Rutinel": {
-      "support": 1009317.69,
+      "support": 1009330.69,
       "oppose": 5684869.58
     },
     "Evans": {
       "support": 1502753.72,
-      "oppose": 4985695.43
+      "oppose": 5014569.43
     }
   },
   "by_committee": {
@@ -48,7 +48,7 @@
       "Unfriendly": 465000.0
     },
     "LCV VICTORY FUND": {
-      "Friendly": 341083.58,
+      "Friendly": 369970.58,
       "Unfriendly": 0.0
     },
     "AMERICAN FEDERATION OF STATE COUNTY & MUNICIPAL EMPLOYEES  P E O P L E": {
