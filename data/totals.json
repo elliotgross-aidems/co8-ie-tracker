@@ -2,16 +2,16 @@
   "since": "2026-07-01",
   "items": 307,
   "support_oppose_pairs": 43,
-  "friendly_total": 5896788.32,
-  "unfriendly_total": 7132500.4,
+  "friendly_total": 5896793.12,
+  "unfriendly_total": 7132501.3,
   "by_candidate": {
     "Rutinel": {
-      "support": 1009313.62,
+      "support": 1009317.69,
       "oppose": 5659827.58
     },
     "Evans": {
-      "support": 1472672.82,
-      "oppose": 4887474.7
+      "support": 1472673.72,
+      "oppose": 4887475.43
     }
   },
   "by_committee": {
@@ -28,7 +28,7 @@
       "Unfriendly": 1351521.0
     },
     "MAINSTREAM COLORADO FUND": {
-      "Friendly": 764931.74,
+      "Friendly": 764933.2,
       "Unfriendly": 0.0
     },
     "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION": {
@@ -61,7 +61,7 @@
     },
     "AMERICA PAC": {
       "Friendly": 0.0,
-      "Unfriendly": 228342.63000000003
+      "Unfriendly": 228343.53000000006
     },
     "AMERICAN CONSERVATION COALITION PAC (ACC PAC)": {
       "Friendly": 0.0,
@@ -76,7 +76,7 @@
       "Unfriendly": 0.0
     },
     "AB PAC": {
-      "Friendly": 92582.0,
+      "Friendly": 92584.45,
       "Unfriendly": 0.0
     },
     "AMERICAN CHEMISTRY COUNCIL, INC": {
@@ -112,7 +112,7 @@
       "Unfriendly": 0.0
     },
     "FIELD TEAM 6, INC.": {
-      "Friendly": 913.0,
+      "Friendly": 913.8900000000001,
       "Unfriendly": 0.0
     },
     "NRA VICTORY FUND, INC.": {
