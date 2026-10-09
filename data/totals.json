@@ -1,16 +1,16 @@
 {
   "since": "2026-07-01",
-  "items": 308,
-  "support_oppose_pairs": 43,
+  "items": 310,
+  "support_oppose_pairs": 44,
   "friendly_total": 5951011.12,
-  "unfriendly_total": 7132501.3,
+  "unfriendly_total": 7182585.3,
   "by_candidate": {
     "Rutinel": {
       "support": 1009317.69,
-      "oppose": 5659827.58
+      "oppose": 5684869.58
     },
     "Evans": {
-      "support": 1472673.72,
+      "support": 1497715.72,
       "oppose": 4941693.43
     }
   },
@@ -86,6 +86,10 @@
     "NATIONAL ASSOCIATION OF REALTORS POLITICAL ACTION COMMITTEE": {
       "Friendly": 0.0,
       "Unfriendly": 61793.0
+    },
+    "HISPANIC LEADERSHIP TRUST": {
+      "Friendly": 0.0,
+      "Unfriendly": 50084.0
     },
     "CLEARPATH ACTION FUND, INC.": {
       "Friendly": 0.0,
