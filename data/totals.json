@@ -1,16 +1,16 @@
 {
   "since": "2026-07-01",
-  "items": 345,
-  "support_oppose_pairs": 48,
+  "items": 353,
+  "support_oppose_pairs": 50,
   "friendly_total": 6312353.41,
-  "unfriendly_total": 8226324.68,
+  "unfriendly_total": 8286154.68,
   "by_candidate": {
     "Rutinel": {
       "support": 1058734.24,
-      "oppose": 6691248.08
+      "oppose": 6712163.08
     },
     "Evans": {
-      "support": 1535076.6,
+      "support": 1573991.6,
       "oppose": 5253619.17
     }
   },
@@ -33,7 +33,7 @@
     },
     "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION": {
       "Friendly": 0.0,
-      "Unfriendly": 717706.7399999999
+      "Unfriendly": 777536.7399999999
     },
     "LCV VICTORY FUND": {
       "Friendly": 559616.8599999999,
