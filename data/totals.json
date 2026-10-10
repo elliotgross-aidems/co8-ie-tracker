@@ -1,17 +1,17 @@
 {
   "since": "2026-07-01",
-  "items": 343,
+  "items": 345,
   "support_oppose_pairs": 48,
-  "friendly_total": 6312347.12,
-  "unfriendly_total": 8224617.3,
+  "friendly_total": 6312353.41,
+  "unfriendly_total": 8226324.68,
   "by_candidate": {
     "Rutinel": {
-      "support": 1058731.69,
-      "oppose": 6689542.58
+      "support": 1058734.24,
+      "oppose": 6691248.08
     },
     "Evans": {
-      "support": 1535074.72,
-      "oppose": 5253615.43
+      "support": 1535076.6,
+      "oppose": 5253619.17
     }
   },
   "by_committee": {
@@ -20,7 +20,7 @@
       "Unfriendly": 4722757.83
     },
     "HMP": {
-      "Friendly": 3203345.2199999997,
+      "Friendly": 3203345.84,
       "Unfriendly": 0.0
     },
     "NO GOING BACK PAC INC.": {
@@ -28,7 +28,7 @@
       "Unfriendly": 1351521.0
     },
     "MAINSTREAM COLORADO FUND": {
-      "Friendly": 795985.2,
+      "Friendly": 795988.6,
       "Unfriendly": 0.0
     },
     "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION": {
@@ -36,7 +36,7 @@
       "Unfriendly": 717706.7399999999
     },
     "LCV VICTORY FUND": {
-      "Friendly": 559615.5799999998,
+      "Friendly": 559616.8599999999,
       "Unfriendly": 0.0
     },
     "CHC BOLD PAC": {
@@ -44,7 +44,7 @@
       "Unfriendly": 0.0
     },
     "314 ACTION FUND": {
-      "Friendly": 474602.61000000004,
+      "Friendly": 474602.69,
       "Unfriendly": 0.0
     },
     "PROTECT AND SERVE PAC": {
@@ -93,7 +93,7 @@
     },
     "HISPANIC LEADERSHIP TRUST": {
       "Friendly": 0.0,
-      "Unfriendly": 50084.0
+      "Unfriendly": 50085.0
     },
     "CLEARPATH ACTION FUND, INC.": {
       "Friendly": 0.0,
@@ -101,10 +101,10 @@
     },
     "THE CONSERVATIVE CAUCUS DBA AMERICANS FOR CONSTITUTIONAL LIBERTY": {
       "Friendly": 0.0,
-      "Unfriendly": 44570.96
+      "Unfriendly": 46275.95999999999
     },
     "BACK THE BOLD": {
-      "Friendly": 44002.0,
+      "Friendly": 44002.909999999996,
       "Unfriendly": 0.0
     },
     "TRUST BRIGADE": {
@@ -121,7 +121,7 @@
     },
     "NRA VICTORY FUND, INC.": {
       "Friendly": 0.0,
-      "Unfriendly": 5569.76
+      "Unfriendly": 5571.14
     },
     "LGBTQ CONNECTION PAC": {
       "Friendly": 3248.1800000000003,
