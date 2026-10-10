@@ -1,23 +1,23 @@
 {
   "since": "2026-07-01",
-  "items": 326,
-  "support_oppose_pairs": 47,
-  "friendly_total": 6244597.12,
-  "unfriendly_total": 7209693.3,
+  "items": 343,
+  "support_oppose_pairs": 48,
+  "friendly_total": 6312347.12,
+  "unfriendly_total": 8224617.3,
   "by_candidate": {
     "Rutinel": {
-      "support": 1024856.69,
-      "oppose": 5695904.58
+      "support": 1058731.69,
+      "oppose": 6689542.58
     },
     "Evans": {
-      "support": 1513788.72,
-      "oppose": 5219740.43
+      "support": 1535074.72,
+      "oppose": 5253615.43
     }
   },
   "by_committee": {
     "CLF": {
       "Friendly": 0.0,
-      "Unfriendly": 3736481.83
+      "Unfriendly": 4722757.83
     },
     "HMP": {
       "Friendly": 3203345.2199999997,
@@ -83,6 +83,10 @@
       "Friendly": 0.0,
       "Unfriendly": 88088.0
     },
+    "SEIU COPE (SERVICE EMPLOYEES INTERNATIONAL UNION COMMITTEE ON POLITICAL EDUCATION)": {
+      "Friendly": 67750.0,
+      "Unfriendly": 0.0
+    },
     "NATIONAL ASSOCIATION OF REALTORS POLITICAL ACTION COMMITTEE": {
       "Friendly": 0.0,
       "Unfriendly": 61793.0
@@ -95,6 +99,10 @@
       "Friendly": 0.0,
       "Unfriendly": 49950.0
     },
+    "THE CONSERVATIVE CAUCUS DBA AMERICANS FOR CONSTITUTIONAL LIBERTY": {
+      "Friendly": 0.0,
+      "Unfriendly": 44570.96
+    },
     "BACK THE BOLD": {
       "Friendly": 44002.0,
       "Unfriendly": 0.0
@@ -102,10 +110,6 @@
     "TRUST BRIGADE": {
       "Friendly": 19207.01,
       "Unfriendly": 0.0
-    },
-    "THE CONSERVATIVE CAUCUS DBA AMERICANS FOR CONSTITUTIONAL LIBERTY": {
-      "Friendly": 0.0,
-      "Unfriendly": 15922.96
     },
     "INDIVISIBLE PROJECT INC.": {
       "Friendly": 11854.0,
