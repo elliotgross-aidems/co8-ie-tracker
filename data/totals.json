@@ -1,23 +1,23 @@
 {
   "since": "2026-07-01",
-  "items": 355,
+  "items": 356,
   "support_oppose_pairs": 51,
-  "friendly_total": 6330133.41,
-  "unfriendly_total": 8286154.68,
+  "friendly_total": 6456884.27,
+  "unfriendly_total": 8286160.5,
   "by_candidate": {
     "Rutinel": {
-      "support": 1067624.24,
-      "oppose": 6712163.08
+      "support": 1067624.67,
+      "oppose": 6712168.3
     },
     "Evans": {
-      "support": 1573991.6,
-      "oppose": 5262509.17
+      "support": 1573992.2,
+      "oppose": 5389259.6
     }
   },
   "by_committee": {
     "CLF": {
       "Friendly": 0.0,
-      "Unfriendly": 4722757.83
+      "Unfriendly": 4722758.359999999
     },
     "HMP": {
       "Friendly": 3203345.84,
@@ -28,12 +28,12 @@
       "Unfriendly": 1351521.0
     },
     "MAINSTREAM COLORADO FUND": {
-      "Friendly": 813768.6,
+      "Friendly": 940519.46,
       "Unfriendly": 0.0
     },
     "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION": {
       "Friendly": 0.0,
-      "Unfriendly": 777536.74
+      "Unfriendly": 777537.74
     },
     "LCV VICTORY FUND": {
       "Friendly": 559616.8599999999,
@@ -101,7 +101,7 @@
     },
     "THE CONSERVATIVE CAUCUS DBA AMERICANS FOR CONSTITUTIONAL LIBERTY": {
       "Friendly": 0.0,
-      "Unfriendly": 46275.96
+      "Unfriendly": 46280.25
     },
     "BACK THE BOLD": {
       "Friendly": 44002.909999999996,
