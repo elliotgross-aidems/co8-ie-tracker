@@ -1,17 +1,17 @@
 {
   "since": "2026-07-01",
   "items": 366,
-  "support_oppose_pairs": 54,
-  "friendly_total": 6603872.27,
+  "support_oppose_pairs": 53,
+  "friendly_total": 6603875.86,
   "unfriendly_total": 8336160.5,
   "by_candidate": {
     "Rutinel": {
-      "support": 1114009.67,
+      "support": 1114011.43,
       "oppose": 6712168.3
     },
     "Evans": {
       "support": 1623992.2,
-      "oppose": 5489862.6
+      "oppose": 5489864.43
     }
   },
   "by_committee": {
@@ -28,7 +28,7 @@
       "Unfriendly": 1351521.0
     },
     "MAINSTREAM COLORADO FUND": {
-      "Friendly": 1033289.4599999998,
+      "Friendly": 1033292.9699999999,
       "Unfriendly": 0.0
     },
     "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION": {
@@ -40,7 +40,7 @@
       "Unfriendly": 0.0
     },
     "314 ACTION FUND": {
-      "Friendly": 528820.6900000001,
+      "Friendly": 528820.77,
       "Unfriendly": 0.0
     },
     "CHC BOLD PAC": {
