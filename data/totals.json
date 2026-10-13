@@ -1,16 +1,16 @@
 {
   "since": "2026-07-01",
-  "items": 363,
+  "items": 366,
   "support_oppose_pairs": 54,
   "friendly_total": 6603872.27,
-  "unfriendly_total": 8286160.5,
+  "unfriendly_total": 8336160.5,
   "by_candidate": {
     "Rutinel": {
       "support": 1114009.67,
       "oppose": 6712168.3
     },
     "Evans": {
-      "support": 1573992.2,
+      "support": 1623992.2,
       "oppose": 5489862.6
     }
   },
@@ -91,6 +91,10 @@
       "Friendly": 0.0,
       "Unfriendly": 61793.0
     },
+    "THE CONSERVATIVE CAUCUS DBA AMERICANS FOR CONSTITUTIONAL LIBERTY": {
+      "Friendly": 0.0,
+      "Unfriendly": 56280.25
+    },
     "HISPANIC LEADERSHIP TRUST": {
       "Friendly": 0.0,
       "Unfriendly": 50085.0
@@ -99,13 +103,13 @@
       "Friendly": 0.0,
       "Unfriendly": 49950.0
     },
-    "THE CONSERVATIVE CAUCUS DBA AMERICANS FOR CONSTITUTIONAL LIBERTY": {
-      "Friendly": 0.0,
-      "Unfriendly": 46280.25
-    },
     "BACK THE BOLD": {
       "Friendly": 44002.909999999996,
       "Unfriendly": 0.0
+    },
+    "PROTECT LIBERTY PAC": {
+      "Friendly": 0.0,
+      "Unfriendly": 40000.0
     },
     "TRUST BRIGADE": {
       "Friendly": 19207.01,
