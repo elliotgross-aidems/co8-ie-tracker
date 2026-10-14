@@ -1,13 +1,13 @@
 {
   "since": "2026-07-01",
-  "items": 376,
+  "items": 377,
   "support_oppose_pairs": 56,
   "friendly_total": 6614025.86,
-  "unfriendly_total": 8375854.5,
+  "unfriendly_total": 8401893.5,
   "by_candidate": {
     "Rutinel": {
       "support": 1124161.43,
-      "oppose": 6722827.3
+      "oppose": 6748866.3
     },
     "Evans": {
       "support": 1653027.2,
@@ -110,6 +110,10 @@
     "PROTECT LIBERTY PAC": {
       "Friendly": 0.0,
       "Unfriendly": 40000.0
+    },
+    "MAGA INC.": {
+      "Friendly": 0.0,
+      "Unfriendly": 26039.0
     },
     "TRUST BRIGADE": {
       "Friendly": 19207.01,
