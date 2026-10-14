@@ -1,16 +1,16 @@
 {
   "since": "2026-07-01",
-  "items": 372,
-  "support_oppose_pairs": 55,
+  "items": 374,
+  "support_oppose_pairs": 56,
   "friendly_total": 6603875.86,
-  "unfriendly_total": 8371854.5,
+  "unfriendly_total": 8375854.5,
   "by_candidate": {
     "Rutinel": {
       "support": 1114011.43,
-      "oppose": 6720827.3
+      "oppose": 6722827.3
     },
     "Evans": {
-      "support": 1651027.2,
+      "support": 1653027.2,
       "oppose": 5489864.43
     }
   },
@@ -97,7 +97,7 @@
     },
     "HISPANIC LEADERSHIP TRUST": {
       "Friendly": 0.0,
-      "Unfriendly": 50085.0
+      "Unfriendly": 54085.0
     },
     "CLEARPATH ACTION FUND, INC.": {
       "Friendly": 0.0,
