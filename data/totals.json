@@ -1,16 +1,16 @@
 {
   "since": "2026-07-01",
-  "items": 383,
+  "items": 384,
   "support_oppose_pairs": 56,
   "friendly_total": 6614041.86,
-  "unfriendly_total": 8480539.5,
+  "unfriendly_total": 8486524.5,
   "by_candidate": {
     "Rutinel": {
       "support": 1124177.43,
       "oppose": 6748866.3
     },
     "Evans": {
-      "support": 1731673.2,
+      "support": 1737658.2,
       "oppose": 5489864.43
     }
   },
@@ -87,13 +87,13 @@
       "Friendly": 67750.0,
       "Unfriendly": 0.0
     },
+    "THE CONSERVATIVE CAUCUS DBA AMERICANS FOR CONSTITUTIONAL LIBERTY": {
+      "Friendly": 0.0,
+      "Unfriendly": 62265.25
+    },
     "NATIONAL ASSOCIATION OF REALTORS POLITICAL ACTION COMMITTEE": {
       "Friendly": 0.0,
       "Unfriendly": 61793.0
-    },
-    "THE CONSERVATIVE CAUCUS DBA AMERICANS FOR CONSTITUTIONAL LIBERTY": {
-      "Friendly": 0.0,
-      "Unfriendly": 56280.25
     },
     "HISPANIC LEADERSHIP TRUST": {
       "Friendly": 0.0,
