@@ -3,14 +3,14 @@
   "items": 384,
   "support_oppose_pairs": 56,
   "friendly_total": 6614041.86,
-  "unfriendly_total": 8486524.5,
+  "unfriendly_total": 8486527.1,
   "by_candidate": {
     "Rutinel": {
       "support": 1124177.43,
-      "oppose": 6748866.3
+      "oppose": 6748867.23
     },
     "Evans": {
-      "support": 1737658.2,
+      "support": 1737659.87,
       "oppose": 5489864.43
     }
   },
@@ -53,7 +53,7 @@
     },
     "AMERICA PAC": {
       "Friendly": 0.0,
-      "Unfriendly": 344577.53
+      "Unfriendly": 344579.39
     },
     "AMERICAN FEDERATION OF STATE COUNTY & MUNICIPAL EMPLOYEES  P E O P L E": {
       "Friendly": 329500.0,
@@ -65,7 +65,7 @@
     },
     "AMERICAN CONSERVATION COALITION PAC (ACC PAC)": {
       "Friendly": 0.0,
-      "Unfriendly": 134405.59
+      "Unfriendly": 134406.33000000002
     },
     "UNITE HERE PAC": {
       "Friendly": 100207.03,
