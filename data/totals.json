@@ -1,16 +1,16 @@
 {
   "since": "2026-07-01",
-  "items": 388,
-  "support_oppose_pairs": 56,
+  "items": 394,
+  "support_oppose_pairs": 59,
   "friendly_total": 6736878.86,
-  "unfriendly_total": 8534458.1,
+  "unfriendly_total": 8694158.1,
   "by_candidate": {
     "Rutinel": {
       "support": 1247014.43,
-      "oppose": 6796798.23
+      "oppose": 6876648.23
     },
     "Evans": {
-      "support": 1737659.87,
+      "support": 1817509.87,
       "oppose": 5489864.43
     }
   },
@@ -39,6 +39,10 @@
       "Friendly": 651657.77,
       "Unfriendly": 0.0
     },
+    "PROTECT AND SERVE PAC": {
+      "Friendly": 0.0,
+      "Unfriendly": 624700.0
+    },
     "LCV VICTORY FUND": {
       "Friendly": 559616.8599999999,
       "Unfriendly": 0.0
@@ -46,10 +50,6 @@
     "CHC BOLD PAC": {
       "Friendly": 500000.0,
       "Unfriendly": 0.0
-    },
-    "PROTECT AND SERVE PAC": {
-      "Friendly": 0.0,
-      "Unfriendly": 465000.0
     },
     "AMERICA PAC": {
       "Friendly": 0.0,
