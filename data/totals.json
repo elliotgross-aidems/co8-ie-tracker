@@ -1,16 +1,16 @@
 {
   "since": "2026-07-01",
-  "items": 381,
+  "items": 383,
   "support_oppose_pairs": 56,
   "friendly_total": 6614041.86,
-  "unfriendly_total": 8401893.5,
+  "unfriendly_total": 8480539.5,
   "by_candidate": {
     "Rutinel": {
       "support": 1124177.43,
       "oppose": 6748866.3
     },
     "Evans": {
-      "support": 1653027.2,
+      "support": 1731673.2,
       "oppose": 5489864.43
     }
   },
@@ -51,6 +51,10 @@
       "Friendly": 0.0,
       "Unfriendly": 465000.0
     },
+    "AMERICA PAC": {
+      "Friendly": 0.0,
+      "Unfriendly": 344577.53
+    },
     "AMERICAN FEDERATION OF STATE COUNTY & MUNICIPAL EMPLOYEES  P E O P L E": {
       "Friendly": 329500.0,
       "Unfriendly": 0.0
@@ -58,10 +62,6 @@
     "AMERICA FIRST AGRICULTURE ACTION INC.": {
       "Friendly": 0.0,
       "Unfriendly": 300132.89
-    },
-    "AMERICA PAC": {
-      "Friendly": 0.0,
-      "Unfriendly": 265931.53
     },
     "AMERICAN CONSERVATION COALITION PAC (ACC PAC)": {
       "Friendly": 0.0,
