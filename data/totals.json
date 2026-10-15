@@ -1,12 +1,12 @@
 {
   "since": "2026-07-01",
-  "items": 397,
+  "items": 400,
   "support_oppose_pairs": 59,
-  "friendly_total": 6736908.86,
+  "friendly_total": 6736927.86,
   "unfriendly_total": 8694158.1,
   "by_candidate": {
     "Rutinel": {
-      "support": 1247044.43,
+      "support": 1247063.43,
       "oppose": 6876648.23
     },
     "Evans": {
@@ -144,7 +144,7 @@
       "Unfriendly": 0.0
     },
     "FIELD TEAM 6, INC.": {
-      "Friendly": 913.8900000000001,
+      "Friendly": 932.8900000000001,
       "Unfriendly": 0.0
     },
     "MOMSRISING PAC": {
