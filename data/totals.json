@@ -1,16 +1,16 @@
 {
   "since": "2026-07-01",
-  "items": 474,
+  "items": 475,
   "support_oppose_pairs": 61,
   "friendly_total": 8086753.68,
-  "unfriendly_total": 8769766.12,
+  "unfriendly_total": 8844766.12,
   "by_candidate": {
     "Rutinel": {
       "support": 1361916.25,
       "oppose": 6903013.75
     },
     "Evans": {
-      "support": 1866752.37,
+      "support": 1941752.37,
       "oppose": 6724837.43
     }
   },
@@ -63,13 +63,13 @@
       "Friendly": 0.0,
       "Unfriendly": 300132.89
     },
+    "AMERICAN CONSERVATION COALITION PAC (ACC PAC)": {
+      "Friendly": 0.0,
+      "Unfriendly": 209406.33000000002
+    },
     "AMERICAN MEAT PRODUCERS PAC": {
       "Friendly": 150000.0,
       "Unfriendly": 0.0
-    },
-    "AMERICAN CONSERVATION COALITION PAC (ACC PAC)": {
-      "Friendly": 0.0,
-      "Unfriendly": 134406.33000000002
     },
     "UNITE HERE PAC": {
       "Friendly": 100207.03,
