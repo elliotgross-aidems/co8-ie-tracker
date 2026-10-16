@@ -1,8 +1,8 @@
 {
   "since": "2026-07-01",
-  "items": 473,
+  "items": 474,
   "support_oppose_pairs": 61,
-  "friendly_total": 7936753.68,
+  "friendly_total": 8086753.68,
   "unfriendly_total": 8769766.12,
   "by_candidate": {
     "Rutinel": {
@@ -11,7 +11,7 @@
     },
     "Evans": {
       "support": 1866752.37,
-      "oppose": 6574837.43
+      "oppose": 6724837.43
     }
   },
   "by_committee": {
@@ -62,6 +62,10 @@
     "AMERICA FIRST AGRICULTURE ACTION INC.": {
       "Friendly": 0.0,
       "Unfriendly": 300132.89
+    },
+    "AMERICAN MEAT PRODUCERS PAC": {
+      "Friendly": 150000.0,
+      "Unfriendly": 0.0
     },
     "AMERICAN CONSERVATION COALITION PAC (ACC PAC)": {
       "Friendly": 0.0,
