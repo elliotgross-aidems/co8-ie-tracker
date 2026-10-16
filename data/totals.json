@@ -1,16 +1,16 @@
 {
   "since": "2026-07-01",
   "items": 468,
-  "support_oppose_pairs": 63,
-  "friendly_total": 7899054.86,
-  "unfriendly_total": 8755642.1,
+  "support_oppose_pairs": 61,
+  "friendly_total": 7899055.68,
+  "unfriendly_total": 8755649.12,
   "by_candidate": {
     "Rutinel": {
-      "support": 1361259.43,
-      "oppose": 6903010.23
+      "support": 1361260.25,
+      "oppose": 6903013.75
     },
     "Evans": {
-      "support": 1852631.87,
+      "support": 1852635.37,
       "oppose": 6537795.43
     }
   },
@@ -33,10 +33,10 @@
     },
     "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION": {
       "Friendly": 0.0,
-      "Unfriendly": 841821.7399999998
+      "Unfriendly": 841827.7199999999
     },
     "LCV VICTORY FUND": {
-      "Friendly": 659930.8599999999,
+      "Friendly": 659931.6799999999,
       "Unfriendly": 0.0
     },
     "314 ACTION FUND": {
@@ -105,7 +105,7 @@
     },
     "THE GOVERNING MAJORITY FUND": {
       "Friendly": 0.0,
-      "Unfriendly": 47931.0
+      "Unfriendly": 47931.21
     },
     "BACK THE BOLD": {
       "Friendly": 44002.909999999996,
@@ -117,7 +117,7 @@
     },
     "MAGA INC.": {
       "Friendly": 0.0,
-      "Unfriendly": 26039.0
+      "Unfriendly": 26039.83
     },
     "TRUST BRIGADE": {
       "Friendly": 19207.01,
