@@ -1,16 +1,16 @@
 {
   "since": "2026-07-01",
-  "items": 469,
+  "items": 470,
   "support_oppose_pairs": 61,
   "friendly_total": 7936097.68,
-  "unfriendly_total": 8755649.12,
+  "unfriendly_total": 8769766.12,
   "by_candidate": {
     "Rutinel": {
       "support": 1361260.25,
       "oppose": 6903013.75
     },
     "Evans": {
-      "support": 1852635.37,
+      "support": 1866752.37,
       "oppose": 6574837.43
     }
   },
@@ -126,6 +126,10 @@
     "CAMPAIGN FOR WORKING CLASS COMMUNITIES": {
       "Friendly": 14603.949999999999,
       "Unfriendly": 0.0
+    },
+    "THE GUARDIAN SUPER PAC": {
+      "Friendly": 0.0,
+      "Unfriendly": 14117.0
     },
     "INDIVISIBLE PROJECT INC.": {
       "Friendly": 11854.0,
