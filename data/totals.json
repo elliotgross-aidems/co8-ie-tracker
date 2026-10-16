@@ -1,17 +1,17 @@
 {
   "since": "2026-07-01",
-  "items": 430,
+  "items": 455,
   "support_oppose_pairs": 63,
-  "friendly_total": 6845840.86,
+  "friendly_total": 6850912.86,
   "unfriendly_total": 8755642.1,
   "by_candidate": {
     "Rutinel": {
-      "support": 1355976.43,
+      "support": 1360753.43,
       "oppose": 6903010.23
     },
     "Evans": {
       "support": 1852631.87,
-      "oppose": 5489864.43
+      "oppose": 5490159.43
     }
   },
   "by_committee": {
@@ -123,16 +123,16 @@
       "Friendly": 19207.01,
       "Unfriendly": 0.0
     },
+    "CAMPAIGN FOR WORKING CLASS COMMUNITIES": {
+      "Friendly": 14603.95,
+      "Unfriendly": 0.0
+    },
     "INDIVISIBLE PROJECT INC.": {
       "Friendly": 11854.0,
       "Unfriendly": 0.0
     },
     "DEMOCRATIC MESSAGING PROJECT": {
       "Friendly": 10150.0,
-      "Unfriendly": 0.0
-    },
-    "CAMPAIGN FOR WORKING CLASS COMMUNITIES": {
-      "Friendly": 9531.95,
       "Unfriendly": 0.0
     },
     "ASIAN AMERICANS FOR CIVIL RIGHTS AND EQUALITY ACTION FUND": {
