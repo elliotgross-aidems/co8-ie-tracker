@@ -1,8 +1,8 @@
 {
   "since": "2026-07-01",
-  "items": 520,
+  "items": 521,
   "support_oppose_pairs": 61,
-  "friendly_total": 8613411.82,
+  "friendly_total": 8643371.82,
   "unfriendly_total": 10140810.98,
   "by_candidate": {
     "Rutinel": {
@@ -11,7 +11,7 @@
     },
     "Evans": {
       "support": 1941753.02,
-      "oppose": 6871275.9
+      "oppose": 6901235.9
     }
   },
   "by_committee": {
@@ -68,7 +68,7 @@
       "Unfriendly": 209406.33000000002
     },
     "AMERICAN MEAT PRODUCERS PAC": {
-      "Friendly": 150000.0,
+      "Friendly": 179960.0,
       "Unfriendly": 0.0
     },
     "UNITE HERE PAC": {
