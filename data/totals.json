@@ -2,25 +2,25 @@
   "since": "2026-07-01",
   "items": 516,
   "support_oppose_pairs": 61,
-  "friendly_total": 8467617.68,
-  "unfriendly_total": 10140810.12,
+  "friendly_total": 8467619.82,
+  "unfriendly_total": 10140810.98,
   "by_candidate": {
     "Rutinel": {
-      "support": 1741093.25,
-      "oppose": 8199057.75
+      "support": 1741093.92,
+      "oppose": 8199057.96
     },
     "Evans": {
-      "support": 1941752.37,
-      "oppose": 6726524.43
+      "support": 1941753.02,
+      "oppose": 6726525.9
     }
   },
   "by_committee": {
     "CLF": {
       "Friendly": 0.0,
-      "Unfriendly": 5964256.359999999
+      "Unfriendly": 5964256.57
     },
     "HMP": {
-      "Friendly": 4250642.84,
+      "Friendly": 4250643.6899999995,
       "Unfriendly": 0.0
     },
     "NO GOING BACK PAC INC.": {
@@ -40,7 +40,7 @@
       "Unfriendly": 841827.7199999997
     },
     "314 ACTION FUND": {
-      "Friendly": 688699.77,
+      "Friendly": 688700.39,
       "Unfriendly": 0.0
     },
     "PROTECT AND SERVE PAC": {
@@ -133,7 +133,7 @@
     },
     "THE GUARDIAN SUPER PAC": {
       "Friendly": 0.0,
-      "Unfriendly": 14117.0
+      "Unfriendly": 14117.65
     },
     "INDIVISIBLE PROJECT INC.": {
       "Friendly": 11854.0,
@@ -156,7 +156,7 @@
       "Unfriendly": 0.0
     },
     "NEIGHBOR VOICES PAC": {
-      "Friendly": 980.0,
+      "Friendly": 980.67,
       "Unfriendly": 0.0
     },
     "FIELD TEAM 6, INC.": {
