@@ -1,12 +1,12 @@
 {
   "since": "2026-07-01",
-  "items": 485,
+  "items": 515,
   "support_oppose_pairs": 61,
-  "friendly_total": 8459868.68,
+  "friendly_total": 8465930.68,
   "unfriendly_total": 10140810.12,
   "by_candidate": {
     "Rutinel": {
-      "support": 1735031.25,
+      "support": 1741093.25,
       "oppose": 8199057.75
     },
     "Evans": {
@@ -123,12 +123,12 @@
       "Friendly": 0.0,
       "Unfriendly": 26039.83
     },
-    "TRUST BRIGADE": {
-      "Friendly": 19207.01,
+    "CAMPAIGN FOR WORKING CLASS COMMUNITIES": {
+      "Friendly": 20665.949999999997,
       "Unfriendly": 0.0
     },
-    "CAMPAIGN FOR WORKING CLASS COMMUNITIES": {
-      "Friendly": 14603.949999999999,
+    "TRUST BRIGADE": {
+      "Friendly": 19207.01,
       "Unfriendly": 0.0
     },
     "THE GUARDIAN SUPER PAC": {
