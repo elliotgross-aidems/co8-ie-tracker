@@ -2,16 +2,16 @@
   "since": "2026-07-01",
   "items": 527,
   "support_oppose_pairs": 62,
-  "friendly_total": 8709623.36,
+  "friendly_total": 8709635.74,
   "unfriendly_total": 10235014.98,
   "by_candidate": {
     "Rutinel": {
-      "support": 1775262.46,
+      "support": 1775274.34,
       "oppose": 8203505.96
     },
     "Evans": {
       "support": 2031509.02,
-      "oppose": 6934360.9
+      "oppose": 6934361.4
     }
   },
   "by_committee": {
@@ -32,7 +32,7 @@
       "Unfriendly": 0.0
     },
     "LCV VICTORY FUND": {
-      "Friendly": 1033046.6799999998,
+      "Friendly": 1033047.2299999997,
       "Unfriendly": 0.0
     },
     "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION": {
@@ -112,7 +112,7 @@
       "Unfriendly": 47931.21
     },
     "BACK THE BOLD": {
-      "Friendly": 45689.909999999996,
+      "Friendly": 45690.409999999996,
       "Unfriendly": 0.0
     },
     "PROTECT LIBERTY PAC": {
@@ -124,7 +124,7 @@
       "Unfriendly": 26039.83
     },
     "CAMPAIGN FOR WORKING CLASS COMMUNITIES": {
-      "Friendly": 21709.489999999998,
+      "Friendly": 21720.82,
       "Unfriendly": 0.0
     },
     "TRUST BRIGADE": {
