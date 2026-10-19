@@ -2,16 +2,16 @@
   "since": "2026-07-01",
   "items": 532,
   "support_oppose_pairs": 63,
-  "friendly_total": 8798049.74,
-  "unfriendly_total": 10300232.98,
+  "friendly_total": 8798051.75,
+  "unfriendly_total": 10300234.41,
   "by_candidate": {
     "Rutinel": {
-      "support": 1812404.34,
-      "oppose": 8216505.96
+      "support": 1812405.09,
+      "oppose": 8216506.46
     },
     "Evans": {
-      "support": 2083727.02,
-      "oppose": 6985645.4
+      "support": 2083727.95,
+      "oppose": 6985646.66
     }
   },
   "by_committee": {
@@ -20,15 +20,15 @@
       "Unfriendly": 5977256.57
     },
     "HMP": {
-      "Friendly": 4264797.6899999995,
+      "Friendly": 4264798.2,
       "Unfriendly": 0.0
     },
     "NO GOING BACK PAC INC.": {
       "Friendly": 0.0,
-      "Unfriendly": 1498700.0
+      "Unfriendly": 1498701.0
     },
     "MAINSTREAM COLORADO FUND": {
-      "Friendly": 1252302.9699999997,
+      "Friendly": 1252304.4699999997,
       "Unfriendly": 0.0
     },
     "LCV VICTORY FUND": {
@@ -93,7 +93,7 @@
     },
     "THE CONSERVATIVE CAUCUS DBA AMERICANS FOR CONSTITUTIONAL LIBERTY": {
       "Friendly": 0.0,
-      "Unfriendly": 63836.25
+      "Unfriendly": 63836.68
     },
     "NATIONAL ASSOCIATION OF REALTORS POLITICAL ACTION COMMITTEE": {
       "Friendly": 0.0,
