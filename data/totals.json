@@ -1,17 +1,17 @@
 {
   "since": "2026-07-01",
-  "items": 529,
+  "items": 531,
   "support_oppose_pairs": 63,
-  "friendly_total": 8783895.74,
-  "unfriendly_total": 10235014.98,
+  "friendly_total": 8798049.74,
+  "unfriendly_total": 10287232.98,
   "by_candidate": {
     "Rutinel": {
       "support": 1812404.34,
       "oppose": 8203505.96
     },
     "Evans": {
-      "support": 2031509.02,
-      "oppose": 6971491.4
+      "support": 2083727.02,
+      "oppose": 6985645.4
     }
   },
   "by_committee": {
@@ -20,7 +20,7 @@
       "Unfriendly": 5964256.57
     },
     "HMP": {
-      "Friendly": 4250643.6899999995,
+      "Friendly": 4264797.6899999995,
       "Unfriendly": 0.0
     },
     "NO GOING BACK PAC INC.": {
@@ -102,6 +102,10 @@
     "HISPANIC LEADERSHIP TRUST": {
       "Friendly": 0.0,
       "Unfriendly": 54085.0
+    },
+    "CENTER FORWARD INITIATIVE INC (CFI)": {
+      "Friendly": 0.0,
+      "Unfriendly": 52218.0
     },
     "CLEARPATH ACTION FUND, INC.": {
       "Friendly": 0.0,
