@@ -1,12 +1,12 @@
 {
   "since": "2026-07-01",
-  "items": 532,
+  "items": 533,
   "support_oppose_pairs": 63,
-  "friendly_total": 8798051.75,
+  "friendly_total": 8798061.75,
   "unfriendly_total": 10300234.41,
   "by_candidate": {
     "Rutinel": {
-      "support": 1812405.09,
+      "support": 1812415.09,
       "oppose": 8216506.46
     },
     "Evans": {
@@ -177,6 +177,10 @@
     },
     "GIVEGREEN UNITED ACTION": {
       "Friendly": 16.0,
+      "Unfriendly": 0.0
+    },
+    "SIERRA CLUB INDEPENDENT ACTION": {
+      "Friendly": 10.0,
       "Unfriendly": 0.0
     }
   }
