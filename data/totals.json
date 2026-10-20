@@ -1,12 +1,12 @@
 {
   "since": "2026-07-01",
-  "items": 536,
+  "items": 537,
   "support_oppose_pairs": 63,
-  "friendly_total": 8848061.75,
+  "friendly_total": 8848608.75,
   "unfriendly_total": 10336295.41,
   "by_candidate": {
     "Rutinel": {
-      "support": 1812415.09,
+      "support": 1812962.09,
       "oppose": 8252567.46
     },
     "Evans": {
@@ -165,6 +165,10 @@
     },
     "FIELD TEAM 6, INC.": {
       "Friendly": 932.8900000000001,
+      "Unfriendly": 0.0
+    },
+    "ACTIVATE AMERICA": {
+      "Friendly": 547.0,
       "Unfriendly": 0.0
     },
     "BUILDING TOGETHER": {
