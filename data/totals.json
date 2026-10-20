@@ -1,13 +1,13 @@
 {
   "since": "2026-07-01",
-  "items": 553,
+  "items": 554,
   "support_oppose_pairs": 64,
   "friendly_total": 9026943.75,
-  "unfriendly_total": 10336295.41,
+  "unfriendly_total": 10374901.41,
   "by_candidate": {
     "Rutinel": {
       "support": 1933761.09,
-      "oppose": 8252567.46
+      "oppose": 8291173.46
     },
     "Evans": {
       "support": 2083727.95,
@@ -91,6 +91,10 @@
       "Friendly": 0.0,
       "Unfriendly": 88088.0
     },
+    "THE GOVERNING MAJORITY FUND": {
+      "Friendly": 0.0,
+      "Unfriendly": 86537.20999999999
+    },
     "THE CONSERVATIVE CAUCUS DBA AMERICANS FOR CONSTITUTIONAL LIBERTY": {
       "Friendly": 0.0,
       "Unfriendly": 63836.68
@@ -110,10 +114,6 @@
     "CLEARPATH ACTION FUND, INC.": {
       "Friendly": 0.0,
       "Unfriendly": 49950.0
-    },
-    "THE GOVERNING MAJORITY FUND": {
-      "Friendly": 0.0,
-      "Unfriendly": 47931.21
     },
     "BACK THE BOLD": {
       "Friendly": 45690.409999999996,
