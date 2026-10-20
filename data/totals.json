@@ -1,12 +1,12 @@
 {
   "since": "2026-07-01",
-  "items": 549,
+  "items": 553,
   "support_oppose_pairs": 64,
-  "friendly_total": 9026459.75,
+  "friendly_total": 9026943.75,
   "unfriendly_total": 10336295.41,
   "by_candidate": {
     "Rutinel": {
-      "support": 1933277.09,
+      "support": 1933761.09,
       "oppose": 8252567.46
     },
     "Evans": {
@@ -164,7 +164,7 @@
       "Unfriendly": 0.0
     },
     "NEIGHBOR VOICES PAC": {
-      "Friendly": 1560.67,
+      "Friendly": 2044.67,
       "Unfriendly": 0.0
     },
     "FIELD TEAM 6, INC.": {
