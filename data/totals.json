@@ -1,12 +1,12 @@
 {
   "since": "2026-07-01",
-  "items": 548,
+  "items": 549,
   "support_oppose_pairs": 64,
-  "friendly_total": 9022224.75,
+  "friendly_total": 9026459.75,
   "unfriendly_total": 10336295.41,
   "by_candidate": {
     "Rutinel": {
-      "support": 1929042.09,
+      "support": 1933277.09,
       "oppose": 8252567.46
     },
     "Evans": {
@@ -154,6 +154,10 @@
     "NRA VICTORY FUND, INC.": {
       "Friendly": 0.0,
       "Unfriendly": 5571.14
+    },
+    "VOTEVETS": {
+      "Friendly": 4235.0,
+      "Unfriendly": 0.0
     },
     "LGBTQ CONNECTION PAC": {
       "Friendly": 3248.1800000000003,
