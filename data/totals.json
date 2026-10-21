@@ -2,16 +2,16 @@
   "since": "2026-07-01",
   "items": 556,
   "support_oppose_pairs": 64,
-  "friendly_total": 9119146.75,
-  "unfriendly_total": 10374901.41,
+  "friendly_total": 9119151.12,
+  "unfriendly_total": 10374902.79,
   "by_candidate": {
     "Rutinel": {
-      "support": 2025964.09,
-      "oppose": 8291173.46
+      "support": 2025966.97,
+      "oppose": 8291174.84
     },
     "Evans": {
       "support": 2083727.95,
-      "oppose": 7093182.66
+      "oppose": 7093184.15
     }
   },
   "by_committee": {
@@ -28,7 +28,7 @@
       "Unfriendly": 1498701.0
     },
     "MAINSTREAM COLORADO FUND": {
-      "Friendly": 1276010.4699999997,
+      "Friendly": 1276012.2699999998,
       "Unfriendly": 0.0
     },
     "LCV VICTORY FUND": {
@@ -40,7 +40,7 @@
       "Unfriendly": 841827.7199999997
     },
     "314 ACTION FUND": {
-      "Friendly": 838030.3899999999,
+      "Friendly": 838030.9799999999,
       "Unfriendly": 0.0
     },
     "PROTECT AND SERVE PAC": {
@@ -53,7 +53,7 @@
     },
     "AMERICA PAC": {
       "Friendly": 0.0,
-      "Unfriendly": 380640.39
+      "Unfriendly": 380640.94000000006
     },
     "AMERICAN FEDERATION OF STATE COUNTY & MUNICIPAL EMPLOYEES  P E O P L E": {
       "Friendly": 379500.0,
@@ -93,7 +93,7 @@
     },
     "THE GOVERNING MAJORITY FUND": {
       "Friendly": 0.0,
-      "Unfriendly": 86537.20999999999
+      "Unfriendly": 86538.04000000001
     },
     "THE CONSERVATIVE CAUCUS DBA AMERICANS FOR CONSTITUTIONAL LIBERTY": {
       "Friendly": 0.0,
@@ -156,7 +156,7 @@
       "Unfriendly": 5571.14
     },
     "VOTEVETS": {
-      "Friendly": 4235.0,
+      "Friendly": 4235.14,
       "Unfriendly": 0.0
     },
     "LGBTQ CONNECTION PAC": {
@@ -164,7 +164,7 @@
       "Unfriendly": 0.0
     },
     "NEIGHBOR VOICES PAC": {
-      "Friendly": 2044.67,
+      "Friendly": 2046.51,
       "Unfriendly": 0.0
     },
     "FIELD TEAM 6, INC.": {
