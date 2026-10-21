@@ -1,12 +1,12 @@
 {
   "since": "2026-07-01",
-  "items": 554,
+  "items": 556,
   "support_oppose_pairs": 64,
-  "friendly_total": 9026943.75,
+  "friendly_total": 9119146.75,
   "unfriendly_total": 10374901.41,
   "by_candidate": {
     "Rutinel": {
-      "support": 1933761.09,
+      "support": 2025964.09,
       "oppose": 8291173.46
     },
     "Evans": {
@@ -67,6 +67,10 @@
       "Friendly": 0.0,
       "Unfriendly": 209406.33000000002
     },
+    "AB PAC": {
+      "Friendly": 184787.45,
+      "Unfriendly": 0.0
+    },
     "AMERICAN MEAT PRODUCERS PAC": {
       "Friendly": 179960.0,
       "Unfriendly": 0.0
@@ -81,10 +85,6 @@
     },
     "BOLD AMERICA": {
       "Friendly": 100000.0,
-      "Unfriendly": 0.0
-    },
-    "AB PAC": {
-      "Friendly": 92584.45,
       "Unfriendly": 0.0
     },
     "AMERICAN CHEMISTRY COUNCIL, INC": {
