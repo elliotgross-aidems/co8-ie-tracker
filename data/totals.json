@@ -1,17 +1,17 @@
 {
   "since": "2026-07-01",
   "items": 583,
-  "support_oppose_pairs": 70,
-  "friendly_total": 11542576.12,
-  "unfriendly_total": 10509765.79,
+  "support_oppose_pairs": 69,
+  "friendly_total": 11542580.12,
+  "unfriendly_total": 10509770.18,
   "by_candidate": {
     "Rutinel": {
-      "support": 2246090.97,
-      "oppose": 8354238.84
+      "support": 2246093.56,
+      "oppose": 8354240.53
     },
     "Evans": {
-      "support": 2155526.95,
-      "oppose": 9296485.15
+      "support": 2155529.65,
+      "oppose": 9296486.56
     }
   },
   "by_committee": {
@@ -28,16 +28,16 @@
       "Unfriendly": 1572283.0
     },
     "LCV VICTORY FUND": {
-      "Friendly": 1530555.2299999997,
+      "Friendly": 1530555.74,
       "Unfriendly": 0.0
     },
     "MAINSTREAM COLORADO FUND": {
-      "Friendly": 1299718.2699999998,
+      "Friendly": 1299720.0699999998,
       "Unfriendly": 0.0
     },
     "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION": {
       "Friendly": 0.0,
-      "Unfriendly": 903108.7199999999
+      "Unfriendly": 903113.1099999999
     },
     "314 ACTION FUND": {
       "Friendly": 838030.9799999999,
@@ -168,7 +168,7 @@
       "Unfriendly": 0.0
     },
     "FIELD TEAM 6, INC.": {
-      "Friendly": 2149.8900000000003,
+      "Friendly": 2151.58,
       "Unfriendly": 0.0
     },
     "NEIGHBOR VOICES PAC": {
