@@ -57,7 +57,9 @@ DISTRICT = "08"
 CANDIDATES = {
     "H6CO08013": {"name": "Manny Rutinel", "short": "Rutinel", "last": "RUTINEL", "party": "DEM"},
     "H4CO08034": {"name": "Gabe Evans", "short": "Evans", "last": "EVANS", "party": "REP"},
-    # Libertarian, no FEC candidate ID as of 2026-10-22, so matched by name only
+    # Libertarian. His committee (Dave Wood for Congress, C00950337) is registered, but he
+    # has filed no Statement of Candidacy, so FEC has no candidate ID for him as of
+    # 2026-10-22 and filers leave it blank. Matched by name only
     # (Clay, 2026-10-22: label it "Other"). Put his ID here once he has one.
     "WOOD": {"name": "David Wood", "short": "Wood", "last": "WOOD", "party": "LIB", "no_id": True},
 }
