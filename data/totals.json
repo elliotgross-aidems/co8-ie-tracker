@@ -1,8 +1,8 @@
 {
   "since": "2026-07-01",
-  "items": 593,
+  "items": 594,
   "support_oppose_pairs": 71,
-  "friendly_total": 12170103.12,
+  "friendly_total": 12172386.12,
   "unfriendly_total": 10525140.18,
   "other_total": 2478.0,
   "by_candidate": {
@@ -12,7 +12,7 @@
     },
     "Evans": {
       "support": 2163714.65,
-      "oppose": 9907784.56
+      "oppose": 9910067.56
     },
     "Wood": {
       "support": 2478.0,
@@ -106,7 +106,7 @@
       "Other": 0.0
     },
     "UNITE HERE PAC": {
-      "Friendly": 100207.03,
+      "Friendly": 102490.03,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
