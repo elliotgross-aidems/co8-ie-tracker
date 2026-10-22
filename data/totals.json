@@ -1,9 +1,10 @@
 {
   "since": "2026-07-01",
-  "items": 589,
+  "items": 590,
   "support_oppose_pairs": 70,
   "friendly_total": 12170103.12,
   "unfriendly_total": 10509770.18,
+  "other_total": 2478.0,
   "by_candidate": {
     "Rutinel": {
       "support": 2262318.56,
@@ -12,200 +13,252 @@
     "Evans": {
       "support": 2155529.65,
       "oppose": 9907784.56
+    },
+    "Wood": {
+      "support": 2478.0,
+      "oppose": 0.0
     }
   },
   "by_committee": {
     "CLF": {
       "Friendly": 0.0,
-      "Unfriendly": 5977256.57
+      "Unfriendly": 5977256.57,
+      "Other": 0.0
     },
     "HMP": {
       "Friendly": 5956252.2,
-      "Unfriendly": 0.0
+      "Unfriendly": 0.0,
+      "Other": 0.0
     },
     "NO GOING BACK PAC INC.": {
       "Friendly": 0.0,
-      "Unfriendly": 1572283.0
+      "Unfriendly": 1572283.0,
+      "Other": 0.0
     },
     "LCV VICTORY FUND": {
       "Friendly": 1530555.74,
-      "Unfriendly": 0.0
+      "Unfriendly": 0.0,
+      "Other": 0.0
     },
     "MAINSTREAM COLORADO FUND": {
       "Friendly": 1323426.0699999998,
-      "Unfriendly": 0.0
+      "Unfriendly": 0.0,
+      "Other": 0.0
     },
     "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION": {
       "Friendly": 0.0,
-      "Unfriendly": 903113.1099999999
+      "Unfriendly": 903113.1099999999,
+      "Other": 0.0
     },
     "314 ACTION FUND": {
       "Friendly": 838030.9799999999,
-      "Unfriendly": 0.0
+      "Unfriendly": 0.0,
+      "Other": 0.0
     },
     "PROTECT AND SERVE PAC": {
       "Friendly": 0.0,
-      "Unfriendly": 624700.0
+      "Unfriendly": 624700.0,
+      "Other": 0.0
     },
     "JOBS AND DEMOCRACY PAC": {
       "Friendly": 599445.0,
-      "Unfriendly": 0.0
+      "Unfriendly": 0.0,
+      "Other": 0.0
     },
     "AMERICAN FEDERATION OF STATE COUNTY & MUNICIPAL EMPLOYEES  P E O P L E": {
       "Friendly": 586515.0,
-      "Unfriendly": 0.0
+      "Unfriendly": 0.0,
+      "Other": 0.0
     },
     "CHC BOLD PAC": {
       "Friendly": 500000.0,
-      "Unfriendly": 0.0
+      "Unfriendly": 0.0,
+      "Other": 0.0
     },
     "AMERICA PAC": {
       "Friendly": 0.0,
-      "Unfriendly": 380640.94000000006
+      "Unfriendly": 380640.94000000006,
+      "Other": 0.0
     },
     "AMERICA FIRST AGRICULTURE ACTION INC.": {
       "Friendly": 0.0,
-      "Unfriendly": 300132.89
+      "Unfriendly": 300132.89,
+      "Other": 0.0
     },
     "AMERICAN CONSERVATION COALITION PAC (ACC PAC)": {
       "Friendly": 0.0,
-      "Unfriendly": 209406.33000000002
+      "Unfriendly": 209406.33000000002,
+      "Other": 0.0
     },
     "AB PAC": {
       "Friendly": 184787.45,
-      "Unfriendly": 0.0
+      "Unfriendly": 0.0,
+      "Other": 0.0
     },
     "AMERICAN MEAT PRODUCERS PAC": {
       "Friendly": 179960.0,
-      "Unfriendly": 0.0
+      "Unfriendly": 0.0,
+      "Other": 0.0
     },
     "SEIU COPE (SERVICE EMPLOYEES INTERNATIONAL UNION COMMITTEE ON POLITICAL EDUCATION)": {
       "Friendly": 134000.0,
-      "Unfriendly": 0.0
+      "Unfriendly": 0.0,
+      "Other": 0.0
     },
     "UNITE HERE PAC": {
       "Friendly": 100207.03,
-      "Unfriendly": 0.0
+      "Unfriendly": 0.0,
+      "Other": 0.0
     },
     "BOLD AMERICA": {
       "Friendly": 100000.0,
-      "Unfriendly": 0.0
+      "Unfriendly": 0.0,
+      "Other": 0.0
     },
     "AMERICAN CHEMISTRY COUNCIL, INC": {
       "Friendly": 0.0,
-      "Unfriendly": 88088.0
+      "Unfriendly": 88088.0,
+      "Other": 0.0
     },
     "THE GOVERNING MAJORITY FUND": {
       "Friendly": 0.0,
-      "Unfriendly": 86538.04000000001
+      "Unfriendly": 86538.04000000001,
+      "Other": 0.0
     },
     "THE CONSERVATIVE CAUCUS DBA AMERICANS FOR CONSTITUTIONAL LIBERTY": {
       "Friendly": 0.0,
-      "Unfriendly": 63836.68
+      "Unfriendly": 63836.68,
+      "Other": 0.0
     },
     "NATIONAL ASSOCIATION OF REALTORS POLITICAL ACTION COMMITTEE": {
       "Friendly": 0.0,
-      "Unfriendly": 61793.0
+      "Unfriendly": 61793.0,
+      "Other": 0.0
     },
     "HISPANIC LEADERSHIP TRUST": {
       "Friendly": 0.0,
-      "Unfriendly": 54085.0
+      "Unfriendly": 54085.0,
+      "Other": 0.0
     },
     "CENTER FORWARD INITIATIVE INC (CFI)": {
       "Friendly": 0.0,
-      "Unfriendly": 52218.0
+      "Unfriendly": 52218.0,
+      "Other": 0.0
     },
     "CLEARPATH ACTION FUND, INC.": {
       "Friendly": 0.0,
-      "Unfriendly": 49950.0
+      "Unfriendly": 49950.0,
+      "Other": 0.0
     },
     "BACK THE BOLD": {
       "Friendly": 45690.409999999996,
-      "Unfriendly": 0.0
+      "Unfriendly": 0.0,
+      "Other": 0.0
     },
     "PROTECT LIBERTY PAC": {
       "Friendly": 0.0,
-      "Unfriendly": 40000.0
+      "Unfriendly": 40000.0,
+      "Other": 0.0
     },
     "MAGA INC.": {
       "Friendly": 0.0,
-      "Unfriendly": 26039.83
+      "Unfriendly": 26039.83,
+      "Other": 0.0
     },
     "CAMPAIGN FOR WORKING CLASS COMMUNITIES": {
       "Friendly": 21720.82,
-      "Unfriendly": 0.0
+      "Unfriendly": 0.0,
+      "Other": 0.0
     },
     "TRUST BRIGADE": {
       "Friendly": 19207.01,
-      "Unfriendly": 0.0
+      "Unfriendly": 0.0,
+      "Other": 0.0
     },
     "THE GUARDIAN SUPER PAC": {
       "Friendly": 0.0,
-      "Unfriendly": 14117.65
+      "Unfriendly": 14117.65,
+      "Other": 0.0
     },
     "INDIVISIBLE PROJECT INC.": {
       "Friendly": 11854.0,
-      "Unfriendly": 0.0
+      "Unfriendly": 0.0,
+      "Other": 0.0
     },
     "DEMOCRATIC MESSAGING PROJECT": {
       "Friendly": 10150.0,
-      "Unfriendly": 0.0
+      "Unfriendly": 0.0,
+      "Other": 0.0
     },
     "ASIAN AMERICANS FOR CIVIL RIGHTS AND EQUALITY ACTION FUND": {
       "Friendly": 8599.0,
-      "Unfriendly": 0.0
+      "Unfriendly": 0.0,
+      "Other": 0.0
     },
     "NRA VICTORY FUND, INC.": {
       "Friendly": 0.0,
-      "Unfriendly": 5571.14
-    },
-    "INDIVISIBLE ACTION": {
-      "Friendly": 4372.0,
-      "Unfriendly": 0.0
-    },
-    "VOTEVETS": {
-      "Friendly": 4235.14,
-      "Unfriendly": 0.0
-    },
-    "LGBTQ CONNECTION PAC": {
-      "Friendly": 3248.1800000000003,
-      "Unfriendly": 0.0
+      "Unfriendly": 5571.14,
+      "Other": 0.0
     },
     "OUR HERITAGE MATTERS": {
       "Friendly": 2486.0,
-      "Unfriendly": 0.0
+      "Unfriendly": 0.0,
+      "Other": 2478.0
+    },
+    "INDIVISIBLE ACTION": {
+      "Friendly": 4372.0,
+      "Unfriendly": 0.0,
+      "Other": 0.0
+    },
+    "VOTEVETS": {
+      "Friendly": 4235.14,
+      "Unfriendly": 0.0,
+      "Other": 0.0
+    },
+    "LGBTQ CONNECTION PAC": {
+      "Friendly": 3248.1800000000003,
+      "Unfriendly": 0.0,
+      "Other": 0.0
     },
     "FIELD TEAM 6, INC.": {
       "Friendly": 2151.58,
-      "Unfriendly": 0.0
+      "Unfriendly": 0.0,
+      "Other": 0.0
     },
     "NEIGHBOR VOICES PAC": {
       "Friendly": 2046.51,
-      "Unfriendly": 0.0
+      "Unfriendly": 0.0,
+      "Other": 0.0
     },
     "ACTIVATE AMERICA": {
       "Friendly": 547.0,
-      "Unfriendly": 0.0
+      "Unfriendly": 0.0,
+      "Other": 0.0
     },
     "BUILDING TOGETHER": {
       "Friendly": 521.0,
-      "Unfriendly": 0.0
+      "Unfriendly": 0.0,
+      "Other": 0.0
     },
     "TOGETHER WE ELECT PAC": {
       "Friendly": 39.0,
-      "Unfriendly": 0.0
+      "Unfriendly": 0.0,
+      "Other": 0.0
     },
     "MOMSRISING PAC": {
       "Friendly": 30.0,
-      "Unfriendly": 0.0
+      "Unfriendly": 0.0,
+      "Other": 0.0
     },
     "GIVEGREEN UNITED ACTION": {
       "Friendly": 16.0,
-      "Unfriendly": 0.0
+      "Unfriendly": 0.0,
+      "Other": 0.0
     },
     "SIERRA CLUB INDEPENDENT ACTION": {
       "Friendly": 10.0,
-      "Unfriendly": 0.0
+      "Unfriendly": 0.0,
+      "Other": 0.0
     }
   }
 }
