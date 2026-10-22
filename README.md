@@ -8,6 +8,10 @@ Everything is labeled from our side of the race: **Friendly** means the money he
 Manny Rutinel (supporting him, or opposing Gabe Evans) and **Unfriendly** means it
 helps Evans. Set `FRIENDLY_ID` in `tracker.py` to flip which candidate that is.
 
+**Other** is spending for or against David Wood, the Libertarian (added 2026-10-22 at Clay's
+request). He has no FEC candidate ID yet, so his lines are matched on his last name; put the ID
+in `CANDIDATES` once he has one.
+
 ## What it fixes
 
 - **Missing dates.** Form 5 filers often omit the dissemination date, so fec.gov's

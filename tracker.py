@@ -57,6 +57,9 @@ DISTRICT = "08"
 CANDIDATES = {
     "H6CO08013": {"name": "Manny Rutinel", "short": "Rutinel", "last": "RUTINEL", "party": "DEM"},
     "H4CO08034": {"name": "Gabe Evans", "short": "Evans", "last": "EVANS", "party": "REP"},
+    # Libertarian, no FEC candidate ID as of 2026-10-22, so matched by name only
+    # (Clay, 2026-10-22: label it "Other"). Put his ID here once he has one.
+    "WOOD": {"name": "David Wood", "short": "Wood", "last": "WOOD", "party": "LIB", "no_id": True},
 }
 
 # Our candidate. Spending that helps him (supporting him, or opposing his
@@ -64,6 +67,8 @@ CANDIDATES = {
 FRIENDLY_ID = "H6CO08013"
 FRIENDLY = "Friendly"
 UNFRIENDLY = "Unfriendly"
+OTHER = "Other"          # spending for or against a third candidate
+SIDES = (FRIENDLY, UNFRIENDLY, OTHER)
 LEGACY_SIDES = {"Pro-Rutinel": FRIENDLY, "Pro-Evans": UNFRIENDLY,
                 "Anti-Rutinel": UNFRIENDLY, "Anti-Evans": FRIENDLY}
 
@@ -159,13 +164,12 @@ def candidate_of(row):
     cid = row.get("candidate_id") or ""
     if cid in CANDIDATES:
         return cid
-    if cid:
-        return ""
     name = (row.get("candidate_name") or row.get("candidate_last_name") or "").upper()
     words = set(re.findall(r"[A-Z]+", name))
-    for cid, c in CANDIDATES.items():
-        if c["last"] in words:
-            return cid
+    for key, c in CANDIDATES.items():
+        # a filed ID we don't know is someone else, unless it's a candidate we know only by name
+        if c["last"] in words and (not cid or c.get("no_id")):
+            return key
     return ""
 
 
@@ -194,7 +198,9 @@ def normalize(row, source):
         str(int(math.floor(amount + 1e-6))), key_date,
         norm_desc(row.get("expenditure_description")),
     ])
-    if so in ("S", "O"):
+    if CANDIDATES.get(cid, {}).get("no_id"):
+        side = OTHER
+    elif so in ("S", "O"):
         # supporting our guy or opposing the other guy both help us
         side = FRIENDLY if (cid == FRIENDLY_ID) == (so == "S") else UNFRIENDLY
     else:
@@ -323,13 +329,13 @@ def totals(rows):
     # support/oppose pair are two halves of one buy, not one buy listed twice
     t = {c["short"]: {"support": 0.0, "oppose": 0.0} for c in CANDIDATES.values()}
     by_committee = {}
-    pro = {FRIENDLY: 0.0, UNFRIENDLY: 0.0}
+    pro = dict.fromkeys(SIDES, 0.0)
     for r in rows:
         amt = float(r["amount"])
         short = next((c["short"] for c in CANDIDATES.values() if c["name"] == r["candidate"]), None)
         if short:
             t[short]["support" if r["support_oppose"] == "Support" else "oppose"] += amt
-        bc = by_committee.setdefault(r["committee"], {FRIENDLY: 0.0, UNFRIENDLY: 0.0})
+        bc = by_committee.setdefault(r["committee"], dict.fromkeys(SIDES, 0.0))
         if r["side"] in bc:
             bc[r["side"]] += amt
             pro[r["side"]] += amt
@@ -340,9 +346,10 @@ def totals(rows):
         "support_oppose_pairs": len(paired(rows)),
         "friendly_total": round(friendly, 2),
         "unfriendly_total": round(unfriendly, 2),
+        "other_total": round(pro[OTHER], 2),
         "by_candidate": {k: {kk: round(vv, 2) for kk, vv in v.items()} for k, v in t.items()},
         "by_committee": dict(sorted(by_committee.items(),
-                                    key=lambda kv: -(kv[1][FRIENDLY] + kv[1][UNFRIENDLY]))),
+                                    key=lambda kv: -sum(kv[1].values()))),
     }
 
 
@@ -376,17 +383,18 @@ def render_email(new_rows, tot, test=False):
     new_total = sum(float(r["amount"]) for r in rows)
     friendly_new = sum(float(r["amount"]) for r in rows if r["side"] == FRIENDLY)
     unfriendly_new = sum(float(r["amount"]) for r in rows if r["side"] == UNFRIENDLY)
+    other_new = sum(float(r["amount"]) for r in rows if r["side"] == OTHER)
 
     if test:
         subject = f"[TEST] CO-08 IE tracker is live: {money(tot['friendly_total'])} friendly vs {money(tot['unfriendly_total'])} unfriendly"
     else:
         subject = f"New IE spending in CO-08: {money(new_total)} ({len(rows)} item{'s' if len(rows) != 1 else ''})"
-        if friendly_new and unfriendly_new:
-            subject += f" | {money(friendly_new)} friendly, {money(unfriendly_new)} unfriendly"
-        elif friendly_new:
-            subject += " | friendly"
-        elif unfriendly_new:
-            subject += " | unfriendly"
+        parts = [(friendly_new, "friendly"), (unfriendly_new, "unfriendly"), (other_new, "other")]
+        parts = [(amt, word) for amt, word in parts if amt]
+        if len(parts) > 1:
+            subject += " | " + ", ".join(f"{money(amt)} {word}" for amt, word in parts)
+        elif parts:
+            subject += f" | {parts[0][1]}"
 
     def td(s, align="left", extra=""):
         return f'<td style="padding:6px 8px;border-bottom:1px solid #e5e5e5;text-align:{align};vertical-align:top;{extra}">{s}</td>'
@@ -427,18 +435,21 @@ def render_email(new_rows, tot, test=False):
       <tr><th style="text-align:left;padding:4px 10px"></th><th style="text-align:right;padding:4px 10px">Supporting</th><th style="text-align:right;padding:4px 10px">Opposing</th></tr>
       <tr><td style="padding:4px 10px">Manny Rutinel</td><td style="text-align:right;padding:4px 10px">{money(bc['Rutinel']['support'])}</td><td style="text-align:right;padding:4px 10px">{money(bc['Rutinel']['oppose'])}</td></tr>
       <tr><td style="padding:4px 10px">Gabe Evans</td><td style="text-align:right;padding:4px 10px">{money(bc['Evans']['support'])}</td><td style="text-align:right;padding:4px 10px">{money(bc['Evans']['oppose'])}</td></tr>
+      <tr><td style="padding:4px 10px">David Wood (Libertarian)</td><td style="text-align:right;padding:4px 10px">{money(bc['Wood']['support'])}</td><td style="text-align:right;padding:4px 10px">{money(bc['Wood']['oppose'])}</td></tr>
     </table>
     <p style="font-size:14px;margin:10px 0 0"><b style="color:#1a56db">Friendly total: {money(tot['friendly_total'])}</b>
-       &nbsp;&nbsp;|&nbsp;&nbsp; <b style="color:#c81e1e">Unfriendly total: {money(tot['unfriendly_total'])}</b></p>"""
+       &nbsp;&nbsp;|&nbsp;&nbsp; <b style="color:#c81e1e">Unfriendly total: {money(tot['unfriendly_total'])}</b>
+       &nbsp;&nbsp;|&nbsp;&nbsp; <b style="color:#555">Other total: {money(tot['other_total'])}</b></p>"""
 
     top = list(tot["by_committee"].items())[:8]
     top_rows = "".join(
         f'<tr><td style="padding:3px 10px">{html.escape(k)}</td>'
         f'<td style="text-align:right;padding:3px 10px;color:#1a56db">{money(v[FRIENDLY]) if v[FRIENDLY] else ""}</td>'
-        f'<td style="text-align:right;padding:3px 10px;color:#c81e1e">{money(v[UNFRIENDLY]) if v[UNFRIENDLY] else ""}</td></tr>'
+        f'<td style="text-align:right;padding:3px 10px;color:#c81e1e">{money(v[UNFRIENDLY]) if v[UNFRIENDLY] else ""}</td>'
+        f'<td style="text-align:right;padding:3px 10px;color:#555">{money(v[OTHER]) if v[OTHER] else ""}</td></tr>'
         for k, v in top)
     top_table = f"""<table style="border-collapse:collapse;font-size:12px;margin-top:6px">
-      <tr><th style="text-align:left;padding:3px 10px">Spender</th><th style="text-align:right;padding:3px 10px">Friendly</th><th style="text-align:right;padding:3px 10px">Unfriendly</th></tr>{top_rows}</table>"""
+      <tr><th style="text-align:left;padding:3px 10px">Spender</th><th style="text-align:right;padding:3px 10px">Friendly</th><th style="text-align:right;padding:3px 10px">Unfriendly</th><th style="text-align:right;padding:3px 10px">Other</th></tr>{top_rows}</table>"""
 
     intro = ("This is a test message confirming the tracker is running. Below are the most recent items on file and the running totals."
              if test else
@@ -457,7 +468,7 @@ def render_email(new_rows, tot, test=False):
       <p style="color:#888;font-size:11px;margin-top:22px">
         Source: FEC Schedule E via api.open.fec.gov, raw e-filings plus processed data, de-duplicated so quarterly re-reports of
         24/48-hour notices are not counted twice. Friendly = supporting Manny Rutinel or opposing Gabe Evans; unfriendly = the
-        reverse. Every line counts, matching fec.gov: where a filer runs one ad both for one candidate and against the other, it
+        reverse; other = supporting or opposing David Wood (Libertarian). Every line counts, matching fec.gov: where a filer runs one ad both for one candidate and against the other, it
         files two lines that each carry their share of the cost, and both are shown and counted, the second marked as the other
         half. Date shown is the dissemination date when reported, otherwise the
         expenditure date, otherwise the filing date. Amounts on 24-hour notices are often estimates.
@@ -466,7 +477,7 @@ def render_email(new_rows, tot, test=False):
     text = "\n".join(f"{r['best_date']}  {r['side']:<12} {money(r['amount']):>12}  {r['committee']}  {r['description']}"
                      + ("  (other half of the same buy)" if r.get("other_half_of") else "") for r in rows)
     text = (f"{re.sub('<[^>]+>', '', intro)}\n\n{text}\n\nSince July 1: friendly {money(tot['friendly_total'])}, "
-            f"unfriendly {money(tot['unfriendly_total'])}\n")
+            f"unfriendly {money(tot['unfriendly_total'])}, other {money(tot['other_total'])}\n")
     return subject, text, body
 
 
@@ -524,7 +535,8 @@ def main(argv):
     pair_mirrors(all_rows)
     tot = totals(all_rows)
     log(f"{len(all_rows)} FEC lines on file ({tot['support_oppose_pairs']} support/oppose pairs), "
-        f"{len(new_rows)} new. Friendly {money(tot['friendly_total'])}, unfriendly {money(tot['unfriendly_total'])}")
+        f"{len(new_rows)} new. Friendly {money(tot['friendly_total'])}, unfriendly {money(tot['unfriendly_total'])}, "
+        f"other {money(tot['other_total'])}")
     for r in order_lines(new_rows):
         half = " (other half of the same buy)" if r["other_half_of"] else (f" (+ {r['also_listed_as']})" if r["also_listed_as"] else "")
         log(f"  NEW {r['best_date']} {r['side']:<12} {money(r['amount']):>12}  {r['committee']}  {r['description']}{half}  [{r['form']} {r['source']}]")
