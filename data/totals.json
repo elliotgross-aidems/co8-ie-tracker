@@ -1,17 +1,17 @@
 {
   "since": "2026-07-01",
-  "items": 562,
-  "support_oppose_pairs": 65,
-  "friendly_total": 9351089.12,
-  "unfriendly_total": 10374902.79,
+  "items": 578,
+  "support_oppose_pairs": 70,
+  "friendly_total": 9848636.12,
+  "unfriendly_total": 10509765.79,
   "by_candidate": {
     "Rutinel": {
-      "support": 2246051.97,
-      "oppose": 8291174.84
+      "support": 2246090.97,
+      "oppose": 8354238.84
     },
     "Evans": {
-      "support": 2083727.95,
-      "oppose": 7105037.15
+      "support": 2155526.95,
+      "oppose": 7602545.15
     }
   },
   "by_committee": {
@@ -25,19 +25,19 @@
     },
     "NO GOING BACK PAC INC.": {
       "Friendly": 0.0,
-      "Unfriendly": 1498701.0
+      "Unfriendly": 1572283.0
+    },
+    "LCV VICTORY FUND": {
+      "Friendly": 1530555.2299999997,
+      "Unfriendly": 0.0
     },
     "MAINSTREAM COLORADO FUND": {
       "Friendly": 1299718.2699999998,
       "Unfriendly": 0.0
     },
-    "LCV VICTORY FUND": {
-      "Friendly": 1033047.2299999997,
-      "Unfriendly": 0.0
-    },
     "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION": {
       "Friendly": 0.0,
-      "Unfriendly": 841827.7199999997
+      "Unfriendly": 903108.7199999997
     },
     "314 ACTION FUND": {
       "Friendly": 838030.9799999999,
@@ -177,6 +177,10 @@
     },
     "BUILDING TOGETHER": {
       "Friendly": 521.0,
+      "Unfriendly": 0.0
+    },
+    "TOGETHER WE ELECT PAC": {
+      "Friendly": 39.0,
       "Unfriendly": 0.0
     },
     "MOMSRISING PAC": {
