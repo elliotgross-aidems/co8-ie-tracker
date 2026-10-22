@@ -1,8 +1,8 @@
 {
   "since": "2026-07-01",
-  "items": 594,
+  "items": 595,
   "support_oppose_pairs": 71,
-  "friendly_total": 12172386.12,
+  "friendly_total": 12172392.12,
   "unfriendly_total": 10525140.18,
   "other_total": 2478.0,
   "by_candidate": {
@@ -12,7 +12,7 @@
     },
     "Evans": {
       "support": 2163714.65,
-      "oppose": 9910067.56
+      "oppose": 9910073.56
     },
     "Wood": {
       "support": 2478.0,
@@ -36,7 +36,7 @@
       "Other": 0.0
     },
     "LCV VICTORY FUND": {
-      "Friendly": 1530555.74,
+      "Friendly": 1530561.74,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
