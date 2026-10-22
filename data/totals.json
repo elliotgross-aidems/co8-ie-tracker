@@ -1,8 +1,8 @@
 {
   "since": "2026-07-01",
-  "items": 578,
+  "items": 583,
   "support_oppose_pairs": 70,
-  "friendly_total": 9848636.12,
+  "friendly_total": 11542576.12,
   "unfriendly_total": 10509765.79,
   "by_candidate": {
     "Rutinel": {
@@ -11,7 +11,7 @@
     },
     "Evans": {
       "support": 2155526.95,
-      "oppose": 7602545.15
+      "oppose": 9296485.15
     }
   },
   "by_committee": {
@@ -20,7 +20,7 @@
       "Unfriendly": 5977256.57
     },
     "HMP": {
-      "Friendly": 4264798.2,
+      "Friendly": 5956252.2,
       "Unfriendly": 0.0
     },
     "NO GOING BACK PAC INC.": {
@@ -37,7 +37,7 @@
     },
     "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION": {
       "Friendly": 0.0,
-      "Unfriendly": 903108.7199999997
+      "Unfriendly": 903108.7199999999
     },
     "314 ACTION FUND": {
       "Friendly": 838030.9799999999,
@@ -161,6 +161,10 @@
     },
     "LGBTQ CONNECTION PAC": {
       "Friendly": 3248.1800000000003,
+      "Unfriendly": 0.0
+    },
+    "OUR HERITAGE MATTERS": {
+      "Friendly": 2486.0,
       "Unfriendly": 0.0
     },
     "FIELD TEAM 6, INC.": {
