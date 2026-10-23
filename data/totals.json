@@ -1,8 +1,8 @@
 {
   "since": "2026-07-01",
-  "items": 607,
+  "items": 608,
   "support_oppose_pairs": 72,
-  "friendly_total": 12273736.93,
+  "friendly_total": 12418486.93,
   "unfriendly_total": 11855423.18,
   "other_total": 8981.03,
   "by_candidate": {
@@ -12,7 +12,7 @@
     },
     "Evans": {
       "support": 2192140.15,
-      "oppose": 10001509.25
+      "oppose": 10146259.25
     },
     "Wood": {
       "support": 8981.03,
@@ -41,7 +41,7 @@
       "Other": 0.0
     },
     "MAINSTREAM COLORADO FUND": {
-      "Friendly": 1343183.8699999999,
+      "Friendly": 1487933.8699999999,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
