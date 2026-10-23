@@ -1,14 +1,14 @@
 {
   "since": "2026-07-01",
-  "items": 599,
+  "items": 603,
   "support_oppose_pairs": 71,
-  "friendly_total": 12253947.12,
-  "unfriendly_total": 10537730.18,
+  "friendly_total": 12253977.12,
+  "unfriendly_total": 11801561.18,
   "other_total": 8981.0,
   "by_candidate": {
     "Rutinel": {
-      "support": 2262318.56,
-      "oppose": 8361425.53
+      "support": 2262348.56,
+      "oppose": 9625256.53
     },
     "Evans": {
       "support": 2176304.65,
@@ -22,7 +22,7 @@
   "by_committee": {
     "CLF": {
       "Friendly": 0.0,
-      "Unfriendly": 5977256.57,
+      "Unfriendly": 7241087.57,
       "Other": 0.0
     },
     "HMP": {
@@ -246,6 +246,11 @@
       "Other": 0.0
     },
     "MOMSRISING PAC": {
+      "Friendly": 30.0,
+      "Unfriendly": 0.0,
+      "Other": 0.0
+    },
+    "MOVEON.ORG POLITICAL ACTION": {
       "Friendly": 30.0,
       "Unfriendly": 0.0,
       "Other": 0.0
