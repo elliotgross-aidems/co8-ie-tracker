@@ -1,21 +1,21 @@
 {
   "since": "2026-07-01",
-  "items": 595,
+  "items": 599,
   "support_oppose_pairs": 71,
-  "friendly_total": 12172392.12,
-  "unfriendly_total": 10525140.18,
-  "other_total": 2478.0,
+  "friendly_total": 12253947.12,
+  "unfriendly_total": 10537730.18,
+  "other_total": 8981.0,
   "by_candidate": {
     "Rutinel": {
       "support": 2262318.56,
       "oppose": 8361425.53
     },
     "Evans": {
-      "support": 2163714.65,
-      "oppose": 9910073.56
+      "support": 2176304.65,
+      "oppose": 9991628.56
     },
     "Wood": {
-      "support": 2478.0,
+      "support": 8981.0,
       "oppose": 0.0
     }
   },
@@ -71,13 +71,13 @@
       "Other": 0.0
     },
     "CHC BOLD PAC": {
-      "Friendly": 500000.0,
+      "Friendly": 575000.0,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
     "AMERICA PAC": {
       "Friendly": 0.0,
-      "Unfriendly": 380640.94000000006,
+      "Unfriendly": 393230.94000000006,
       "Other": 0.0
     },
     "AMERICA FIRST AGRICULTURE ACTION INC.": {
@@ -175,6 +175,11 @@
       "Unfriendly": 0.0,
       "Other": 0.0
     },
+    "OUR HERITAGE MATTERS": {
+      "Friendly": 9041.0,
+      "Unfriendly": 0.0,
+      "Other": 8981.0
+    },
     "THE GUARDIAN SUPER PAC": {
       "Friendly": 0.0,
       "Unfriendly": 14117.65,
@@ -199,11 +204,6 @@
       "Friendly": 0.0,
       "Unfriendly": 5571.14,
       "Other": 0.0
-    },
-    "OUR HERITAGE MATTERS": {
-      "Friendly": 2486.0,
-      "Unfriendly": 0.0,
-      "Other": 2478.0
     },
     "INDIVISIBLE ACTION": {
       "Friendly": 4372.0,
