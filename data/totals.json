@@ -1,17 +1,17 @@
 {
   "since": "2026-07-01",
-  "items": 603,
+  "items": 605,
   "support_oppose_pairs": 71,
   "friendly_total": 12253980.93,
-  "unfriendly_total": 11801562.18,
+  "unfriendly_total": 11855423.18,
   "other_total": 8981.03,
   "by_candidate": {
     "Rutinel": {
       "support": 2262349.68,
-      "oppose": 9625257.03
+      "oppose": 9663283.03
     },
     "Evans": {
-      "support": 2176305.15,
+      "support": 2192140.15,
       "oppose": 9991631.25
     },
     "Wood": {
@@ -87,7 +87,7 @@
     },
     "AMERICAN CONSERVATION COALITION PAC (ACC PAC)": {
       "Friendly": 0.0,
-      "Unfriendly": 209406.33000000002,
+      "Unfriendly": 225241.33000000002,
       "Other": 0.0
     },
     "AB PAC": {
@@ -105,6 +105,11 @@
       "Unfriendly": 0.0,
       "Other": 0.0
     },
+    "THE GOVERNING MAJORITY FUND": {
+      "Friendly": 0.0,
+      "Unfriendly": 124564.04000000001,
+      "Other": 0.0
+    },
     "UNITE HERE PAC": {
       "Friendly": 102490.43,
       "Unfriendly": 0.0,
@@ -118,11 +123,6 @@
     "AMERICAN CHEMISTRY COUNCIL, INC": {
       "Friendly": 0.0,
       "Unfriendly": 88088.0,
-      "Other": 0.0
-    },
-    "THE GOVERNING MAJORITY FUND": {
-      "Friendly": 0.0,
-      "Unfriendly": 86538.04000000001,
       "Other": 0.0
     },
     "THE CONSERVATIVE CAUCUS DBA AMERICANS FOR CONSTITUTIONAL LIBERTY": {
