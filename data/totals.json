@@ -1,18 +1,18 @@
 {
   "since": "2026-07-01",
-  "items": 616,
+  "items": 621,
   "support_oppose_pairs": 72,
-  "friendly_total": 12428552.93,
+  "friendly_total": 12441286.93,
   "unfriendly_total": 11927408.18,
   "other_total": 15513.03,
   "by_candidate": {
     "Rutinel": {
-      "support": 2272769.68,
+      "support": 2282394.68,
       "oppose": 9735268.03
     },
     "Evans": {
       "support": 2192140.15,
-      "oppose": 10155783.25
+      "oppose": 10158892.25
     },
     "Wood": {
       "support": 15513.03,
@@ -26,7 +26,7 @@
       "Other": 0.0
     },
     "HMP": {
-      "Friendly": 5956252.97,
+      "Friendly": 5959286.97,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
@@ -192,6 +192,11 @@
     },
     "DEMOCRATIC MESSAGING PROJECT": {
       "Friendly": 10150.0,
+      "Unfriendly": 0.0,
+      "Other": 0.0
+    },
+    "WORKING AMERICA": {
+      "Friendly": 9700.0,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
