@@ -2,27 +2,27 @@
   "since": "2026-07-01",
   "items": 621,
   "support_oppose_pairs": 72,
-  "friendly_total": 12441286.93,
-  "unfriendly_total": 11927408.18,
-  "other_total": 15513.03,
+  "friendly_total": 12441288.62,
+  "unfriendly_total": 11927410.25,
+  "other_total": 15513.76,
   "by_candidate": {
     "Rutinel": {
-      "support": 2282394.68,
-      "oppose": 9735268.03
+      "support": 2282394.93,
+      "oppose": 9735268.94
     },
     "Evans": {
-      "support": 2192140.15,
-      "oppose": 10158892.25
+      "support": 2192141.31,
+      "oppose": 10158893.69
     },
     "Wood": {
-      "support": 15513.03,
+      "support": 15513.76,
       "oppose": 0.0
     }
   },
   "by_committee": {
     "CLF": {
       "Friendly": 0.0,
-      "Unfriendly": 7241087.569999999,
+      "Unfriendly": 7241088.399999999,
       "Other": 0.0
     },
     "HMP": {
@@ -41,7 +41,7 @@
       "Other": 0.0
     },
     "MAINSTREAM COLORADO FUND": {
-      "Friendly": 1487933.87,
+      "Friendly": 1487934.37,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
@@ -77,7 +77,7 @@
     },
     "AMERICA PAC": {
       "Friendly": 0.0,
-      "Unfriendly": 393230.94000000006,
+      "Unfriendly": 393231.14,
       "Other": 0.0
     },
     "AMERICA FIRST AGRICULTURE ACTION INC.": {
@@ -87,7 +87,7 @@
     },
     "AMERICAN CONSERVATION COALITION PAC (ACC PAC)": {
       "Friendly": 0.0,
-      "Unfriendly": 225241.33000000002,
+      "Unfriendly": 225242.28999999998,
       "Other": 0.0
     },
     "AB PAC": {
@@ -107,7 +107,7 @@
     },
     "THE GOVERNING MAJORITY FUND": {
       "Friendly": 0.0,
-      "Unfriendly": 124564.04000000001,
+      "Unfriendly": 124564.12,
       "Other": 0.0
     },
     "UNITE HERE PAC": {
@@ -161,9 +161,9 @@
       "Other": 0.0
     },
     "OUR HERITAGE MATTERS": {
-      "Friendly": 15625.47,
+      "Friendly": 15626.66,
       "Unfriendly": 0.0,
-      "Other": 15513.03
+      "Other": 15513.76
     },
     "MAGA INC.": {
       "Friendly": 0.0,
