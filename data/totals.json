@@ -1,18 +1,18 @@
 {
   "since": "2026-07-01",
-  "items": 610,
+  "items": 616,
   "support_oppose_pairs": 72,
-  "friendly_total": 12425070.93,
-  "unfriendly_total": 11855423.18,
+  "friendly_total": 12428552.93,
+  "unfriendly_total": 11927408.18,
   "other_total": 15513.03,
   "by_candidate": {
     "Rutinel": {
-      "support": 2272227.68,
-      "oppose": 9663283.03
+      "support": 2272769.68,
+      "oppose": 9735268.03
     },
     "Evans": {
       "support": 2192140.15,
-      "oppose": 10152843.25
+      "oppose": 10155783.25
     },
     "Wood": {
       "support": 15513.03,
@@ -32,7 +32,7 @@
     },
     "NO GOING BACK PAC INC.": {
       "Friendly": 0.0,
-      "Unfriendly": 1572284.0,
+      "Unfriendly": 1644269.0,
       "Other": 0.0
     },
     "LCV VICTORY FUND": {
@@ -220,13 +220,18 @@
       "Unfriendly": 0.0,
       "Other": 0.0
     },
-    "FIELD TEAM 6, INC.": {
-      "Friendly": 2151.58,
+    "POPULAR DEMOCRACY PAC": {
+      "Friendly": 2940.0,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
     "NEIGHBOR VOICES PAC": {
-      "Friendly": 2046.51,
+      "Friendly": 2588.51,
+      "Unfriendly": 0.0,
+      "Other": 0.0
+    },
+    "FIELD TEAM 6, INC.": {
+      "Friendly": 2151.58,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
