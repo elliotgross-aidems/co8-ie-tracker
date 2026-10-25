@@ -1,13 +1,13 @@
 {
   "since": "2026-07-01",
-  "items": 636,
+  "items": 637,
   "support_oppose_pairs": 73,
-  "friendly_total": 12634685.62,
+  "friendly_total": 12731085.62,
   "unfriendly_total": 12332405.25,
   "other_total": 21047.76,
   "by_candidate": {
     "Rutinel": {
-      "support": 2325005.93,
+      "support": 2421405.93,
       "oppose": 10140263.94
     },
     "Evans": {
@@ -26,7 +26,7 @@
       "Other": 0.0
     },
     "HMP": {
-      "Friendly": 5959286.97,
+      "Friendly": 6055686.97,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
@@ -161,9 +161,9 @@
       "Other": 0.0
     },
     "OUR HERITAGE MATTERS": {
-      "Friendly": 21201.66,
+      "Friendly": 21201.660000000003,
       "Unfriendly": 0.0,
-      "Other": 21047.760000000002
+      "Other": 21047.76
     },
     "PROTECT LIBERTY PAC": {
       "Friendly": 0.0,
