@@ -1,21 +1,21 @@
 {
   "since": "2026-07-01",
-  "items": 633,
+  "items": 636,
   "support_oppose_pairs": 73,
-  "friendly_total": 12629110.62,
-  "unfriendly_total": 11927410.25,
-  "other_total": 15513.76,
+  "friendly_total": 12634685.62,
+  "unfriendly_total": 12332405.25,
+  "other_total": 21047.76,
   "by_candidate": {
     "Rutinel": {
       "support": 2325005.93,
-      "oppose": 9735268.94
+      "oppose": 10140263.94
     },
     "Evans": {
       "support": 2192141.31,
-      "oppose": 10304104.69
+      "oppose": 10309679.69
     },
     "Wood": {
-      "support": 15513.76,
+      "support": 21047.76,
       "oppose": 0.0
     }
   },
@@ -73,6 +73,11 @@
     "CHC BOLD PAC": {
       "Friendly": 575000.0,
       "Unfriendly": 0.0,
+      "Other": 0.0
+    },
+    "SAFETY & AFFORDABILITY PAC INC.": {
+      "Friendly": 0.0,
+      "Unfriendly": 404995.0,
       "Other": 0.0
     },
     "AMERICA PAC": {
@@ -155,15 +160,15 @@
       "Unfriendly": 0.0,
       "Other": 0.0
     },
+    "OUR HERITAGE MATTERS": {
+      "Friendly": 21201.66,
+      "Unfriendly": 0.0,
+      "Other": 21047.760000000002
+    },
     "PROTECT LIBERTY PAC": {
       "Friendly": 0.0,
       "Unfriendly": 40000.0,
       "Other": 0.0
-    },
-    "OUR HERITAGE MATTERS": {
-      "Friendly": 15626.66,
-      "Unfriendly": 0.0,
-      "Other": 15513.76
     },
     "MAGA INC.": {
       "Friendly": 0.0,
