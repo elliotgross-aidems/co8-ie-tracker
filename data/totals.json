@@ -1,18 +1,18 @@
 {
   "since": "2026-07-01",
-  "items": 637,
+  "items": 638,
   "support_oppose_pairs": 73,
-  "friendly_total": 12731085.62,
+  "friendly_total": 12739080.47,
   "unfriendly_total": 12332405.25,
   "other_total": 21047.76,
   "by_candidate": {
     "Rutinel": {
-      "support": 2421405.93,
+      "support": 2421408.98,
       "oppose": 10140263.94
     },
     "Evans": {
       "support": 2192141.31,
-      "oppose": 10309679.69
+      "oppose": 10317671.49
     },
     "Wood": {
       "support": 21047.76,
@@ -26,7 +26,7 @@
       "Other": 0.0
     },
     "HMP": {
-      "Friendly": 6055686.97,
+      "Friendly": 6063678.19,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
@@ -36,7 +36,7 @@
       "Other": 0.0
     },
     "MAINSTREAM COLORADO FUND": {
-      "Friendly": 1634440.37,
+      "Friendly": 1634440.87,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
@@ -106,7 +106,7 @@
       "Other": 0.0
     },
     "SEIU COPE (SERVICE EMPLOYEES INTERNATIONAL UNION COMMITTEE ON POLITICAL EDUCATION)": {
-      "Friendly": 159749.0,
+      "Friendly": 159750.0,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
@@ -176,7 +176,7 @@
       "Other": 0.0
     },
     "CAMPAIGN FOR WORKING CLASS COMMUNITIES": {
-      "Friendly": 22789.819999999996,
+      "Friendly": 22790.959999999995,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
@@ -186,7 +186,7 @@
       "Other": 0.0
     },
     "UNIDOSUS ACTION PAC": {
-      "Friendly": 14498.0,
+      "Friendly": 14498.16,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
@@ -241,7 +241,7 @@
       "Other": 0.0
     },
     "NEIGHBOR VOICES PAC": {
-      "Friendly": 2588.51,
+      "Friendly": 2589.34,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
