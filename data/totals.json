@@ -2,20 +2,20 @@
   "since": "2026-07-01",
   "items": 644,
   "support_oppose_pairs": 74,
-  "friendly_total": 12869896.47,
-  "unfriendly_total": 12332405.25,
-  "other_total": 31322.76,
+  "friendly_total": 12869897.52,
+  "unfriendly_total": 12332405.75,
+  "other_total": 31323.34,
   "by_candidate": {
     "Rutinel": {
-      "support": 2474138.98,
-      "oppose": 10140263.94
+      "support": 2474139.21,
+      "oppose": 10140264.44
     },
     "Evans": {
       "support": 2192141.31,
-      "oppose": 10395757.49
+      "oppose": 10395758.31
     },
     "Wood": {
-      "support": 31322.76,
+      "support": 31323.34,
       "oppose": 0.0
     }
   },
@@ -31,7 +31,7 @@
       "Other": 0.0
     },
     "MAINSTREAM COLORADO FUND": {
-      "Friendly": 1739900.8700000003,
+      "Friendly": 1739901.3300000003,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
@@ -77,7 +77,7 @@
     },
     "SAFETY & AFFORDABILITY PAC INC.": {
       "Friendly": 0.0,
-      "Unfriendly": 404995.0,
+      "Unfriendly": 404995.5,
       "Other": 0.0
     },
     "AMERICA PAC": {
@@ -131,9 +131,9 @@
       "Other": 0.0
     },
     "OUR HERITAGE MATTERS": {
-      "Friendly": 46557.659999999996,
+      "Friendly": 46558.25,
       "Unfriendly": 0.0,
-      "Other": 31322.76
+      "Other": 31323.339999999997
     },
     "THE CONSERVATIVE CAUCUS DBA AMERICANS FOR CONSTITUTIONAL LIBERTY": {
       "Friendly": 0.0,
