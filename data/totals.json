@@ -1,13 +1,13 @@
 {
   "since": "2026-07-01",
-  "items": 645,
+  "items": 646,
   "support_oppose_pairs": 74,
-  "friendly_total": 12870089.52,
+  "friendly_total": 12882089.52,
   "unfriendly_total": 12332405.75,
   "other_total": 31323.34,
   "by_candidate": {
     "Rutinel": {
-      "support": 2474331.21,
+      "support": 2486331.21,
       "oppose": 10140264.44
     },
     "Evans": {
@@ -41,7 +41,7 @@
       "Other": 0.0
     },
     "LCV VICTORY FUND": {
-      "Friendly": 1530561.89,
+      "Friendly": 1542561.89,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
