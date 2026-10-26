@@ -1,13 +1,13 @@
 {
   "since": "2026-07-01",
-  "items": 644,
+  "items": 645,
   "support_oppose_pairs": 74,
-  "friendly_total": 12869897.52,
+  "friendly_total": 12870089.52,
   "unfriendly_total": 12332405.75,
   "other_total": 31323.34,
   "by_candidate": {
     "Rutinel": {
-      "support": 2474139.21,
+      "support": 2474331.21,
       "oppose": 10140264.44
     },
     "Evans": {
@@ -176,7 +176,7 @@
       "Other": 0.0
     },
     "CAMPAIGN FOR WORKING CLASS COMMUNITIES": {
-      "Friendly": 22790.959999999995,
+      "Friendly": 22982.959999999995,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
