@@ -1,10 +1,10 @@
 {
   "since": "2026-07-01",
-  "items": 640,
+  "items": 644,
   "support_oppose_pairs": 74,
-  "friendly_total": 12844540.47,
+  "friendly_total": 12869896.47,
   "unfriendly_total": 12332405.25,
-  "other_total": 21047.76,
+  "other_total": 31322.76,
   "by_candidate": {
     "Rutinel": {
       "support": 2474138.98,
@@ -12,10 +12,10 @@
     },
     "Evans": {
       "support": 2192141.31,
-      "oppose": 10370401.49
+      "oppose": 10395757.49
     },
     "Wood": {
-      "support": 21047.76,
+      "support": 31322.76,
       "oppose": 0.0
     }
   },
@@ -130,6 +130,11 @@
       "Unfriendly": 88088.0,
       "Other": 0.0
     },
+    "OUR HERITAGE MATTERS": {
+      "Friendly": 46557.66,
+      "Unfriendly": 0.0,
+      "Other": 31322.76
+    },
     "THE CONSERVATIVE CAUCUS DBA AMERICANS FOR CONSTITUTIONAL LIBERTY": {
       "Friendly": 0.0,
       "Unfriendly": 63836.68,
@@ -159,11 +164,6 @@
       "Friendly": 45690.409999999996,
       "Unfriendly": 0.0,
       "Other": 0.0
-    },
-    "OUR HERITAGE MATTERS": {
-      "Friendly": 21201.660000000003,
-      "Unfriendly": 0.0,
-      "Other": 21047.76
     },
     "PROTECT LIBERTY PAC": {
       "Friendly": 0.0,
