@@ -1,14 +1,14 @@
 {
   "since": "2026-07-01",
-  "items": 647,
+  "items": 649,
   "support_oppose_pairs": 74,
   "friendly_total": 12882089.52,
-  "unfriendly_total": 12399505.75,
+  "unfriendly_total": 12996228.75,
   "other_total": 31323.34,
   "by_candidate": {
     "Rutinel": {
       "support": 2486331.21,
-      "oppose": 10140264.44
+      "oppose": 10736987.44
     },
     "Evans": {
       "support": 2259241.31,
@@ -45,6 +45,11 @@
       "Unfriendly": 0.0,
       "Other": 0.0
     },
+    "SAFETY & AFFORDABILITY PAC INC.": {
+      "Friendly": 0.0,
+      "Unfriendly": 1001718.5,
+      "Other": 0.0
+    },
     "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION": {
       "Friendly": 0.0,
       "Unfriendly": 918483.1099999998,
@@ -73,11 +78,6 @@
     "CHC BOLD PAC": {
       "Friendly": 575000.0,
       "Unfriendly": 0.0,
-      "Other": 0.0
-    },
-    "SAFETY & AFFORDABILITY PAC INC.": {
-      "Friendly": 0.0,
-      "Unfriendly": 404995.5,
       "Other": 0.0
     },
     "AMERICA PAC": {
