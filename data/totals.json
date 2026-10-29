@@ -1,28 +1,28 @@
 {
   "since": "2026-07-01",
-  "items": 649,
-  "support_oppose_pairs": 74,
-  "friendly_total": 12882090.64,
-  "unfriendly_total": 12996228.75,
-  "other_total": 31324.31,
+  "items": 672,
+  "support_oppose_pairs": 78,
+  "friendly_total": 12987497.64,
+  "unfriendly_total": 13140995.75,
+  "other_total": 33352.31,
   "by_candidate": {
     "Rutinel": {
-      "support": 2486331.21,
-      "oppose": 10736987.44
+      "support": 2569949.21,
+      "oppose": 10852067.44
     },
     "Evans": {
-      "support": 2259241.31,
-      "oppose": 10395759.43
+      "support": 2288928.31,
+      "oppose": 10417548.43
     },
     "Wood": {
-      "support": 31324.31,
+      "support": 33352.31,
       "oppose": 0.0
     }
   },
   "by_committee": {
     "CLF": {
       "Friendly": 0.0,
-      "Unfriendly": 7241088.399999999,
+      "Unfriendly": 7254088.399999999,
       "Other": 0.0
     },
     "HMP": {
@@ -31,17 +31,17 @@
       "Other": 0.0
     },
     "MAINSTREAM COLORADO FUND": {
-      "Friendly": 1739901.3300000003,
+      "Friendly": 1779413.3300000003,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
     "NO GOING BACK PAC INC.": {
       "Friendly": 0.0,
-      "Unfriendly": 1711369.0,
+      "Unfriendly": 1722868.0,
       "Other": 0.0
     },
     "LCV VICTORY FUND": {
-      "Friendly": 1542561.89,
+      "Friendly": 1589048.89,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
@@ -52,7 +52,7 @@
     },
     "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION": {
       "Friendly": 0.0,
-      "Unfriendly": 918483.1099999998,
+      "Unfriendly": 954859.1099999998,
       "Other": 0.0
     },
     "314 ACTION FUND": {
@@ -95,6 +95,11 @@
       "Unfriendly": 225242.28999999998,
       "Other": 0.0
     },
+    "THE GOVERNING MAJORITY FUND": {
+      "Friendly": 0.0,
+      "Unfriendly": 208456.12,
+      "Other": 0.0
+    },
     "AB PAC": {
       "Friendly": 184787.45,
       "Unfriendly": 0.0,
@@ -106,13 +111,8 @@
       "Other": 0.0
     },
     "SEIU COPE (SERVICE EMPLOYEES INTERNATIONAL UNION COMMITTEE ON POLITICAL EDUCATION)": {
-      "Friendly": 159750.0,
+      "Friendly": 173304.0,
       "Unfriendly": 0.0,
-      "Other": 0.0
-    },
-    "THE GOVERNING MAJORITY FUND": {
-      "Friendly": 0.0,
-      "Unfriendly": 124564.12,
       "Other": 0.0
     },
     "UNITE HERE PAC": {
@@ -131,9 +131,9 @@
       "Other": 0.0
     },
     "OUR HERITAGE MATTERS": {
-      "Friendly": 46559.37,
+      "Friendly": 48592.37,
       "Unfriendly": 0.0,
-      "Other": 31324.309999999998
+      "Other": 33352.31
     },
     "THE CONSERVATIVE CAUCUS DBA AMERICANS FOR CONSTITUTIONAL LIBERTY": {
       "Friendly": 0.0,
@@ -176,7 +176,7 @@
       "Other": 0.0
     },
     "CAMPAIGN FOR WORKING CLASS COMMUNITIES": {
-      "Friendly": 22982.959999999995,
+      "Friendly": 24423.959999999995,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
@@ -215,6 +215,11 @@
       "Unfriendly": 0.0,
       "Other": 0.0
     },
+    "LGBTQ CONNECTION PAC": {
+      "Friendly": 5628.18,
+      "Unfriendly": 0.0,
+      "Other": 0.0
+    },
     "NRA VICTORY FUND, INC.": {
       "Friendly": 0.0,
       "Unfriendly": 5571.14,
@@ -227,11 +232,6 @@
     },
     "VOTEVETS": {
       "Friendly": 4235.14,
-      "Unfriendly": 0.0,
-      "Other": 0.0
-    },
-    "LGBTQ CONNECTION PAC": {
-      "Friendly": 3248.1800000000003,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
