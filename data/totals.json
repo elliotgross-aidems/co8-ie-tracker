@@ -1,9 +1,9 @@
 {
   "since": "2026-07-01",
-  "items": 681,
+  "items": 682,
   "support_oppose_pairs": 78,
   "friendly_total": 14850057.64,
-  "unfriendly_total": 13162030.75,
+  "unfriendly_total": 13164845.75,
   "other_total": 33352.31,
   "by_candidate": {
     "Rutinel": {
@@ -11,7 +11,7 @@
       "oppose": 10852067.44
     },
     "Evans": {
-      "support": 2309963.31,
+      "support": 2312778.31,
       "oppose": 12176338.43
     },
     "Wood": {
@@ -57,7 +57,7 @@
     },
     "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION": {
       "Friendly": 0.0,
-      "Unfriendly": 954859.1099999995,
+      "Unfriendly": 957674.1099999995,
       "Other": 0.0
     },
     "PROTECT AND SERVE PAC": {
