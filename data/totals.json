@@ -1,9 +1,9 @@
 {
   "since": "2026-07-01",
-  "items": 689,
+  "items": 690,
   "support_oppose_pairs": 78,
   "friendly_total": 14917281.64,
-  "unfriendly_total": 13164845.75,
+  "unfriendly_total": 13172917.75,
   "other_total": 33352.31,
   "by_candidate": {
     "Rutinel": {
@@ -11,7 +11,7 @@
       "oppose": 10852067.44
     },
     "Evans": {
-      "support": 2312778.31,
+      "support": 2320850.31,
       "oppose": 12186676.43
     },
     "Wood": {
@@ -190,6 +190,11 @@
       "Unfriendly": 0.0,
       "Other": 0.0
     },
+    "THE GUARDIAN SUPER PAC": {
+      "Friendly": 0.0,
+      "Unfriendly": 22189.65,
+      "Other": 0.0
+    },
     "TRUST BRIGADE": {
       "Friendly": 19207.01,
       "Unfriendly": 0.0,
@@ -198,11 +203,6 @@
     "UNIDOSUS ACTION PAC": {
       "Friendly": 14498.16,
       "Unfriendly": 0.0,
-      "Other": 0.0
-    },
-    "THE GUARDIAN SUPER PAC": {
-      "Friendly": 0.0,
-      "Unfriendly": 14117.65,
       "Other": 0.0
     },
     "INDIVISIBLE PROJECT INC.": {
