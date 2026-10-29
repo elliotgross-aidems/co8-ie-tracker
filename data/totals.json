@@ -1,18 +1,18 @@
 {
   "since": "2026-07-01",
-  "items": 687,
+  "items": 689,
   "support_oppose_pairs": 78,
-  "friendly_total": 14867281.64,
+  "friendly_total": 14917281.64,
   "unfriendly_total": 13164845.75,
   "other_total": 33352.31,
   "by_candidate": {
     "Rutinel": {
-      "support": 2690605.21,
+      "support": 2730605.21,
       "oppose": 10852067.44
     },
     "Evans": {
       "support": 2312778.31,
-      "oppose": 12176676.43
+      "oppose": 12186676.43
     },
     "Wood": {
       "support": 33352.31,
@@ -153,6 +153,11 @@
     "CENTER FORWARD INITIATIVE INC (CFI)": {
       "Friendly": 0.0,
       "Unfriendly": 52218.0,
+      "Other": 0.0
+    },
+    "LATINO VICTORY PROJECT": {
+      "Friendly": 50000.0,
+      "Unfriendly": 0.0,
       "Other": 0.0
     },
     "CLEARPATH ACTION FUND, INC.": {
