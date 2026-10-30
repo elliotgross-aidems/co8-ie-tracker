@@ -1,18 +1,18 @@
 {
   "since": "2026-07-01",
-  "items": 713,
+  "items": 718,
   "support_oppose_pairs": 81,
-  "friendly_total": 15091824.38,
+  "friendly_total": 15104475.38,
   "unfriendly_total": 15763770.39,
   "other_total": 48148.34,
   "by_candidate": {
     "Rutinel": {
-      "support": 2850636.05,
+      "support": 2856769.05,
       "oppose": 13435686.42
     },
     "Evans": {
       "support": 2328083.97,
-      "oppose": 12241188.33
+      "oppose": 12247706.33
     },
     "Wood": {
       "support": 48148.34,
@@ -176,7 +176,7 @@
       "Other": 0.0
     },
     "WORKING AMERICA": {
-      "Friendly": 26924.79,
+      "Friendly": 39575.79,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
