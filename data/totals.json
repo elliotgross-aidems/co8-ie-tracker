@@ -1,21 +1,21 @@
 {
   "since": "2026-07-01",
-  "items": 709,
-  "support_oppose_pairs": 80,
-  "friendly_total": 15014518.64,
-  "unfriendly_total": 15755594.75,
-  "other_total": 48148.31,
+  "items": 713,
+  "support_oppose_pairs": 81,
+  "friendly_total": 15091824.38,
+  "unfriendly_total": 15763770.39,
+  "other_total": 48148.34,
   "by_candidate": {
     "Rutinel": {
-      "support": 2778332.21,
-      "oppose": 13427515.44
+      "support": 2850636.05,
+      "oppose": 13435686.42
     },
     "Evans": {
-      "support": 2328079.31,
-      "oppose": 12236186.43
+      "support": 2328083.97,
+      "oppose": 12241188.33
     },
     "Wood": {
-      "support": 48148.31,
+      "support": 48148.34,
       "oppose": 0.0
     }
   },
@@ -26,17 +26,17 @@
       "Other": 0.0
     },
     "HMP": {
-      "Friendly": 7780734.1899999995,
+      "Friendly": 7858035.029999999,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
     "SAFETY & AFFORDABILITY PAC INC.": {
       "Friendly": 0.0,
-      "Unfriendly": 2470156.5,
+      "Unfriendly": 2470157.0,
       "Other": 0.0
     },
     "MAINSTREAM COLORADO FUND": {
-      "Friendly": 1851145.3300000003,
+      "Friendly": 1851146.5100000002,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
@@ -46,18 +46,18 @@
       "Other": 0.0
     },
     "LCV VICTORY FUND": {
-      "Friendly": 1589048.89,
+      "Friendly": 1589050.1499999997,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
     "314 ACTION FUND": {
-      "Friendly": 983407.9799999999,
+      "Friendly": 983408.3699999999,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
     "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION": {
       "Friendly": 0.0,
-      "Unfriendly": 963027.1099999995,
+      "Unfriendly": 971199.4799999995,
       "Other": 0.0
     },
     "PROTECT AND SERVE PAC": {
@@ -92,16 +92,16 @@
     },
     "AMERICAN CONSERVATION COALITION PAC (ACC PAC)": {
       "Friendly": 0.0,
-      "Unfriendly": 246277.28999999998,
+      "Unfriendly": 246278.69,
       "Other": 0.0
     },
     "THE GOVERNING MAJORITY FUND": {
       "Friendly": 0.0,
-      "Unfriendly": 208456.12,
+      "Unfriendly": 208456.41,
       "Other": 0.0
     },
     "SEIU COPE (SERVICE EMPLOYEES INTERNATIONAL UNION COMMITTEE ON POLITICAL EDUCATION)": {
-      "Friendly": 185165.0,
+      "Friendly": 185165.6,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
@@ -116,9 +116,9 @@
       "Other": 0.0
     },
     "OUR HERITAGE MATTERS": {
-      "Friendly": 62236.37,
+      "Friendly": 62236.450000000004,
       "Unfriendly": 0.0,
-      "Other": 48148.310000000005
+      "Other": 48148.34
     },
     "UNITE HERE PAC": {
       "Friendly": 102490.43,
@@ -176,7 +176,7 @@
       "Other": 0.0
     },
     "WORKING AMERICA": {
-      "Friendly": 26924.0,
+      "Friendly": 26924.79,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
@@ -186,13 +186,13 @@
       "Other": 0.0
     },
     "CAMPAIGN FOR WORKING CLASS COMMUNITIES": {
-      "Friendly": 24423.959999999992,
+      "Friendly": 24423.999999999993,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
     "THE GUARDIAN SUPER PAC": {
       "Friendly": 0.0,
-      "Unfriendly": 22189.65,
+      "Unfriendly": 22190.47,
       "Other": 0.0
     },
     "TRUST BRIGADE": {
@@ -222,11 +222,11 @@
     },
     "NRA VICTORY FUND, INC.": {
       "Friendly": 0.0,
-      "Unfriendly": 7447.14,
+      "Unfriendly": 7447.400000000001,
       "Other": 0.0
     },
     "LGBTQ CONNECTION PAC": {
-      "Friendly": 5628.179999999999,
+      "Friendly": 5628.239999999999,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
@@ -246,7 +246,7 @@
       "Other": 0.0
     },
     "NEIGHBOR VOICES PAC": {
-      "Friendly": 2716.34,
+      "Friendly": 2716.84,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
