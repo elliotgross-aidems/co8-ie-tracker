@@ -1,17 +1,17 @@
 {
   "since": "2026-07-01",
-  "items": 720,
+  "items": 722,
   "support_oppose_pairs": 81,
-  "friendly_total": 15123266.38,
-  "unfriendly_total": 15763770.39,
+  "friendly_total": 15125449.38,
+  "unfriendly_total": 15771270.39,
   "other_total": 48148.34,
   "by_candidate": {
     "Rutinel": {
-      "support": 2856769.05,
+      "support": 2858952.05,
       "oppose": 13435686.42
     },
     "Evans": {
-      "support": 2328083.97,
+      "support": 2335583.97,
       "oppose": 12266497.33
     },
     "Wood": {
@@ -137,7 +137,7 @@
     },
     "THE CONSERVATIVE CAUCUS DBA AMERICANS FOR CONSTITUTIONAL LIBERTY": {
       "Friendly": 0.0,
-      "Unfriendly": 63836.68,
+      "Unfriendly": 71336.68,
       "Other": 0.0
     },
     "NATIONAL ASSOCIATION OF REALTORS POLITICAL ACTION COMMITTEE": {
@@ -230,13 +230,13 @@
       "Unfriendly": 7447.400000000001,
       "Other": 0.0
     },
-    "LGBTQ CONNECTION PAC": {
-      "Friendly": 5628.239999999999,
+    "INDIVISIBLE ACTION": {
+      "Friendly": 6555.22,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
-    "INDIVISIBLE ACTION": {
-      "Friendly": 4372.22,
+    "LGBTQ CONNECTION PAC": {
+      "Friendly": 5628.239999999999,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
