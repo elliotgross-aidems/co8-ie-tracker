@@ -1,37 +1,42 @@
 {
   "since": "2026-07-01",
-  "items": 691,
-  "support_oppose_pairs": 78,
-  "friendly_total": 14917281.64,
-  "unfriendly_total": 13174793.75,
-  "other_total": 33352.31,
+  "items": 702,
+  "support_oppose_pairs": 80,
+  "friendly_total": 14992235.64,
+  "unfriendly_total": 15750241.75,
+  "other_total": 36620.31,
   "by_candidate": {
     "Rutinel": {
-      "support": 2730605.21,
-      "oppose": 10852067.44
+      "support": 2766471.21,
+      "oppose": 13427515.44
     },
     "Evans": {
       "support": 2322726.31,
-      "oppose": 12186676.43
+      "oppose": 12225764.43
     },
     "Wood": {
-      "support": 33352.31,
+      "support": 36620.31,
       "oppose": 0.0
     }
   },
   "by_committee": {
+    "CLF": {
+      "Friendly": 0.0,
+      "Unfriendly": 8361098.399999999,
+      "Other": 0.0
+    },
     "HMP": {
       "Friendly": 7780734.1899999995,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
-    "CLF": {
+    "SAFETY & AFFORDABILITY PAC INC.": {
       "Friendly": 0.0,
-      "Unfriendly": 7254088.399999999,
+      "Unfriendly": 2470156.5,
       "Other": 0.0
     },
     "MAINSTREAM COLORADO FUND": {
-      "Friendly": 1779413.3300000003,
+      "Friendly": 1851145.3300000003,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
@@ -43,11 +48,6 @@
     "LCV VICTORY FUND": {
       "Friendly": 1589048.89,
       "Unfriendly": 0.0,
-      "Other": 0.0
-    },
-    "SAFETY & AFFORDABILITY PAC INC.": {
-      "Friendly": 0.0,
-      "Unfriendly": 1001718.5,
       "Other": 0.0
     },
     "314 ACTION FUND": {
@@ -125,15 +125,15 @@
       "Unfriendly": 0.0,
       "Other": 0.0
     },
+    "OUR HERITAGE MATTERS": {
+      "Friendly": 51814.37,
+      "Unfriendly": 0.0,
+      "Other": 36620.310000000005
+    },
     "AMERICAN CHEMISTRY COUNCIL, INC": {
       "Friendly": 0.0,
       "Unfriendly": 88088.0,
       "Other": 0.0
-    },
-    "OUR HERITAGE MATTERS": {
-      "Friendly": 48592.37,
-      "Unfriendly": 0.0,
-      "Other": 33352.310000000005
     },
     "THE CONSERVATIVE CAUCUS DBA AMERICANS FOR CONSTITUTIONAL LIBERTY": {
       "Friendly": 0.0,
