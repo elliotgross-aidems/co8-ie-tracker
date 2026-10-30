@@ -1,13 +1,13 @@
 {
   "since": "2026-07-01",
-  "items": 730,
+  "items": 736,
   "support_oppose_pairs": 82,
-  "friendly_total": 15365042.38,
+  "friendly_total": 15365400.38,
   "unfriendly_total": 15771270.39,
   "other_total": 52207.34,
   "by_candidate": {
     "Rutinel": {
-      "support": 3081681.05,
+      "support": 3082039.05,
       "oppose": 13435686.42
     },
     "Evans": {
@@ -250,13 +250,13 @@
       "Unfriendly": 0.0,
       "Other": 0.0
     },
-    "POPULAR DEMOCRACY PAC": {
-      "Friendly": 2940.0,
+    "NEIGHBOR VOICES PAC": {
+      "Friendly": 3074.84,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
-    "NEIGHBOR VOICES PAC": {
-      "Friendly": 2716.84,
+    "POPULAR DEMOCRACY PAC": {
+      "Friendly": 2940.0,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
