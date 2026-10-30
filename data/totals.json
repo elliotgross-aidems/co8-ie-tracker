@@ -1,21 +1,21 @@
 {
   "since": "2026-07-01",
-  "items": 702,
+  "items": 709,
   "support_oppose_pairs": 80,
-  "friendly_total": 14992235.64,
-  "unfriendly_total": 15750241.75,
-  "other_total": 36620.31,
+  "friendly_total": 15014518.64,
+  "unfriendly_total": 15755594.75,
+  "other_total": 48148.31,
   "by_candidate": {
     "Rutinel": {
-      "support": 2766471.21,
+      "support": 2778332.21,
       "oppose": 13427515.44
     },
     "Evans": {
-      "support": 2322726.31,
-      "oppose": 12225764.43
+      "support": 2328079.31,
+      "oppose": 12236186.43
     },
     "Wood": {
-      "support": 36620.31,
+      "support": 48148.31,
       "oppose": 0.0
     }
   },
@@ -57,7 +57,7 @@
     },
     "AMERICANS FOR PROSPERITY ACTION, INC. (AFP ACTION) DBA CVA ACTION AND DBA LIBRE ACTION": {
       "Friendly": 0.0,
-      "Unfriendly": 957674.1099999995,
+      "Unfriendly": 963027.1099999995,
       "Other": 0.0
     },
     "PROTECT AND SERVE PAC": {
@@ -100,6 +100,11 @@
       "Unfriendly": 208456.12,
       "Other": 0.0
     },
+    "SEIU COPE (SERVICE EMPLOYEES INTERNATIONAL UNION COMMITTEE ON POLITICAL EDUCATION)": {
+      "Friendly": 185165.0,
+      "Unfriendly": 0.0,
+      "Other": 0.0
+    },
     "AB PAC": {
       "Friendly": 184787.45,
       "Unfriendly": 0.0,
@@ -110,10 +115,10 @@
       "Unfriendly": 0.0,
       "Other": 0.0
     },
-    "SEIU COPE (SERVICE EMPLOYEES INTERNATIONAL UNION COMMITTEE ON POLITICAL EDUCATION)": {
-      "Friendly": 173304.0,
+    "OUR HERITAGE MATTERS": {
+      "Friendly": 62236.37,
       "Unfriendly": 0.0,
-      "Other": 0.0
+      "Other": 48148.310000000005
     },
     "UNITE HERE PAC": {
       "Friendly": 102490.43,
@@ -124,11 +129,6 @@
       "Friendly": 100000.0,
       "Unfriendly": 0.0,
       "Other": 0.0
-    },
-    "OUR HERITAGE MATTERS": {
-      "Friendly": 51814.37,
-      "Unfriendly": 0.0,
-      "Other": 36620.310000000005
     },
     "AMERICAN CHEMISTRY COUNCIL, INC": {
       "Friendly": 0.0,
