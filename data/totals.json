@@ -1,18 +1,18 @@
 {
   "since": "2026-07-01",
-  "items": 725,
-  "support_oppose_pairs": 81,
-  "friendly_total": 15128302.38,
+  "items": 727,
+  "support_oppose_pairs": 82,
+  "friendly_total": 15156324.38,
   "unfriendly_total": 15771270.39,
   "other_total": 52207.34,
   "by_candidate": {
     "Rutinel": {
-      "support": 2858952.05,
+      "support": 2872963.05,
       "oppose": 13435686.42
     },
     "Evans": {
       "support": 2335583.97,
-      "oppose": 12269350.33
+      "oppose": 12283361.33
     },
     "Wood": {
       "support": 52207.34,
@@ -116,7 +116,7 @@
       "Other": 0.0
     },
     "OUR HERITAGE MATTERS": {
-      "Friendly": 65089.450000000004,
+      "Friendly": 65089.44999999999,
       "Unfriendly": 0.0,
       "Other": 52207.34
     },
@@ -177,6 +177,11 @@
     },
     "WORKING AMERICA": {
       "Friendly": 39575.79,
+      "Unfriendly": 0.0,
+      "Other": 0.0
+    },
+    "BUILDING TOGETHER": {
+      "Friendly": 28543.0,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
@@ -262,11 +267,6 @@
     },
     "ACTIVATE AMERICA": {
       "Friendly": 547.0,
-      "Unfriendly": 0.0,
-      "Other": 0.0
-    },
-    "BUILDING TOGETHER": {
-      "Friendly": 521.0,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
