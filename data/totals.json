@@ -1,8 +1,8 @@
 {
   "since": "2026-07-01",
-  "items": 718,
+  "items": 720,
   "support_oppose_pairs": 81,
-  "friendly_total": 15104475.38,
+  "friendly_total": 15123266.38,
   "unfriendly_total": 15763770.39,
   "other_total": 48148.34,
   "by_candidate": {
@@ -12,7 +12,7 @@
     },
     "Evans": {
       "support": 2328083.97,
-      "oppose": 12247706.33
+      "oppose": 12266497.33
     },
     "Wood": {
       "support": 48148.34,
@@ -197,6 +197,11 @@
     },
     "TRUST BRIGADE": {
       "Friendly": 19207.01,
+      "Unfriendly": 0.0,
+      "Other": 0.0
+    },
+    "THE LINCOLN PROJECT": {
+      "Friendly": 18791.0,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
