@@ -1,13 +1,13 @@
 {
   "since": "2026-07-01",
-  "items": 727,
+  "items": 730,
   "support_oppose_pairs": 82,
-  "friendly_total": 15156324.38,
+  "friendly_total": 15365042.38,
   "unfriendly_total": 15771270.39,
   "other_total": 52207.34,
   "by_candidate": {
     "Rutinel": {
-      "support": 2872963.05,
+      "support": 3081681.05,
       "oppose": 13435686.42
     },
     "Evans": {
@@ -40,14 +40,14 @@
       "Unfriendly": 0.0,
       "Other": 0.0
     },
+    "LCV VICTORY FUND": {
+      "Friendly": 1797768.1499999997,
+      "Unfriendly": 0.0,
+      "Other": 0.0
+    },
     "NO GOING BACK PAC INC.": {
       "Friendly": 0.0,
       "Unfriendly": 1722868.0,
-      "Other": 0.0
-    },
-    "LCV VICTORY FUND": {
-      "Friendly": 1589050.1499999997,
-      "Unfriendly": 0.0,
       "Other": 0.0
     },
     "314 ACTION FUND": {
