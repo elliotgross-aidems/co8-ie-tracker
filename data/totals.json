@@ -1,17 +1,17 @@
 {
   "since": "2026-07-01",
-  "items": 741,
+  "items": 768,
   "support_oppose_pairs": 82,
-  "friendly_total": 15567392.47,
-  "unfriendly_total": 15792219.23,
+  "friendly_total": 15602574.47,
+  "unfriendly_total": 15794281.23,
   "other_total": 52208.96,
   "by_candidate": {
     "Rutinel": {
-      "support": 3158350.99,
+      "support": 3193532.99,
       "oppose": 13435687.26
     },
     "Evans": {
-      "support": 2356531.97,
+      "support": 2358593.97,
       "oppose": 12409041.48
     },
     "Wood": {
@@ -92,7 +92,7 @@
     },
     "AMERICAN CONSERVATION COALITION PAC (ACC PAC)": {
       "Friendly": 0.0,
-      "Unfriendly": 246278.69,
+      "Unfriendly": 248340.69,
       "Other": 0.0
     },
     "THE GOVERNING MAJORITY FUND": {
@@ -180,19 +180,24 @@
       "Unfriendly": 0.0,
       "Other": 0.0
     },
+    "CAMPAIGN FOR WORKING CLASS COMMUNITIES": {
+      "Friendly": 31105.999999999993,
+      "Unfriendly": 0.0,
+      "Other": 0.0
+    },
     "BUILDING TOGETHER": {
       "Friendly": 28544.3,
+      "Unfriendly": 0.0,
+      "Other": 0.0
+    },
+    "PAY THE PEOPLE PAC": {
+      "Friendly": 28500.0,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
     "MAGA INC.": {
       "Friendly": 0.0,
       "Unfriendly": 26039.83,
-      "Other": 0.0
-    },
-    "CAMPAIGN FOR WORKING CLASS COMMUNITIES": {
-      "Friendly": 24423.999999999993,
-      "Unfriendly": 0.0,
       "Other": 0.0
     },
     "THE GUARDIAN SUPER PAC": {
