@@ -1,32 +1,32 @@
 {
   "since": "2026-07-01",
-  "items": 738,
+  "items": 741,
   "support_oppose_pairs": 82,
-  "friendly_total": 15369279.38,
-  "unfriendly_total": 15792218.39,
-  "other_total": 52207.34,
+  "friendly_total": 15567392.47,
+  "unfriendly_total": 15792219.23,
+  "other_total": 52208.96,
   "by_candidate": {
     "Rutinel": {
-      "support": 3085918.05,
-      "oppose": 13435686.42
+      "support": 3158350.99,
+      "oppose": 13435687.26
     },
     "Evans": {
       "support": 2356531.97,
-      "oppose": 12283361.33
+      "oppose": 12409041.48
     },
     "Wood": {
-      "support": 52207.34,
+      "support": 52208.96,
       "oppose": 0.0
     }
   },
   "by_committee": {
     "CLF": {
       "Friendly": 0.0,
-      "Unfriendly": 8361098.399999999,
+      "Unfriendly": 8361099.239999999,
       "Other": 0.0
     },
     "HMP": {
-      "Friendly": 7858035.029999999,
+      "Friendly": 8056011.869999999,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
@@ -41,7 +41,7 @@
       "Other": 0.0
     },
     "LCV VICTORY FUND": {
-      "Friendly": 1797768.15,
+      "Friendly": 1797768.65,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
@@ -101,7 +101,7 @@
       "Other": 0.0
     },
     "SEIU COPE (SERVICE EMPLOYEES INTERNATIONAL UNION COMMITTEE ON POLITICAL EDUCATION)": {
-      "Friendly": 185165.6,
+      "Friendly": 185165.85,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
@@ -116,9 +116,9 @@
       "Other": 0.0
     },
     "OUR HERITAGE MATTERS": {
-      "Friendly": 65089.44999999999,
+      "Friendly": 65091.44999999999,
       "Unfriendly": 0.0,
-      "Other": 52207.34
+      "Other": 52208.96
     },
     "UNITE HERE PAC": {
       "Friendly": 102490.43,
@@ -176,12 +176,12 @@
       "Other": 0.0
     },
     "WORKING AMERICA": {
-      "Friendly": 39575.79,
+      "Friendly": 39576.58,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
     "BUILDING TOGETHER": {
-      "Friendly": 28543.0,
+      "Friendly": 28544.3,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
@@ -206,7 +206,7 @@
       "Other": 0.0
     },
     "THE LINCOLN PROJECT": {
-      "Friendly": 18791.0,
+      "Friendly": 18791.66,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
@@ -236,7 +236,7 @@
       "Other": 0.0
     },
     "INDIVISIBLE ACTION": {
-      "Friendly": 6555.22,
+      "Friendly": 6555.35,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
@@ -246,7 +246,7 @@
       "Other": 0.0
     },
     "VOTEVETS": {
-      "Friendly": 4235.14,
+      "Friendly": 4363.52,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
@@ -256,7 +256,7 @@
       "Other": 0.0
     },
     "NEIGHBOR VOICES PAC": {
-      "Friendly": 3074.84,
+      "Friendly": 3077.0800000000004,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
