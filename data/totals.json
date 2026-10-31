@@ -1,13 +1,13 @@
 {
   "since": "2026-07-01",
-  "items": 737,
+  "items": 738,
   "support_oppose_pairs": 82,
-  "friendly_total": 15365400.38,
+  "friendly_total": 15369279.38,
   "unfriendly_total": 15792218.39,
   "other_total": 52207.34,
   "by_candidate": {
     "Rutinel": {
-      "support": 3082039.05,
+      "support": 3085918.05,
       "oppose": 13435686.42
     },
     "Evans": {
@@ -247,6 +247,11 @@
     },
     "VOTEVETS": {
       "Friendly": 4235.14,
+      "Unfriendly": 0.0,
+      "Other": 0.0
+    },
+    "MI FAMILIA VOTA": {
+      "Friendly": 3879.0,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
