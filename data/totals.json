@@ -1,21 +1,21 @@
 {
   "since": "2026-07-01",
-  "items": 768,
+  "items": 771,
   "support_oppose_pairs": 82,
-  "friendly_total": 15602574.47,
+  "friendly_total": 15608742.47,
   "unfriendly_total": 15794281.23,
-  "other_total": 52208.96,
+  "other_total": 55028.96,
   "by_candidate": {
     "Rutinel": {
-      "support": 3193532.99,
+      "support": 3198532.99,
       "oppose": 13435687.26
     },
     "Evans": {
       "support": 2358593.97,
-      "oppose": 12409041.48
+      "oppose": 12410209.48
     },
     "Wood": {
-      "support": 52208.96,
+      "support": 55028.96,
       "oppose": 0.0
     }
   },
@@ -116,9 +116,9 @@
       "Other": 0.0
     },
     "OUR HERITAGE MATTERS": {
-      "Friendly": 65091.44999999999,
+      "Friendly": 66259.44999999998,
       "Unfriendly": 0.0,
-      "Other": 52208.96
+      "Other": 55028.96
     },
     "UNITE HERE PAC": {
       "Friendly": 102490.43,
@@ -205,6 +205,11 @@
       "Unfriendly": 22190.47,
       "Other": 0.0
     },
+    "UNIDOSUS ACTION PAC": {
+      "Friendly": 19498.16,
+      "Unfriendly": 0.0,
+      "Other": 0.0
+    },
     "TRUST BRIGADE": {
       "Friendly": 19207.01,
       "Unfriendly": 0.0,
@@ -212,11 +217,6 @@
     },
     "THE LINCOLN PROJECT": {
       "Friendly": 18791.66,
-      "Unfriendly": 0.0,
-      "Other": 0.0
-    },
-    "UNIDOSUS ACTION PAC": {
-      "Friendly": 14498.16,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
