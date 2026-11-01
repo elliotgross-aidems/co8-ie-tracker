@@ -2,16 +2,16 @@
   "since": "2026-07-01",
   "items": 771,
   "support_oppose_pairs": 82,
-  "friendly_total": 15608742.47,
-  "unfriendly_total": 15794281.23,
+  "friendly_total": 15608753.82,
+  "unfriendly_total": 15794282.4,
   "other_total": 55028.96,
   "by_candidate": {
     "Rutinel": {
-      "support": 3198532.99,
+      "support": 3198544.34,
       "oppose": 13435687.26
     },
     "Evans": {
-      "support": 2358593.97,
+      "support": 2358595.14,
       "oppose": 12410209.48
     },
     "Wood": {
@@ -82,7 +82,7 @@
     },
     "AMERICA PAC": {
       "Friendly": 0.0,
-      "Unfriendly": 414179.14,
+      "Unfriendly": 414179.69,
       "Other": 0.0
     },
     "AMERICA FIRST AGRICULTURE ACTION INC.": {
@@ -92,7 +92,7 @@
     },
     "AMERICAN CONSERVATION COALITION PAC (ACC PAC)": {
       "Friendly": 0.0,
-      "Unfriendly": 248340.69,
+      "Unfriendly": 248341.31,
       "Other": 0.0
     },
     "THE GOVERNING MAJORITY FUND": {
@@ -118,7 +118,7 @@
     "OUR HERITAGE MATTERS": {
       "Friendly": 66259.44999999998,
       "Unfriendly": 0.0,
-      "Other": 55028.96
+      "Other": 55028.96000000001
     },
     "UNITE HERE PAC": {
       "Friendly": 102490.43,
@@ -181,7 +181,7 @@
       "Other": 0.0
     },
     "CAMPAIGN FOR WORKING CLASS COMMUNITIES": {
-      "Friendly": 31105.999999999993,
+      "Friendly": 31116.499999999993,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
@@ -256,7 +256,7 @@
       "Other": 0.0
     },
     "MI FAMILIA VOTA": {
-      "Friendly": 3879.0,
+      "Friendly": 3879.85,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
