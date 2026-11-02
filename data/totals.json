@@ -1,13 +1,13 @@
 {
   "since": "2026-07-01",
-  "items": 775,
+  "items": 787,
   "support_oppose_pairs": 82,
-  "friendly_total": 15611909.36,
+  "friendly_total": 15627761.36,
   "unfriendly_total": 15794282.4,
   "other_total": 60013.55,
   "by_candidate": {
     "Rutinel": {
-      "support": 3198544.34,
+      "support": 3214396.34,
       "oppose": 13435687.26
     },
     "Evans": {
@@ -220,6 +220,11 @@
       "Unfriendly": 0.0,
       "Other": 0.0
     },
+    "MI FAMILIA VOTA": {
+      "Friendly": 18353.85,
+      "Unfriendly": 0.0,
+      "Other": 0.0
+    },
     "INDIVISIBLE PROJECT INC.": {
       "Friendly": 11854.0,
       "Unfriendly": 0.0,
@@ -255,8 +260,8 @@
       "Unfriendly": 0.0,
       "Other": 0.0
     },
-    "MI FAMILIA VOTA": {
-      "Friendly": 3879.85,
+    "FIELD TEAM 6, INC.": {
+      "Friendly": 3529.58,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
@@ -267,11 +272,6 @@
     },
     "POPULAR DEMOCRACY PAC": {
       "Friendly": 2940.0,
-      "Unfriendly": 0.0,
-      "Other": 0.0
-    },
-    "FIELD TEAM 6, INC.": {
-      "Friendly": 2151.58,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
