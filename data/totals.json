@@ -1,9 +1,9 @@
 {
   "since": "2026-07-01",
-  "items": 792,
+  "items": 793,
   "support_oppose_pairs": 83,
   "friendly_total": 15644943.97,
-  "unfriendly_total": 15794282.4,
+  "unfriendly_total": 15798152.4,
   "other_total": 63230.66,
   "by_candidate": {
     "Rutinel": {
@@ -11,7 +11,7 @@
       "oppose": 13435687.26
     },
     "Evans": {
-      "support": 2358595.14,
+      "support": 2362465.14,
       "oppose": 12422531.24
     },
     "Wood": {
@@ -47,7 +47,7 @@
     },
     "NO GOING BACK PAC INC.": {
       "Friendly": 0.0,
-      "Unfriendly": 1722868.0,
+      "Unfriendly": 1726738.0,
       "Other": 0.0
     },
     "314 ACTION FUND": {
