@@ -1,21 +1,21 @@
 {
   "since": "2026-07-01",
-  "items": 791,
+  "items": 792,
   "support_oppose_pairs": 83,
-  "friendly_total": 15644826.36,
+  "friendly_total": 15644943.97,
   "unfriendly_total": 15794282.4,
-  "other_total": 63229.55,
+  "other_total": 63230.66,
   "by_candidate": {
     "Rutinel": {
-      "support": 3222298.34,
+      "support": 3222412.73,
       "oppose": 13435687.26
     },
     "Evans": {
       "support": 2358595.14,
-      "oppose": 12422528.02
+      "oppose": 12422531.24
     },
     "Wood": {
-      "support": 63229.55,
+      "support": 63230.66,
       "oppose": 0.0
     }
   },
@@ -36,7 +36,7 @@
       "Other": 0.0
     },
     "MAINSTREAM COLORADO FUND": {
-      "Friendly": 1866950.5100000002,
+      "Friendly": 1866951.7100000002,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
@@ -116,9 +116,9 @@
       "Other": 0.0
     },
     "OUR HERITAGE MATTERS": {
-      "Friendly": 70675.99,
+      "Friendly": 70677.93000000001,
       "Unfriendly": 0.0,
-      "Other": 63229.55
+      "Other": 63230.66
     },
     "UNITE HERE PAC": {
       "Friendly": 102490.43,
@@ -186,7 +186,7 @@
       "Other": 0.0
     },
     "BUILDING TOGETHER": {
-      "Friendly": 28544.3,
+      "Friendly": 28545.53,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
@@ -221,7 +221,7 @@
       "Other": 0.0
     },
     "MI FAMILIA VOTA": {
-      "Friendly": 18353.85,
+      "Friendly": 18354.64,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
@@ -256,12 +256,12 @@
       "Other": 0.0
     },
     "VOTEVETS": {
-      "Friendly": 4363.52,
+      "Friendly": 4470.5,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
     "FIELD TEAM 6, INC.": {
-      "Friendly": 3529.580000000001,
+      "Friendly": 3533.4000000000005,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
@@ -286,7 +286,7 @@
       "Other": 0.0
     },
     "MOMSRISING PAC": {
-      "Friendly": 30.0,
+      "Friendly": 31.65,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
