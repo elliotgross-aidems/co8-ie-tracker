@@ -1,18 +1,18 @@
 {
   "since": "2026-07-01",
-  "items": 801,
-  "support_oppose_pairs": 83,
-  "friendly_total": 15649606.97,
+  "items": 803,
+  "support_oppose_pairs": 84,
+  "friendly_total": 15667386.97,
   "unfriendly_total": 15798152.4,
   "other_total": 73805.66,
   "by_candidate": {
     "Rutinel": {
-      "support": 3222835.73,
+      "support": 3231725.73,
       "oppose": 13435687.26
     },
     "Evans": {
       "support": 2362465.14,
-      "oppose": 12426771.24
+      "oppose": 12435661.24
     },
     "Wood": {
       "support": 73805.66,
@@ -36,7 +36,7 @@
       "Other": 0.0
     },
     "MAINSTREAM COLORADO FUND": {
-      "Friendly": 1866951.7100000002,
+      "Friendly": 1884731.7100000002,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
