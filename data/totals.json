@@ -1,21 +1,21 @@
 {
   "since": "2026-07-01",
-  "items": 793,
+  "items": 801,
   "support_oppose_pairs": 83,
-  "friendly_total": 15644943.97,
+  "friendly_total": 15649606.97,
   "unfriendly_total": 15798152.4,
-  "other_total": 63230.66,
+  "other_total": 73805.66,
   "by_candidate": {
     "Rutinel": {
-      "support": 3222412.73,
+      "support": 3222835.73,
       "oppose": 13435687.26
     },
     "Evans": {
       "support": 2362465.14,
-      "oppose": 12422531.24
+      "oppose": 12426771.24
     },
     "Wood": {
-      "support": 63230.66,
+      "support": 73805.66,
       "oppose": 0.0
     }
   },
@@ -116,9 +116,9 @@
       "Other": 0.0
     },
     "OUR HERITAGE MATTERS": {
-      "Friendly": 70677.93000000001,
+      "Friendly": 74542.93000000001,
       "Unfriendly": 0.0,
-      "Other": 63230.66
+      "Other": 73805.66
     },
     "UNITE HERE PAC": {
       "Friendly": 102490.43,
@@ -260,13 +260,13 @@
       "Unfriendly": 0.0,
       "Other": 0.0
     },
-    "FIELD TEAM 6, INC.": {
-      "Friendly": 3533.4000000000005,
+    "NEIGHBOR VOICES PAC": {
+      "Friendly": 3875.0800000000004,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
-    "NEIGHBOR VOICES PAC": {
-      "Friendly": 3077.0800000000004,
+    "FIELD TEAM 6, INC.": {
+      "Friendly": 3533.4000000000005,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
