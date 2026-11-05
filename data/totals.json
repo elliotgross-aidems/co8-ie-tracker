@@ -2,20 +2,20 @@
   "since": "2026-07-01",
   "items": 809,
   "support_oppose_pairs": 85,
-  "friendly_total": 15681594.97,
+  "friendly_total": 15681601.4,
   "unfriendly_total": 15798152.4,
-  "other_total": 77104.66,
+  "other_total": 77106.06,
   "by_candidate": {
     "Rutinel": {
-      "support": 3238639.73,
+      "support": 3238643.26,
       "oppose": 13435687.26
     },
     "Evans": {
       "support": 2362465.14,
-      "oppose": 12442955.24
+      "oppose": 12442958.14
     },
     "Wood": {
-      "support": 77104.66,
+      "support": 77106.06,
       "oppose": 0.0
     }
   },
@@ -36,7 +36,7 @@
       "Other": 0.0
     },
     "MAINSTREAM COLORADO FUND": {
-      "Friendly": 1898559.71,
+      "Friendly": 1898562.1300000001,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
@@ -116,9 +116,9 @@
       "Other": 0.0
     },
     "OUR HERITAGE MATTERS": {
-      "Friendly": 74922.93,
+      "Friendly": 74924.62,
       "Unfriendly": 0.0,
-      "Other": 77104.66
+      "Other": 77106.06
     },
     "UNITE HERE PAC": {
       "Friendly": 102490.43,
@@ -261,7 +261,7 @@
       "Other": 0.0
     },
     "NEIGHBOR VOICES PAC": {
-      "Friendly": 3875.08,
+      "Friendly": 3876.1600000000003,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
@@ -296,7 +296,7 @@
       "Other": 0.0
     },
     "GIVEGREEN UNITED ACTION": {
-      "Friendly": 16.0,
+      "Friendly": 17.24,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
