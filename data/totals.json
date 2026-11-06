@@ -2,20 +2,20 @@
   "since": "2026-07-01",
   "items": 809,
   "support_oppose_pairs": 85,
-  "friendly_total": 15681601.4,
+  "friendly_total": 15681612.24,
   "unfriendly_total": 15798152.4,
-  "other_total": 77106.06,
+  "other_total": 77106.72,
   "by_candidate": {
     "Rutinel": {
-      "support": 3238643.26,
+      "support": 3238653.5,
       "oppose": 13435687.26
     },
     "Evans": {
       "support": 2362465.14,
-      "oppose": 12442958.14
+      "oppose": 12442958.74
     },
     "Wood": {
-      "support": 77106.06,
+      "support": 77106.72,
       "oppose": 0.0
     }
   },
@@ -116,9 +116,9 @@
       "Other": 0.0
     },
     "OUR HERITAGE MATTERS": {
-      "Friendly": 74924.62,
+      "Friendly": 74925.22,
       "Unfriendly": 0.0,
-      "Other": 77106.06
+      "Other": 77106.72
     },
     "UNITE HERE PAC": {
       "Friendly": 102490.43,
@@ -181,7 +181,7 @@
       "Other": 0.0
     },
     "CAMPAIGN FOR WORKING CLASS COMMUNITIES": {
-      "Friendly": 31116.499999999993,
+      "Friendly": 31125.409999999993,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
@@ -261,7 +261,7 @@
       "Other": 0.0
     },
     "NEIGHBOR VOICES PAC": {
-      "Friendly": 3876.1600000000003,
+      "Friendly": 3877.4900000000002,
       "Unfriendly": 0.0,
       "Other": 0.0
     },
